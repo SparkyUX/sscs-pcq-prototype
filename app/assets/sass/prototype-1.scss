@@ -1,0 +1,40 @@
+@import "_colours";
+
+#content.prototype-1 {
+
+  .description {
+    background-color: #dee0e2;
+    padding: 20px;
+  }
+
+  .appeal,
+  .hearing,
+  .decision {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .details {
+    padding-bottom: 10px;
+  }
+
+  .hearing,
+  .decision {
+    p {
+      display: inline;
+    }
+  }
+
+  .tick {
+    width: 30px;
+    float: left;
+    margin: -5px 15px 15px 0px;
+  }
+
+  li:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}

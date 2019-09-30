@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block page_title %}
+After you appeal - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %}
+ {% include "includes/breadcrumbs.html" %}
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">Appeal a benefit decision</h1>
+      <aside class="nav-container" role="complementary">
+          <div class="nav-section">
+              <h2>Contents</h2>
+              <ol class="navigation-list">
+                  <li><a href="overview">Overview</a></li>
+                  <li><a href="before-you-appeal">Before you appeal</a></li>
+                  <li><a href="help-with-appeal">Help with your appeal</a></li>
+                  <li><a href="start-an-appeal">Start an appeal</a></li>
+                  <li>What happens after you’ve appealed</li>
+              </ol>
+          </div>
+      </aside>
+  </div>
+
+     <div class="column-two-thirds">
+    <h1 class="part-title">What happens after you’ve appealed</h1>
+    <h2 class="heading-medium">Your appeal is sent to the department</h2>
+    <p>Your appeal is sent to the department which made the decision about your entitlement to benefits. This will either be the Department for Work and Pensions, HMRC or your local authority. </p>
+    <h2 class="heading-medium">The department responds to your appeal </h2>
+    <p>The department which made the decision writes a response. This should explain how they’ve made their decision and include any evidence. You can respond to this if you want. </p>
+  <!--  <h2 class="heading-medium">You may be asked some additional questions</h2>
+    <p>You may receive some additional questions by email or letter. These are to help the independent tribunal make a decision on your appeal.</p>-->
+    <h2 class="heading-medium">Your appeal is ‘heard’ </h2>
+    <p>A hearing takes place in front of an independent panel of people, known as a tribunal. They are completely separate to the department which made the original decision. </p>
+    <h2 class="heading-medium">The time it takes to appeal </h2>
+    <p>It’s hard to say how long it will take to get a decision on your appeal.  It depends on how busy the hearing venue is and how many appeals are being made. They can take several months though.</p>
+    <p>You can avoid delays by: </p>
+    <ul class="list list-bullet">
+      <li>sending any evidence well before the hearing (if you have any)</li>
+      <li>turning up to the hearing on time (if you choose to go)</li>
+      <li>getting a <a href="help-with-appeal">representative</a> early (if you need one) </li>
+    </ul>
+    <h2 class="heading-medium">Sending evidence to support your appeal </h2>
+    <p>Evidence can help the tribunal understand your condition or circumstances. For example, a letter from a doctor or a written statement by someone who knows you. Different evidence is useful depending on the benefit you are appealing. There is more specific guidance in the service.</p>
+    <p>For some benefit appeals you can upload evidence when are submitting the appeal. You can also post it in. You should send it as soon as possible if you are posting it. This is so the tribunal have time to read it before your hearing. You’ll be sent more information on how to send in evidence after you’ve submitted your appeal.</p>
+
+     <nav class="pagination" role="navigation" aria-label="Pagination">
+         <ul class="pagination-list">
+             <li class="pagination-item pagination-prev">
+                 <a class="pagination-link" href="/prototype-beta-180522/submit-your-appeal/guidance/start-an-appeal">
+                        <span class="pagination-title">
+                            <svg class="pagination-icon">
+                                <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                            </svg>
+                            Previous
+                        </span>
+                     <span class="visually-hidden">:</span>
+                     <span class="pagination-label">Start an appeal</span>
+                 </a>
+             </li>
+         </ul>
+     </nav>
+
+</div>
+
+    <div class="column-one-third">
+        <aside class="govuk-related-items">
+            <h2 class="heading-small">Related Content</h2>
+            <nav role="navigation">
+                <ul class="font-xsmall">
+                    <li><a href="https://www.gov.uk/benefits-calculators">Benefits calculators</a></li>
+                    <li><a href="https://www.gov.uk/benefit-overpayments">Benefit overpayments</a></li>
+                    <li><a href="https://www.gov.uk/benefit-fraud">Benefit fraud</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3 class="sub-heading">Explore the topic</h3>
+                <ul class="font-xsmall">
+                    <li class="bold"><a href="https://www.gov.uk/browse/benefits/entitlement">How benefits work</a></li>
+                    <li class="bold"><a href="https://www.gov.uk/browse/justice/courts-sentencing-tribunals">Courts, sentencing and tribunals</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+</div>
+</main>
+{% endblock %}

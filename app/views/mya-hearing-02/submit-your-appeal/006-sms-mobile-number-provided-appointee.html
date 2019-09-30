@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Send to number provided? (appointee) - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="005-sms-sign-up" class="link-back">Back</a> 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Do you want them sent to the number you provided earlier? 
+            </h1>
+            <form  action="/prototype-190211/mobile-app" method="post">
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="visually-hidden">Send them to the number you provided earlier? </legend>
+                        <div class="multiple-choice">
+                            <input id="radio-1" type="radio" name="radioGroup" value="usemobileApp">
+                            <label  for="radio-1">
+                                Yes, send them to <span style="font-weight: bold">07972 438178</span>
+                            </label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="radio-2" type="radio" name="radioGroup" value="newmobileApp">
+                            <label  for="radio-2">
+                                No, send them to a different number
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+   <div class="grid-row">
+      <div class="column-one-third">
+        <input type="submit" class="button" value="Save and continue">
+      </div>
+      <div class="column-two-thirds save-for-later">
+        <a href="saved-signed-out">Save and come back later</a></p>  
+      </div>
+    </div>
+
+
+            </form>
+
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+<!--<p> <a href="#">Save and come back later</a></p>-->
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

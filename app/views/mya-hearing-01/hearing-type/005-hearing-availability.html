@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing availability (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+{% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="#" class="link-back">Back</a> 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">Your availability for a hearing</h1>
+            <p>Do you have any dates when you cannot attend a hearing? For example, because you’re going on holiday or have an appointment which cannot be moved.</p>
+            <form  action="/mya-hearing01/availability" method="post">
+                <div class="form-group">
+                    <fieldset>
+                      <div class="multiple-choice">
+                        <input id="radio-1" type="radio" name="radioGroup" value="datesYes">
+                        <label for="radio-1">I need to tell you about dates when I cannot attend a hearing</label>
+                    </div>
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="radio" name="radioGroup" value="datesNo">
+                        <label for="radio-2">I will come to a hearing whenever you schedule it</label>
+                    </div>
+                </fieldset>
+</div>
+                <div class="grid-row">
+                  <div class="column-one-third">
+                    <input type="submit" class="button" value="Continue">
+                </div>
+
+            </div>
+
+        </form>
+
+        <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+
+    </div>
+</div>
+</main>
+{% endblock %}

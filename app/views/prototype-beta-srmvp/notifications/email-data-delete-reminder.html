@@ -1,0 +1,37 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Email - Data delete reminder 
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+	<p style="padding-top: 30px;"><strong class="bold-small">Subject: </strong>Your appeal application is about to be deleted</p>
+	
+	<div class="email-border">
+		
+		
+		<div style="margin-bottom: 30px;"> <img src="/public/images/hmcts-logo.png"></div>
+		<div class="panel panel-border-wide">
+			<p>Appeal reference number: SC242/16/03435</p>
+		</div>
+		<br/>
+		<p>Dear Manish Sharma</p>
+		<p>The [benefit name acronym] appeal application you saved on [save date] is going to be deleted on [delete date]. This is because we only save your data for [X] days.</p>
+
+<p>If you still want to submit this appeal application then you need to sign in and complete it by [delete date minus one]. 
+</p>
+		<h2 class="heading-medium">Sign in and complete your appeal </h2> 
+<a href="../submit-your-appeal/idam-sign-in-return">https://benefit-appeal.gov.uk/sign-in</a></p>
+	
+	<p>If you do not want to appeal then you do not need to do anything. The information you entered will be deleted automatically. </p>	
+		
+		<p>PIP Benefit Appeals<br/>
+			HMCTS<br/>
+			Telephone: 0300 123 1142<br/>
+		</p>
+		<p>This message is automatically generated; please do not reply to this email.</p>
+		<p>Change your email address or stop receiving these emails:  <a href="../manage/manage-email-notifications">https://track-appeal.platform.hmcts.net/manage-email<br/>-notifications/vUXyPb17L2</a></p>
+	</div>
+	
+	</div>	
+</main>
+{% endblock %}

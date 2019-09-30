@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your details - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+        {% include "includes/back.html" %}
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Enter your details
+    </h1>
+    <p>We’ll use these to send you information about your appeal.</p>
+    <form>
+  
+        <fieldset>
+    <div class="form-group">
+          <!-- Firstname, surname -->
+          <label class="form-label" for="first-name">
+            First name
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+          </div>
+
+    <div class="form-group">
+          <label class="form-label" for="Last name">
+            Last name(s) 
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+          </div>
+
+          <!-- National insurance number --> 
+     <div class="form-group">
+          <label class="form-label" for="ni-number">
+            National Insurance number
+          </label>
+          <input class="form-control form-control-1-4" id="form-control-3-4" type="text">  
+</div>
+
+          <!-- Address --> 
+               <div class="form-group">
+
+          <label class="form-label" for="address">
+            Address
+          </label>
+          <textarea class="form-control form-control-3-4" id="textarea-a" cols="90" rows="4"></textarea>
+          </div>
+
+          <!-- Postcode --> 
+               <div class="form-group">
+
+          <label class="form-label" for="postcode">
+            Postcode
+          </label>
+          <input class="form-control form-control-1-4" id="form-control-3-4" type="text">
+          </div> 
+  <!-- Phone number --> 
+               <div class="form-group">
+
+          <label class="form-label" for="phone-number">
+            Phone number
+          </label>
+          <input class="form-control form-control-2-4" id="form-control-3-4" type="text"> 
+ </div>
+          
+         
+               <div class="form-group">
+
+          <label class="form-label" for="form-control-1-4">
+            Email address (optional)
+          
+         <span class="form-hint">We’ll use this to email you updates about your appeal</span></label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text"> 
+          </div> 
+
+        
+         
+        </fieldset>
+      <a class="button" href="../prototype-beta-16/submit-your-appeal/005-sms-sign-up">Continue</a>
+    </form>
+  </div>
+</div>
+
+</main>
+{% endblock %}

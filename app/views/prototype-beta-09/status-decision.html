@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Status - Decision made - to be issued - GOV.UK (PHDM1-S)
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+Your ESA benefit appeal
+</h1>
+            <div class="details">
+<h2 class="heading-medium">Mr M Sharma</h2>
+<h2>Appeal reference number:  SC242/16/034</h2>
+</div>
+            <div class="divider"></div>
+            <div class="progress-container">
+                <div class="ring active">
+                    <p class="appeal-received">Appeal</p>
+                </div>
+                <div class="leg foot active">
+                    <p class="dwp-respond">DWP response</p>
+                </div>
+                <div class="leg foot active">
+                    <p class="hearing-booked">Hearing booked</p>
+                </div>
+                <div class="leg active"></div>
+                <div class="ring active">
+                    <p class="hearing">Hearing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="description">
+                <h4 class="heading-small">Latest update</h4>
+                <p>Your hearing took place on <span style=""> 9 February 2017</span>. The decision will be sent to you in the post and should reach you by 20 February 2017.</p> 
+
+<p>We can’t publish the decision online or tell you over the phone. This is to protect your personal information. </p>
+
+                <!-- Previous updates -->
+                <p class="updates-toggle">
+                    <i class="fa fa-caret-right" aria-hidden="true"><span>View previous updates</span></i>
+                </p>
+                <div class="updates-container">
+
+
+
+                    <div class="update">
+                        <h4 class="bold-small">Hearing booked<span class="date-updates">20 February 2017</span></h4>
+                        <p>A hearing has been booked for your appeal. </p>
+                        <p>  <a href="check-your-hearing-details">Check the details of your hearing</a></p>
+                    </div>
+
+                    <div class="update">
+                        <h4 class="bold-small">Evidence received<span class="date-updates">01 February 2017</span></h4>
+                        <p>The evidence you sent was received by us.</p>
+                    </div>
+
+                    <div class="update">
+                        <h4 class="bold-small">DWP response<span class="date-updates">08 January 2017</span></h4>
+                        
+                        <p>The DWP  have written a response to your 
+ESA benefit  appeal. They should have sent you a copy in the post.</p>
+
+<p>We’re now in the process of booking a hearing for your appeal. We’ll contact you by <span style=""> 5 January 2017</span> with the details.</p>
+                    </div>
+
+
+                    <div class="update">
+                        <h4 class="bold-small">Appeal received<span class="date-updates">15 December 2016</span>
+                            <p>We’ve told the DWP  that you’ve appealed against their decision. They have to respond before 12 January 2017. We’ll contact you and explain the next steps when they’ve replied.</p>
+                        </div>
+                    </div>
+                    <!-- End previous updates -->
+                </div>
+
+
+<div class="updates-border"></div>
+
+<h4 class="heading-small">About your appeal</h4>
+
+               <ul class="list">
+
+                    <li><a href="contact-us">Contact us</a></li>   
+  </ul>
+                <div class="prototype-nav">
+            <p><a href="index">Index</a></p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}

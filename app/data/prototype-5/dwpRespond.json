@@ -1,0 +1,20 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC242/16/03435",
+  "status": "dwpRespond",
+  "updates": [
+    {
+      "date": "28 October 2016",
+      "messages": [
+        "We have told the DWP you wanted to appeal against their decision on your claim for PIP benefit. They have now responded and told us they have not changed their decision. They should have sent you a copy of their response in the post.",
+        "We are now in the process of booking a hearing for your appeal. We’ll contact you within 6 weeks to tell you when and where your hearing is."
+      ]
+    },
+    {
+      "date": "13 October 2016",
+      "messages": [
+        "We have told the DWP that you want to appeal against their decision. They have to provide a written response before 23 November 2016. We will contact you and explain the next steps when they have replied."
+      ]
+    }
+  ]
+}

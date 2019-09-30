@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Track your appeal - HMCTS
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-6" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+    {% include "includes/sscs-breadcrumbs.html" %}
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <form action="/prototype-6/validate" method="get" class="form">
+
+                {% if errors %}
+                <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+
+                    <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
+                        There are errors on the page.
+                    </h1>
+
+                    <ul class="error-summary-list">
+                        {% if errors.surname.length %}
+                        <li><a href="">{{errors.surname[0]}}</a></li>
+                        {% endif %}
+                        {% if errors.reference.length %}
+                        <li><a href="">{{errors.reference[0]}}</a></li>
+                        {% endif %}
+                        {% if errors.notFound.length %}
+                        <li><a href="">{{errors.notFound[0]}}</a></li>
+                        <li><a href="">{{errors.notFound[1]}}</a></li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+                {% endif %}
+
+                <h1 class="form-title heading-xlarge">Track your benefit appeal</h1>
+
+                <div class="form-group {{ 'error' if errors.surname.length }}">
+                    <label class="heading-medium" for="surname">Enter your surname</label>
+                    <p class="form-hint">As it appears on any correspondence about your appeal.</p>
+                    {% if errors.surname.length %}
+                    <span class="error-message">
+                        {{errors.surname[1]}}
+                    </span>
+                    {% endif %}
+                    <input type="text" class="form-control surname" id="surname" name="surname" value="{{surname}}">
+                </div>
+
+                <div class="form-group {{ 'error' if errors.reference.length }}">
+                    <label class="heading-medium" for="reference">Enter your appeal reference number</label>
+                    <p class="form-hint">As it appears on any correspondence about your appeal.<br/>For example SC242/16/03435.</p>
+                    {% if errors.reference.length %}
+                    <span class="error-message">
+                        {{errors.reference[1]}}
+                    </span>
+                    {% endif %}
+                    <span>SC </span><input type="text" id="reference" class="form-control" name="reference" value="{{reference}}">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Find appeal">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
+

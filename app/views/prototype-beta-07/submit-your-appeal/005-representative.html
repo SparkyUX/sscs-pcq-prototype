@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Manage email notifications - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Do you have someone who you’d like to be the representative on your appeal?
+            </h1>
+<div>     
+<p>Such as a welfare rights adviser, carer or friend. </p>
+
+<p>This means they’ll be able to: </p>
+<ul class="list list-bullet">
+  <li>receive the same information as you do about your appeal</li> 
+  <li>submit evidence (and see any that’s submitted)</li>
+  <li>help present your appeal at your hearing</li>
+</ul>   
+
+If you don’t have the details to hand, you can phone up and register a representative after you’ve submitted your appeal. 
+</div>
+
+<br/>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="visually-hidden">Do you have someone who you’d like to be the representative on your appeal?</legend>
+
+      <label class="block-label selection-button-radio" for="radio-1">
+        <input id="radio-1" type="radio" name="radio-group" value="yes">
+        Yes
+      </label>
+      <label class="block-label selection-button-radio" for="radio-2">
+        <input id="radio-2" type="radio" name="radio-group" value="no">
+        No
+      </label>
+
+    </fieldset>
+
+  </div>
+  <a class="button" href="006-reps-details">Continue</a>
+
+</form>
+            
+        </div>
+
+    </div>
+
+    
+            
+
+
+</main>
+
+{% endblock %}

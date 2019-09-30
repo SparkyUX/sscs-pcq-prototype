@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Sending evidence - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="011-additional-reasons" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Evidence to support your appeal 
+    </h1>
+    <p>Evidence is any information that supports your appeal such as a letter, written statement or medical report. Useful evidence shows how your condition affects your life. </p>
+    <p>You can upload evidence now or after you have submitted your appeal. You can also post it in. You’ll be sent the address after you’ve submitted your appeal.</p>
+    <h2 class="heading-medium">Upload evidence</h2> 
+    <form>  
+      <label class="heading-small" for="upload-description">Describe the evidence<span class="form-hint">Briefly describe what you’re uploading and why</span>
+      </label>
+      <textarea class="form-control form-control-3-4 autoExpand" name="textarea" id="textarea" rows='6' data-min-rows='6' placeholder="You can write as much as you want "></textarea>
+      <br/>
+      <details>
+        <summary>Read more about uploading evidence</summary>
+        <p>If you are taking a picture of a letter or document, lay it on a flat surface and take the picture from above. </p>
+        <!-- File upload -->
+        <p>You can upload evidence to support your answer such as letters, photos, video or audio. If you are taking a picture of a letter, place it on a flat surface and take the picture from above. </p>
+      </summary>
+    </details>
+    <br/>
+    <!-- File upload -->
+    <div id="actions" class="row">
+      <div class="col-lg-7">
+        <!-- The fileinput-button span is used to style the file input field as button -->
+        <span class="btn btn-success fileinput-button button-secondary">
+          <i class="glyphicon glyphicon-plus"></i>
+          <span>Choose a file/s</span>
+        </span>
+      </div>
+      <div class="col-lg-5">
+        <!-- The global file processing state -->
+        <span class="fileupload-process">
+          <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="display:none;3">
+            <div class="progress-bar progress-bar-success" style="width:0%;color:red;" data-dz-uploadprogress></div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div id="file-upload-table-display">
+     <h2 class="heading-small" id="uploads">Uploaded files</h2>
+     <div class="c-uploads" id="upload-documents" role="upload-documents" role="region" aria-labelledby="uploads" aria-live="polite">
+       <div class="c-uploads-item">
+         <p class="c-uploads-empty">No files uploaded</p>
+       </div>
+     </div>
+     <div class="table table-striped files" id="previews">
+       <div id="template" class="file-row">
+         <div id="file-name">
+           <span class="name" data-dz-name></span>
+           <strong class="error text-danger" data-dz-errormessage></strong>
+         </div>
+         <div id="p-bar">
+           <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+             <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+           </div>
+         </div>
+         <div id="file-size">
+           <p class="size" data-dz-size></p>
+         </div>
+         <div id="file-buttons">
+           <a data-dz-remove class="btn btn-warning cancel">
+             <span class="link">Cancel</span>
+           </a>
+           <a class="btn preview-file">
+             <span class="link">Preview</span>
+           </a>
+           <a class="btn btn-danger delete">
+             <span class="link">Delete</span>
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Modal window for image preview -->
+   <div id="imageModal" class="">
+     <div id="modal-container">
+       <a class="link close">Close</a>
+       <div id="modal-content" class="modal-content"></div>
+       <div id="image-name"></div>
+     </div>
+   </div>
+   <a class="button" href="013-your-hearing">Save and continue</a>
+    <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+ </form>
+<br/>
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+        <!--<p> <a href="#">Save and come back later</a></p>-->
+
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}
+

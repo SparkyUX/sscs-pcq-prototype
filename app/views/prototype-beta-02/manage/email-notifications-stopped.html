@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Email notifications stopped - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                You’ve stopped email notifications 
+            </h1>
+
+     <p>You won’t receive any more emails about your <span style="color: green;">ESA benefit </span><span style="color: red; font-weight: normal;">[Appeal benefit type]</span> appeal. </p> 
+       
+     <p> You can still <a href="../status-dwp-response">track your benefit appeal online</a></p>
+     <br/>
+      
+<form>
+  <div class="form-group">
+   
+
+
+</form>
+            
+        </div>
+
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

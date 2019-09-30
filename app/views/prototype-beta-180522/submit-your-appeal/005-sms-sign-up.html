@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block page_title %}
+SMS notifications - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-details" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+     Do you want to receive text message notifications?
+   </h1>
+   <p>Text message notifications provide you with short updates about your appeal. You’ll only receive them when something important happens. You won’t be charged to receive them. </p>
+   <form  action="/prototype-180522/smssignup" method="post">
+    <div class="form-group">
+      <fieldset>
+        <div class="multiple-choice">
+          <input id="radio-1" type="radio" name="radioGroup" value="smsyes">
+          <label for="radio-1">Yes, I want to receive text message notifications </label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-2" type="radio" name="radioGroup" value="smsno">
+          <label for="radio-2">No, I don't want to receive text message notifications </label>
+        </div>
+      </fieldset>
+    </div>
+    <input type="submit" class="button" value="Continue">
+  </form>
+ <br/>
+  <!-- <p> <a href="#">Save and come back later</a></p> -->
+
+  <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+</div>
+</div>
+</main>
+{% endblock %}

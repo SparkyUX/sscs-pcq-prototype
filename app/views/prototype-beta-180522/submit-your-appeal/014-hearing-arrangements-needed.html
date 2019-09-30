@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing arrangements confirm - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="../prototype-beta-180522/submit-your-appeal/013-your-hearing" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Do you need any support for your hearing?  
+    </h1>
+    <p>Support for your hearing can be arranged such as an interpreter, hearing loop or disabled access. You <span class="pbold">can’t</span> bring your own interpreter to the hearing.</p> 
+    <form  action="/prototype-180522/arrangements" method="post">
+      <div class="form-group">
+       <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radioGroup" value="arrangementsRequired">
+        <label for="radio-1">
+          Yes
+        </label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radioGroup" value="arrangementsNotRequired">
+        <label for="radio-2">
+          No
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <input type="submit" class="button" value="Continue">
+</form>
+        <!-- <p> <a href="#">Save and come back later</a></p> -->
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

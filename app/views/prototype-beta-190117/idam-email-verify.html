@@ -1,0 +1,32 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Email - IdAM check your email
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+	<p style="padding-top: 30px;"><strong class="bold-small">Subject:</strong> Activate your account</p>
+	<div class="email-border">
+		<div style="margin-bottom: 15px;"> <img src="/public/images/notify-email-header.png"></div>
+		<div class="email-margin">
+			<div style="margin-bottom: 20px;"> <img src="/public/images/hmcts-logo.png"></div>
+			<p style="margin:0 0 30px;font-size:19px">Dear Manish Sharma,</p>
+			<p style="margin:0 0 30px;font-size:19px">Click on the link to finish creating your account:</p>
+			<p style="margin:0 0 30px;font-size:19px; "><a href="idam-create-password">
+				https://idam.preprod.ccidam.reform.hmcts.net/activate?jwt=ey<br>
+				JhbGciOiJIUzI1NiJ9.eyJqdGkiOiJnMG91MmY4MzEzOWc<br>
+				4c2p2MDlsczJkZW1vaiIsInN1YiI6IjE2MSIsImlhdCI6MTUxNjE5NjU<br>
+				3MywiZXhwIjoxNTIxMzgwNTczLCJkYXRhIjoiY2l0aXplbixjbWMtc<br>
+				HJpdmF0ZS1iZXRhLGNsYWltYW50LGNpdGl6ZW4tbG9hMSxjb<br>
+				WMtcHJpdmF0ZS1iZXRhLWxvYTEsY2xhaW1hbnQtbG9hMSIsIn<br>R5
+				cGUiOiJBQ1RJVkFURSIsImlkIjoiMTYxIiwiZm9yZW5hbWUiOiJ<br>
+				Mb25lc3RhciIsInN1cm5hbWUiOiJNaWxuZSIsImRlZmF1bHQtc<br>
+				2VydmljZSI6IkNNQyIsImxvYSI6MSwiZGVmYXVsdC11cmwiOi<br>
+				JodHRwczovL3d3dy1wcmVwcm9kLm1vbmV5Y2xhaW0ucmVmb<br>3J
+				tLmhtY3RzLm5ldC9yZWNlaXZlciIsImdyb3VwIjoiY21jLXB<br>
+			yaXZhdGUtYmV0YSJ9.Aej2z6vlgudv1ODR3tq0C27nUm<br>Nx_b8qeAUg_9J9kq4.</a></p>
+			<p>  <h3 class="heading-medium">Get help</h3>
+				<p style="margin:0 0 15px;font-size:19px; ">Contact us if you need help using an HMCTS service: <br> <a href="https://idam-hmcts.herokuapp.com/contact-us?type=generic#">https://hmcts-access.service.gov.uk/contact-us</a></p>
+				<p  class="dynamic-content default-content" style="font-size:19px; ;">HM Courts & Tribunals Service</p>
+				<p  class="dynamic-content default-content" style="font-size:19px; ;">This is an automated message, please don't reply to this email.</p>
+			</main>
+			{% endblock %}

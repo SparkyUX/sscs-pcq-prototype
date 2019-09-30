@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Independent tribunal - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+     <a href="000-postcode" class="link-back">Back</a> 
+
+ <div class="grid-row">
+  <div class="column-full">
+    <div class="banner-blue">
+     <h1 class="bold-xlarge">Your appeal will be decided by <br/>an independent tribunal</h1>
+    </div>
+
+  
+<p class="lede">Your appeal will be reviewed by a tribunal made up of a judge, doctor and disability expert. They will consider everything you tell them and make a decision on your entitlement to the PIP benefit.</p>
+<p class="lede">The tribunal are separate to DWP.</p>
+
+  <a class="button" href="002-have-mrn">Continue</a>
+<br/>
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+
+
+</div>
+</div>
+</main>
+{% endblock %}

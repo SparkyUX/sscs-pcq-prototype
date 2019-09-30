@@ -1,0 +1,20 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC242/16/03435",
+  "status": "dwpRespond",
+  "updates": [
+    {
+      "date": "28 October 2016",
+      "messages": [
+        "The DWP have responded to your appeal. They have not changed their original decision.",
+        "We are now in the process of booking a hearing for your appeal. We will contact you within 6 weeks to tell you when and where your hearing is."
+      ]
+    },
+    {
+      "date": "13 September 2016",
+      "messages": [
+        "We have notified the DWP that you want to appeal against their decision. They have until 28 October to respond. We will contact you when they have replied."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your hearing - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+        {% include "includes/back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Your hearing
+            </h1>
+
+<p>Your appeal will be decided using the information you submit in this form and any that you and DWP send in. </p>
+
+<p>If you come to the hearing you can explain your appeal to the tribunal.</p> 
+
+ 
+<p>We can also make arrangements so the hearing caters for your needs. </p>
+
+
+            
+<form  action="/prototype-15/hearing" method="post">
+  <div class="form-group">
+
+  <p class="heading-medium">Do you want to go to your hearing?</p>
+    <fieldset>
+
+      <legend class="visually-hidden">What do you want to do?</legend>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radioGroup" value="attend">
+       <label for="radio-1">
+        Yes
+      </label>
+      </div>
+  <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radioGroup" value="notAttend">
+           <label for="radio-2">
+        No
+      </label>
+      </div>
+
+    </fieldset>
+
+  </div>
+  <input type="submit" class="button" value="Continue">
+
+</form>
+   
+<br/> 
+<br/>           
+
+        </div>
+
+    </div>
+    
+
+
+
+</main>
+
+{% endblock %}

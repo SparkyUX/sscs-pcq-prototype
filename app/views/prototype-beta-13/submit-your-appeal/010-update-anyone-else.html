@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Update anyone else? - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Is there anyone else you’d like to keep updated? 
+            </h1>
+            
+<form  action="/prototype-10/supporter" method="post">
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="visually-hidden">Is there anyone else who you’d like to be kept updated?</legend>
+
+      <p>We can send a friend, family member or partner emails or text messages about your appeal.</p> 
+
+      <label class="block-label selection-button-radio" for="radio-1">
+        <input id="radio-1" type="radio" name="radioGroup" value="yes">
+        Yes
+      </label>
+      <label class="block-label selection-button-radio" for="radio-2">
+        <input id="radio-2" type="radio" name="radioGroup" value="no">
+        No
+      </label>
+
+    </fieldset>
+
+  </div>
+   <input type="submit" class="button" value="Continue">
+
+</form>
+            
+        </div>
+
+    </div>
+    
+            <div class="prototype-nav">
+            <p><a href="index">Index</a></p>
+
+            </div>
+</main>
+
+{% endblock %}

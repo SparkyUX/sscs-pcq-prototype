@@ -1,0 +1,6 @@
+.idea
+node_modules
+govuk_modules
+public
+uploads/*
+!uploads/.gitkeep

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Representative confirm (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="#" class="link-back">Back</a> 
+ <div class="grid-row">
+   <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Do you have a representative? 
+    </h1>
+    <div>     
+      <p>You’ve said you are an ‘appointee’. You may also have someone who’s helping with your appeal and you think should be kept updated, such as a welfare rights adviser. </p>
+      <p>Registering them means they can: </p> 
+      <ul class="list list-bullet">
+        <li>receive information about your appeal</li> 
+        <li>submit evidence (and see any that’s submitted)</li>
+        <li>act on your behalf during your appeal</li>
+      </ul>   
+    </div>
+    <br/>
+    <form  action="/prototype-24/representative-app" method="post">
+      <div class="form-group">
+        <fieldset>
+          <legend class="visually-hidden">Do you have someone who you’d like to be the representative on your appeal?</legend>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radioGroup" value="repApp">
+            <label for="radio-1">
+              Yes, I have a representative 
+            </label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radioGroup" value="noRepApp">
+            <label  for="radio-2">
+              No, I don’t have a representative
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <p>If you don’t have their contact details to hand, you can contact the tribunal and register them after you’ve submitted your appeal.   </p>
+      <input type="submit" class="button" value="Continue">
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

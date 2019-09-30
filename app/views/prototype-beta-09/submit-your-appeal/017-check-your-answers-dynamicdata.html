@@ -1,0 +1,249 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Check your answers - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Check your appeal</h1>
+     <!-- <p>Read through all the information you’ve provided. When you’re happy, submit the appeal below.</p> -->
+      </div>
+      </div>
+        <div class="grid-row">
+      <div class="column-full">
+        <table class="demo">
+<thead>
+            <tr style="border-bottom: 2px solid black;">
+              <th>Benefit your appeal is about</th>
+              <th></th>
+              <th class=""></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name of benefit</td>
+              <td>[Benefit name]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+          <thead>
+            <tr style="border-bottom: 2px solid black;">
+              <th></br>Mandatory Reconsideration Notice (MRN)</th>
+              <th></th>
+              <th class=""></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+             <!--<tr>
+              <td>Have an MRN</td>
+              <td><[Only display if 'No']</td>
+              <td><a href="">Change</a></td>
+            </tr>-->
+              <td>Date sent</td>
+              <td>[Date MRN sent]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+                        <tr>
+            <!--  <td>Within date</td>
+              <td>[Yes/No]</td>
+              <td></td>
+            </tr>
+             <tr>
+              <td>Late reason</td>
+              <td>[Late reason]</td>
+              <td><a href="">Change</a></td>
+            </tr> -->
+<thead>
+            <tr style="border-bottom: 2px solid black;">
+              <th><br/>Appointee</th>
+              <th></th>
+              <th class=""></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Are you an appointee?</td>
+              <td>[Yes/No]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+          <thead>
+            <tr style="border-bottom: 2px solid black;">
+              <th><br/>Your details</th>
+              <th></th>
+              <th class=""><br/><a href="">Change</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>[First name] [Surname]</td>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td>National insurance number</td>
+              <td>[NINO]</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Address<br/><br/><br/></td>
+              <td>[Address line 1]<br/>[Address line 2]<br/>[Postcode]</td>
+
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>[Email]</td>
+              <td>&nbsp;</td>
+            </tr>       
+            <tr>
+              <td>Phone number</td>
+              <td>[Phone number]</td>
+              <td>&nbsp;</td>
+            </tr>
+
+             <tr style="border-bottom: 2px solid black;"> 
+              <th><br/>Text reminders</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>Your mobile phone number</td>
+              <td>[Your mobile phone number]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+            <tr>
+              <td>[Supporters name] mobile phone number</td>
+              <td>[Supporters mobile phone number]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+
+
+            <tr style="border-bottom: 2px solid black;">
+              <th><br/>Your representative</th>
+              <th></th>
+              <th><br/><a href="">Change</a></th>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>[Representative name]</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Organisation</td>
+              <td>[Organisation]</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td>[Address line 1]<br/>[Address line 2]</td>
+              <td>&nbsp;</td>
+            </tr>
+
+                        <tr>
+              <td>Email</td>
+              <td>[Email]</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Phone number</td>
+              <td>[Phone number]</td>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr style="border-bottom: 2px solid black;">
+              <th><br/>Reasons for appealing</th>
+              <th></th>
+              <th><br/><a href="">Change</a></th>
+            </tr>
+            <tr>
+              <td>What you disagree with</td>
+              <td>[What your disagree with]</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>Why you disagree</td>
+              <td>[Why you disagree]</td>
+              <td>&nbsp;</td>
+            </tr>
+<tr style="border-bottom: 2px solid black;">
+              <th><br/>Your hearing</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Attending your hearing</td>
+              <td>[Yes/No]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+            <tr>
+            <td>Availability</td>
+              <td>[dd/mmm/yyyy]<br/>[dd/mmm/yyyy to dd/mmm/yyyy]</td>
+              <td><a href="">Change</a></td>
+            </tr>
+<tr style="border-bottom: 2px solid black;">
+             <th><br/>Hearing arrangements</th>
+              <th></th>
+              <th><a href=""><br/>Change</a></th>
+            </tr>
+            <tr>
+              <td>Language interpreter<br/><br/></td>
+              <td>[Language]<br/>[Dialect]</td>
+              <td></a></td>
+            </tr>
+                        <tr>
+              <td>Sign  interpreter</td>
+              <td>[Yes/No]</td>
+              <td></td>
+            </tr>
+              <tr>
+              <td>Hearing loop</td>
+              <td>[Yes/No]</td>
+              <td></td>
+            </tr>
+           <tr>
+              <td>Disabled access</td>
+              <td>[Yes/No]</td>
+              <td></td>
+            </tr>
+           <tr>
+              <td>Anything else we need to know</td>
+              <td>[Free text]</td>
+              <td></td>
+</tr>
+
+
+            <tbody>
+            </table>
+            <br/>
+            <br/>
+</div>
+</div>
+            <div class="grid-row">
+    <div class="column-two-thirds">
+              <p>I’m submitting this appeal on the basis that I disagree with the decision by the DWP on my entitlement to the ESA benefit. </p>
+              <a class="button" href="018-confirmation">Submit your appeal</a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="prototype-nav">
+        <p><a href="../index">Index</a></p>
+
+      </div>
+
+
+    </main>
+
+    {% endblock %}

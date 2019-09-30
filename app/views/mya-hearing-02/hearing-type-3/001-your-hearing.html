@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block page_title %}
+The hearing - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="#" class="link-back">Back to your appeal</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      The hearing for your appeal 
+    </h1>
+    <p>You have chosen not to attend the hearing for your appeal but you can change your mind and come if you want to. </p>
+<p>The tribunal can arrange support for you at the hearing such as an interpreter, hearing loop or disabled access.</p>
+    <form  action="/mya-hearing02/hearing" method="post">
+      <div class="form-group">
+        <p class="heading-medium">Do you want to attend the hearing?</p>
+        <fieldset>
+          <legend class="visually-hidden">What do you want to do?</legend>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radioGroup" value="attend">
+            <label for="radio-1">
+              Yes
+            </label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radioGroup" value="notAttend">
+            <label for="radio-2">
+              No, go back 
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    
+         
+
+         
+        <input type="submit" class="button" value="Continue">
+
+
+
+ </form>
+     
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

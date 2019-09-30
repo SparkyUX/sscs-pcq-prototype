@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Reasons for appealing - Appeal a benefit decision - GOV.UK - option a
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="#" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Your reasons for appealing
+    </h1>
+    <p>DWP should have explained their decision on your entitlement to PIP in the MRN. Read the MRN and tell us what you disagree with and why. </p>
+    <p>You could also write about anything you feel DWP didn’t consider in their assessment of the claimant. 
+    </p>
+    <form>
+      <div class="form-group">
+        
+        <textarea class="form-control form-control-3-4" id="textarea-a"  rows="10"></textarea>
+      </div>
+   </form>   
+   <!--<p> <a href="saved-signed-out">Save and come back later</a></p>-->
+    <div class="prototype-nav">
+    <p><a href="011-why-are-you-appealing-appointee">Reasons for appealing - split screens</a></p>
+</div>   
+    </div>
+  
+
+</div>
+</div>
+</main>
+{% endblock %}

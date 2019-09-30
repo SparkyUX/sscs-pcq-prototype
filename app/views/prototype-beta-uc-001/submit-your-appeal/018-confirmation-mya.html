@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Appeal submitted - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-box-highlight">
+     <h1 class="bold-large">
+      Your appeal has been submitted
+    </h1>
+  </div>
+  <section class="progress-bar-tya">
+      <div class="appeal-received active">
+          <div class="ring">
+              <img class="tick" src="/public/images/tick2.png" alt="ignored by screen readers" aria-hidden="true">
+          </div>
+          <h4 class="current" aria-hidden="true">Appeal</h4>
+          <span class="screen-reader-text">Appeal received. This step is complete.</span>
+      </div>
+      <div class="dwp-respond">
+          <div class="leg"></div>
+          <div class="ring">
+              <img class="tick" src="/public/images/tick.svg" alt="ignored by screen readers" aria-hidden="true">
+          </div>
+          <h4 class="" aria-hidden="true">DWP Response</h4>
+          <span class="screen-reader-text">DWP response. This has not happened yet.</span>
+      </div>
+      <div class="hearing-booked">
+          <div class="leg"></div>
+          <div class="ring">
+              <img class="tick" src="/public/images/tick.svg" alt="ignored by screen readers" aria-hidden="true">
+          </div>
+          <h4 class="" aria-hidden="true">Tribunal review</h4>
+          <span class="screen-reader-text">Tribunal review. This has not happened yet.</span>
+      </div>
+      <div class="hearing">
+          <div class="leg"></div>
+          <div class="ring">
+              <img class="tick" src="/public/images/tick.svg" alt="ignored by screen readers" aria-hidden="true">
+          </div>
+          <h4 class="" aria-hidden="true">Decision</h4>
+          <span class="screen-reader-text">Decision on your appeal. This has not happened yet.</span>
+      </div>
+  </section>
+ <div class="description">
+  <h4 class="heading-small">What happens next</h4>
+<p>DWP now have to respond to your appeal by 21 February 2019<!--[date + 35 days from DWP notified of appeal]-->. You’ll get another email explaining what happens next, after they’ve responded.</p>
+</div>
+
+ <h4 class="heading-small">Track and manage your appeal online</h4>
+<p>You can access your appeal online anytime, allowing you to:</p>
+
+
+<ul class="list list-bullet">
+
+<li>track the status </li>
+<li>upload evidence </li>
+<li>get help, support and useful information</li> 
+</ul>
+
+<!--<p>[if no account] You will need to create an account first </p>-->
+<p> <a href="https://sscs-cor.herokuapp.com/mya-001/idam-sign-in-return">Track and manage your appeal online</a></p>
+
+
+
+<br/>
+<!--
+<div class="form-group">
+  <a class="button" href="019-exit-survey">Save and continue</a>-->
+</div>
+</div>
+</div>
+
+
+</main>
+{% endblock %}

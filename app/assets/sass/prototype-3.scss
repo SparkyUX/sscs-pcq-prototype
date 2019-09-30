@@ -1,0 +1,117 @@
+@import "_colours";
+
+$legHeight: 50px;
+$legFootHeight: 6px;
+
+#content.prototype-3 {
+
+  .heading-xlarge {
+    margin-bottom: 0;
+  }
+
+  .update {
+    position: relative;
+    height: 35px;
+    border-bottom: 1px solid $grey-3;
+    margin-top: 20px;
+    h2:first-child {
+      float: left;
+    }
+    h2:last-child {
+      float: right;
+    }
+  }
+
+  .description {
+    background-color: #eef7ff;
+    padding: 20px;
+    .heading-small {
+      padding-bottom: 10px;
+    }
+  }
+
+  .details .heading-medium {
+    margin-bottom: 0;
+  }
+
+  .divider {
+    border-bottom: 2px solid $govuk-blue;
+    &.top {
+      margin-bottom: 15px;
+    }
+    &.bottom {
+      margin-top: 15px;
+    }
+  }
+
+  .appeal-progress {
+    margin-top: 40px;
+  }
+
+  .progress-container {
+    float: left;
+    margin-top: 15px;
+
+    .ring {
+      border: 8px solid $grey-2;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin-top: -1px;
+      margin-bottom: -1px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .leg {
+      width: 10px;
+      height: $legHeight;
+      background-color: $grey-2;
+      margin: auto;
+      position: relative;
+    }
+
+    .leg.foot:after {
+      display: block;
+      content: " ";
+      background-color: $grey-2;
+      width: 24px;
+      height: 6px;
+      position: relative;
+      top: $legHeight - $legFootHeight;
+    }
+
+    .leg.active,
+    .leg.foot.active:after {
+      background-color: $button-colour;
+    }
+
+    .ring.active {
+      border: 8px solid $button-colour;
+    }
+  }
+
+  .progress-text-container {
+    margin-left: 60px;
+    margin-top: 35px;
+    padding-top: 2px;
+
+    .hearing,
+    .appeal-received {
+      font-weight: bold;
+    }
+
+    .evidence-received {
+      margin-top: 39px;
+    }
+
+    .hearing-booked,
+    .dwp-respond {
+      margin-top: 26px;
+    }
+
+    .hearing {
+      margin-top: 37px;
+    }
+  }
+}

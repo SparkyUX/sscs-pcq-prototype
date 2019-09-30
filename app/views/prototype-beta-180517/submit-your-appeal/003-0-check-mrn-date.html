@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Check MRN date - Appeal a benefit decision - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+<a href="../prototype-beta-180517/submit-your-appeal/003-mrn-date" class="link-back">Back</a> 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Double check the date you entered
+      </h1>
+      <p>Your appeal may be late. Just check you entered the date from the top right of your Mandatory Reconsideration Notice.</p>
+      <div class="form-group">
+        <img src="/public/images/mrn/mrn-date-001.png" width="100%" alt="Example Mandatory Reconsideration Notice with the date it was sent highlighted in the top right of your MRN.">
+        <br/>
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">
+            </span><br/>
+            <span class="form-label-bold">
+             Did you enter the date from the top right of your MRN letter?  
+           </span>
+         </legend>
+        
+         <form  action="/prototype-180517/checkdate" method="post">
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radioGroup" value="correctdate">
+            <label for="radio-1">Yes, I entered the date from the top right of my MRN </label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radioGroup" value="wrongdate">
+            <label for="radio-2">No, I entered a different date</label>
+          </div>
+        </fieldset>
+      </div>
+      <input type="submit" class="button" value="Continue">
+    </form>
+
+<br/>
+        <p> <a href="#">Save and come back later</a></p>
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your data. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}
+    
+  </div>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Date of your MRN - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                What date is shown on your mandatory reconsideration notice?
+            </h1>
+      
+      <p>This is the letter you received from the DWP when you asked them to reconsider their decision about your entitlement to ESA. </p>
+
+<details>
+
+  <summary><span class="summary">Example MRN</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>[image of an MRN letter showing date location]
+
+
+  </div>
+
+</details>
+ <br/>
+<form>
+  <div class="form-group">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          Date
+        </span>
+        <span class="form-hint" id="dob-hint">For example, 31 3 2017</span>
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-day">
+          <label class="form-label" for="dob-day">Day</label>
+          <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+        </div>
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month">Month</label>
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year">Year</label>
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <a class="button" href="003-appointee">Continue</a>
+
+</form>
+            
+        </div>
+
+    </div>
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

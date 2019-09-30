@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Sesison timed out- GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-large">
+            Sorry, you'll have to start again
+        </h1>
+        <p>Your session automatically ends if you don't use this service for 30 minutes.</p>
+        <p>Your details have been deleted. We do this for your security. </p>
+  
+    <br/>
+<a class="button" href="../guidance/start-an-appeal">Start again</a>
+  </div>
+</div>
+</main>
+{% endblock %}

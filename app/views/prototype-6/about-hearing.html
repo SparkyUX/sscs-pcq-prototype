@@ -1,0 +1,77 @@
+<pre>{{ __('hearing.expectations') | json }}</pre>
+
+{% extends "layout.html" %}
+{% block page_title %}
+    About your hearing - Track your benefits appeal
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-6" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+    {% include "includes/sscs-breadcrumbs.html" %}
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <p><a href="{{langUrl}}">{{ __('common.availableInAnotherLanguage') }}</a></p>
+
+            <h1 class="heading-xlarge">{{ __('hearing.expectations.title') }}</h1>
+
+            <p class="lede">{{ __('hearing.expectations.description') }}</p>
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.whenYouArrive.heading') }}</h2>
+            <p>{{ __('hearing.expectations.whenYouArrive.description') }}</p>
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.theHearingRoom.heading') }}</h2>
+            <p>{{ __('hearing.expectations.theHearingRoom.description') }}</p>
+
+            <img src="/public/images/hearing-room.png">
+            <p>{{ __('hearing.expectations.image.description') }}</p>
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.peopleAtHearing.heading') }}</h2>
+            {% for description in __('hearing.expectations.peopleAtHearing.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.duringHearing.heading') }}</h2>
+            {% for description in __('hearing.expectations.duringHearing.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.gettingDecision.heading') }}</h2>
+            {% for description in __('hearing.expectations.gettingDecision.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('hearing.expectations.afterYourHearing.heading') }}</h2>
+            {% for description in __('hearing.expectations.afterYourHearing.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+        </div>
+
+        <div class="column-third">
+            <aside class="govuk-related-items" role="complementary">
+                <h2 class="heading-medium" id="subsection-title">{{ __('common.aboutYourAppeal') }}</h2>
+                <nav role="navigation" aria-labelledby="subsection-title">
+                    <ul class="font-xsmall">
+
+                        {% if status=='hearingbooked' or status=='hearing'  %}
+                        <li><a href="/prototype-6/hearingdetails">{{ __('hearingDetails.checkDetails') }}</a></li>
+                        {% endif %}
+
+                        <li><a href="/prototype-6/provideevidence">{{ __('evidence.provide.title') }}</a></li>
+                        <li><a href="/prototype-6/appealstatus?reference={{reference}}">{{ __('common.trackYourAppeal') }}</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

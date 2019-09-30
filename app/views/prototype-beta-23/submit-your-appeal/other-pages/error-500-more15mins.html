@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Service not available - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <div class="grid-row">
+    <div class="column-full">
+    <h1 class="heading-large">
+            We’re sorry but this online service is currently unavailable 
+        </h1>
+    </div>
+  
+  <div class="column-two-thirds">
+        <p>You can try again tomorrow or download and fill out a paper form.</p>
+
+         <form>
+      <a class="button" href="http://formfinder.hmctsformfinder.justice.gov.uk/sscs1-eng.pdf">Continue to form download</a>
+    </form>
+    </div>
+    
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,119 @@
+{
+	"status": {
+		"appeal": "",
+		"dwpRespond": {
+			"noChange": "",
+			"contactYou": ""
+		},
+		"hearingBooked": "",
+		"hearing": ""
+	},
+	"evidence": {
+		"dwp": "",
+		"default": "",
+		"appellant": "",
+		"tribunalsService": "",
+		"representative": "",
+		"provide": {
+			"title": "Darparu tystiolaeth i gefnogi eich apêl",
+			"description": "",
+			"": ""
+		}
+	},
+	"notifications": {
+		"register": {
+			"title": "",
+			"description": "",
+			"question": "",
+			"options": [
+				"",
+				"",
+				""
+			],
+			"continue": "",
+			"cancel": "",
+			"url": ""
+		}
+	},
+	"hearing": {
+		"expectations": {
+			"title": "Beth i'w ddisgwyl yn eich gwrandawiad",
+			"description": "Mae eich clyw yn gyfle i chi esbonio eich achos a chael penderfyniad ar eich apęl budd-daliadau. Y barnwr yn annibynnol a bydd yn gwrando ar ddwy ochr yr anghydfod cyn gwneud penderfyniad.",
+			"whenYouArrive": {
+				"heading": "Pan fyddwch yn cyrraedd",
+				"description": "Byddwch yn cael eich cyfarch gan glerc y tribiwnlys. Byddant yn cymryd gofal i chi yn y lleoliad gwrandawiad ac ateb unrhyw gwestiynau sydd gennych. Yna byddwch yn eistedd mewn man aros nes bod eich clyw yn dechrau."
+			},
+			"theHearingRoom": {
+				"heading": "Yr Ystafell Gwrandawiad",
+				"description": "Bydd y clerc tribiwnlys yn mynd â chi i ystafell ar gyfer eich gwrandawiad. Bydd y barnwr yn eistedd y tu ôl i fwrdd a byddwch yn cael gwahoddiad i eistedd gyferbyn ag ef neu hi. Os oes gennych rywun i'ch cefnogi neu roi tystiolaeth y byddant yn eistedd nesaf i chi."
+			},
+			"image": {
+				"description": "Mae gwrandawiad tribiwnlys nodweddiadol"
+			},
+			"peopleAtHearing": {
+				"heading": "Pobl yn eich gwrandawiad",
+				"description": [
+					"Y barnwr yn rhedeg y gwrandawiad. Mae'n eu swydd i adolygu'r dystiolaeth ac yn gwneud penderfyniad ar eich cais. Ni fyddant yn cael eu gwisgo mewn mantell a wig, nid yw mor ffurfiol â llys.",
+					"Yn dibynnu ar eich math o apêl, yna gall pobl eraill sy'n helpu y barnwr yn gwneud penderfyniad. Er enghraifft, meddyg neu arbenigwr anabledd yn bresennol mewn llawer o apeliadau Taliad Annibyniaeth Bersonol.",
+					"Yn olaf gall cynrychiolydd o'r Adran Gwaith a Phensiynau (DWP) yno hefyd. Nid ydynt yn y person a wnaeth y penderfyniad ar eich budd-daliadau, ond maent yno i siarad ar ran y DWP."
+				]
+			},
+			"duringHearing": {
+				"heading": "Yn ystod eich clyw",
+				"description": [
+					"Y barnwr a'r bobl cynghori'r bydd y barnwr yn gofyn rhai cwestiynau i chi. Maent yn ceisio deall sut mae eich cyflwr yn effeithio ar eich bywyd. Felly, efallai y byddant yn gofyn sut rydych yn ymdopi â thasgau penodol neu pa fath o bethau angen help gyda chi.",
+					"Efallai y byddant hefyd yn gofyn cwestiynau sy'n ymwneud â'r dystiolaeth byddwch chi neu'r Adran Gwaith a Phensiynau wedi darparu i chi. Mae'n bwysig eich bod yn anfon unrhyw dystiolaeth o leiaf bythefnos cyn fel bod ganddynt amser i'w ddarllen cyn eich gwrandawiad.",
+					"Ni fydd y barnwr neu'r aelodau eraill y panel yn gofyn cwestiynau i chi tric. Maent yn unig yn ceisio penderfynu a oes gennych hawl cyfreithiol i'r budd-dal rydych yn ei hawlio."
+				]
+			},
+			"gettingDecision": {
+				"heading": "Cael Penderfyniad",
+				"description": [
+					"Ar ôl y aelodau'r panel wedi gorffen gofyn cwestiynau i chi, bydd gofyn i chi aros y tu allan tra byddant yn trafod eich apêl. Yna, gofynnir i chi yn ôl i'r ystafell i dderbyn eich penderfyniad.",
+					"Bydd y barnwr naill ai'n dweud wrthych eich apêl wedi cael ei 'ganiatáu' (sy'n golygu eich bod wedi ennill) neu a oedd y penderfyniad gwreiddiol wedi ei gadarnhau. Bydd y barnwr yn esbonio beth mae hyn yn ei olygu o ran eich budd-daliadau.",
+					"Weithiau mae angen i'r tribiwnlys mwy o amser i wneud penderfyniad. Yn yr achos hwnnw, bydd eich penderfyniad yn cael ei bostio i chi."
+				]
+			},
+			"afterYourHearing": {
+				"heading": "Ar ôl eich clyw",
+				"description": [
+					"Os ydych yn derbyn penderfyniad y tribiwnlys yna mae hynny'n ddiwedd eich apęl. Os oes gennych unrhyw gwestiynau pellach am eich budd-daliadau, bydd angen i chi gysylltu â'r Adran Gwaith a Phensiynau.",
+					"Os nad ydych yn derbyn y penderfyniad ac rydych yn teimlo bod gennych sail gyfreithiol ar gyfer apêl gallwch ofyn am un. Yn gyntaf rhaid i chi ofyn i'r barnwr i esbonio'r penderfyniad. Mae hyn yn golygu gofyn am Datganiad o Resymau."
+				]
+			}
+		}
+	},
+	"hearingDetails": {
+		"checkDetails": "Gwiriwch eich manylion clyw",
+		"arriveEarly": "",
+		"location": "",
+		"mapsAndDirections": "",
+		"nearestCarPark": "",
+		"parking": "",
+		"disabledAccess": "",
+		"representative": "",
+		"interpreter": "",
+		"interpretersBookedByUs": "",
+		"incorrect": "",
+		"pleaseNote": {
+			"heading": "",
+			"description": []
+		}
+	},
+	"trackYourAppeal": {
+		"title": "",
+		"enterReference": "",
+		"hint": "",
+		"hint2": "",
+		"find": ""
+	},
+	"common": {
+		"date": "dyddiad",
+		"time": "amser",
+		"aboutYourAppeal": "Am eich apêl",
+		"trackYourAppeal": "Dilyn trywydd eich apêl",
+		"latestUpdate": "Latest Update",
+		"appealReferenceNumber": "Rhif cyfeirnod yr apêl",
+		"availableInAnotherLanguage": "Mae'r dudalen hon ar gael hefyd yn Saesneg (English)."
+	}
+}

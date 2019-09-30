@@ -1,0 +1,17 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC242/16/03435",
+  "status": "hearingBooked",
+  "date": "18 December 2016",
+  "time": "9.30am",
+  "address": {
+    "addressLine1": "Fox Court",
+    "addressLine2": "14 Grays Inn Road",
+    "addressLine3": "London",
+    "addressLine4": "WC1X 8HN"
+  },
+  "messages": [
+    "You have told us you need a sign language interpreter. We will book this for you.",
+    "Call us on 0300 123 1142 if anything is incorrect or you cannot attend."
+  ]
+}

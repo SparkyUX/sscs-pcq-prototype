@@ -1,0 +1,409 @@
+@import "_colours";
+
+@import 'progress-bar/one';
+@import 'progress-bar/four';
+@import 'progress-bar/seven';
+@import 'progress-bar/ten';
+
+@mixin wrap-dwp-and-hearing-booked-text {
+  .dwp-respond h4,
+  .hearing-booked h4 {
+    white-space: normal;
+    text-align: center;
+    width: 67px;
+    right: -13px !important;
+    top: 38px;
+  }
+}
+
+@mixin wrap-progress-bar-text {
+  @media (min-width: 640px) and (max-width: 800px) {
+    @include wrap-dwp-and-hearing-booked-text;
+  }
+  @media (min-width: 401px) and (max-width: 520px) {
+    @include wrap-dwp-and-hearing-booked-text;
+  }
+}
+
+#content.prototype-8 {
+
+  .breadcrumbs {
+    padding-top: 15px;
+  }
+
+  .divider {
+    margin-top: 15px;
+    border-bottom: 3px solid $govuk-blue;
+  }
+
+   .divider-grey-light {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $grey-2;
+  }
+
+  .details .heading-medium {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .progress-bar {
+
+    &.one {
+      @include design-one;
+    }
+    &.four {
+      @include design-four;
+    }
+    &.seven {
+      @include design-seven;
+    }
+    &.ten {
+      @include design-ten;
+    }
+
+    @include wrap-progress-bar-text;
+  }
+
+  .progress-container {
+    height: 32px;
+    white-space: nowrap;
+    margin-top: 45px;
+    margin-bottom: 75px;
+    padding: 15px;
+
+    .ring {
+      border-radius: 50%;
+      border: 8px solid $grey-2;;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .leg {
+      width: calc((100% - 49px)/3);
+      height: 8px;
+      background-color: $grey-2;
+      margin: 12px -5px;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+    }
+
+    .leg.foot:after {
+      display: block;
+      content: " ";
+      background-color: $grey-2;
+      width: 8px;
+      height: 22px;
+      position: relative;
+      z-index: 1;
+      left: calc(100% - 8px);
+    }
+
+    .leg.active,
+    .leg.foot.active:after {
+      background-color: $button-colour;
+    }
+
+    .ring.active {
+      border: 8px solid $button-colour;
+    }
+
+    p {
+      position: absolute;
+      top: 30px;
+    }
+
+    .appeal-received {
+      left: -21px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .dwp-respond {
+      top: 26px;
+      font-size: 16px;
+      left: calc(100% - 60px);
+    }
+
+    .hearing-booked {
+      top: 26px;
+      font-size: 16px;
+      left: calc(100% - 70px);
+    }
+
+    .hearing {
+      font-weight: bold;
+      font-size: 16px;
+      left: calc(100% - 40px);
+    }
+  }
+
+  .description {
+    background-color: #eef7ff;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 45px;
+    .heading-small {
+      margin-top: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  .surname {
+    display: block;
+  }
+
+  .tribunal-details {
+    background-color: $grey-3;
+    margin-top: 20px;
+    padding: 30px 20px 20px 25px;
+    dl {
+      margin-bottom: 15px;
+    }
+    dt,
+    dd {
+      display: inline;
+    }
+    dd {
+      font-weight: bold;
+    }
+    .date-time {
+      dt {
+        padding-right: 120px;
+      }
+    }
+    .address {
+      dt {
+        padding-right: 89px;
+      }
+      dd span:not(:first-child) {
+        display: block;
+        margin-left: 164px;
+      }
+    }
+    .maps-and-directions {
+      margin-left: 163px;
+      line-height: 160%
+    }
+
+    .parking {
+      dt {
+        padding-right: 97px;
+      }
+      dd span:not(:first-child) {
+        display: block;
+        margin-left: 164px;
+      }
+    }
+
+    .disabled-access {
+      dt {
+        padding-right:27px;
+      }
+    }
+
+ .representative {
+      dt {
+        padding-right:35px;
+      }
+    }
+
+
+  .interpreter {
+      dt {
+        padding-right: 70px;
+      }
+      dd span:not(:first-child) {
+        display: block;
+        margin-left: 164px;
+      }
+    }
+
+  }
+
+
+  .interpreter-message {
+    margin-top: 30px;
+  }
+
+  .contact-us-message:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .contact-us-message {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    .border {
+      display: inline-block;
+      vertical-align: middle;
+      background: $grey-2;
+      padding: 30px 4px;
+    }
+    h2 {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  .track-apppeal-link {
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .updates-toggle {
+    margin-bottom: 5px;
+    margin-top: 30px;
+    color: $govuk-blue;
+    i {
+      font-size: 25px;
+      vertical-align: middle;
+      cursor: pointer;
+      span {
+        font-family: nta, Arial, sans-serif;
+        font-size: 19px;
+        position: relative;
+        top: -2px;
+        left: 5px;
+      }
+    }
+  }
+
+  .updates-toggle,
+  .updates-container {
+    margin-left: 0px;
+  }
+
+  .updates-container {
+      display: none;
+
+    .update {
+      position: relative;
+      padding-bottom: 10px;
+      padding-top: 15px;
+      a {
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+
+    .update:last-child {
+      padding-bottom: 0;
+    }
+
+    div:after {
+      content: "";
+      background: $grey-2;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 95%;
+      height: 1px;
+    }
+
+    div:last-child:after {
+      display: none;
+    }
+  }
+
+  .updates-border {
+    background: $govuk-blue;
+    height: 6px;
+    margin-top: 60px;
+  }
+
+  .updates-border-thin {
+    background: $govuk-blue;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+
+  .prototype-nav {
+    font-size: 14px;
+    color: grey;
+    font-decoration: none;
+    margin-top: 100px;
+a {
+    color: grey;
+}
+  }
+
+  .email-border {
+  max-width: 600px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $grey-2;
+  padding: 0px;
+  }
+
+.email-margin {
+  margin: 20px;
+}
+
+.date-updates {
+  color: #0B0C0C;
+  font-weight:normal;
+  display:block;
+}
+
+
+}
+
+
+#nav-links {
+max-width: 660px;
+margin: auto;
+}
+
+.nav-list {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+-ms-column-count: 2;
+-o-column-count: 2;
+column-count: 2;
+-webkit-column-gap: 2em;
+-moz-column-gap: 2em;
+-ms-column-gap: 2em;
+-o-column-gap: 2em;
+column-gap: 2em;
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+
+.pbold {
+  font-weight: bold !important;
+}
+
+.lineheight {
+  line-height: 24px;
+}
+
+
+.banner-blue {
+  background: $govuk-blue;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+
+}
+
+.error-summary-heading2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+

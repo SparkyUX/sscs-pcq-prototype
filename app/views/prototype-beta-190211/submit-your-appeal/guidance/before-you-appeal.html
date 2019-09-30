@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Before you appeal - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %}
+ {% include "includes/breadcrumbs.html" %}
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">Appeal a benefit decision</h1>
+
+      <aside class="nav-container" role="complementary">
+          <div class="nav-section">
+              <h2>Contents</h2>
+              <ol class="navigation-list">
+                  <li><a href="overview">Overview</a></li>
+                  <li>Before you appeal</li>
+                  <li><a href="help-with-appeal">Help with your appeal</a></li>
+                  <li><a href="start-an-appeal">Start an appeal</a></li>
+                  <li><a href="after-you-appeal">What happens after you’ve appealed</a></li>
+              </ol>
+          </div>
+      </aside>
+  </div>
+
+     <div class="column-two-thirds">
+
+      <h1 class="part-title">Before you appeal</h1>
+      <p>For most benefits you have to ask the Department for Work and Pensions (DWP) to reconsider their decision before you appeal. This is known as requesting ‘mandatory reconsideration’. DWP will then send you a Mandatory Reconsideration Notice (MRN) which tells you whether they have changed their decision. </p>
+      <p>If you’re appealing a decision about Housing Benefit then you should <a href="https://www.gov.uk/find-local-council"> contact your local authority</a> before appealing. </p>
+      <p>For Child Benefit appeals, <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/child-benefit">contact HMRC</a> first.</p>
+      <p>If you can’t find the right contact details, check the last letter you received about the benefit.</p>
+      <div class="panel panel-border-wide">
+        <p>You can appeal up to a month after going through ‘mandatory reconsideration’. You might still be able to appeal after a month, but you’ll need to explain why it’s late. </p>
+      </div>
+
+         <nav class="pagination" role="navigation" aria-label="Pagination">
+             <ul class="pagination-list">
+                 <li class="pagination-item pagination-prev">
+                     <a class="pagination-link" href="/prototype-beta-190211/submit-your-appeal/guidance/overview">
+                        <span class="pagination-title">
+                            <svg class="pagination-icon">
+                                <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                            </svg>
+                            Previous
+                        </span>
+                         <span class="visually-hidden">:</span>
+                         <span class="pagination-label">Overview</span>
+                     </a>
+                 </li>
+                 <li class="pagination-item pagination-next">
+                     <a class="pagination-link" href="/prototype-beta-190211/submit-your-appeal/guidance/help-with-appeal">
+                        <span class="pagination-title">
+                            Next
+                            <svg class="pagination-icon">
+                                <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                            </svg>
+                        </span>
+                         <span class="visually-hidden">:</span>
+                         <span class="pagination-label">Help with your appeal</span>
+                     </a>
+                 </li>
+             </ul>
+         </nav>
+
+
+    </div>
+
+     <div class="column-one-third">
+         <aside class="govuk-related-items">
+             <h2 class="heading-small">Related Content</h2>
+             <nav role="navigation">
+                 <ul class="font-xsmall">
+                     <li><a href="https://www.gov.uk/benefits-calculators">Benefits calculators</a></li>
+                     <li><a href="https://www.gov.uk/benefit-overpayments">Benefit overpayments</a></li>
+                     <li><a href="https://www.gov.uk/benefit-fraud">Benefit fraud</a></li>
+                 </ul>
+             </nav>
+             <nav>
+                 <h3 class="sub-heading">Explore the topic</h3>
+                 <ul class="font-xsmall">
+                     <li class="bold"><a href="https://www.gov.uk/browse/benefits/entitlement">How benefits work</a></li>
+                     <li class="bold"><a href="https://www.gov.uk/browse/justice/courts-sentencing-tribunals">Courts, sentencing and tribunals</a></li>
+                 </ul>
+             </nav>
+         </aside>
+     </div>
+
+  </div>
+</main>
+{% endblock %}

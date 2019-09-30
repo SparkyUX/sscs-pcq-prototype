@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Expenses - Track your benefits appeal
+{% endblock %}
+{% block proposition_header %}
+    <!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-6" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+    {% include "includes/sscs-breadcrumbs.html" %}
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <h1 class="heading-xlarge">{{ __('claimExpenses.title') }}</h1>
+            <p class="lede">{{ __('claimExpenses.description') }}</p>
+
+            <h2 class="heading-medium">{{ __('claimExpenses.travel.heading') }}</h2>
+            {% for description in __('claimExpenses.travel.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('claimExpenses.meals.heading') }}</h2>
+            <p>{{ __('claimExpenses.meals.subHeading') }}</p>
+            <ul class="list">
+                {% for description in __('claimExpenses.meals.description') %}
+                <li>{{description}}</li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="heading-medium">{{ __('claimExpenses.accommodation.heading') }}</h2>
+            {% for description in __('claimExpenses.accommodation.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('claimExpenses.lossOfEarnings.heading') }}</h2>
+            {% for description in __('claimExpenses.lossOfEarnings.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+            <h2 class="heading-medium">{{ __('claimExpenses.howToClaim.heading') }}</h2>
+            {% for description in __('claimExpenses.howToClaim.description') %}
+                <p>{{description}}</p>
+            {% endfor %}
+
+        </div>
+
+        <div class="column-third">
+            <aside class="govuk-related-items" role="complementary">
+                <h2 class="heading-medium" id="subsection-title">{{ __('common.aboutYourAppeal') }}</h2>
+                <nav role="navigation" aria-labelledby="subsection-title">
+                    <ul class="font-xsmall">
+                        <li><a href="/prototype-6/hearingdetails">{{ __('hearingDetails.checkDetails') }}</a></li>
+                        <li><a href="/prototype-6/appealstatus?reference={{reference}}">{{ __('common.trackYourAppeal') }}</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

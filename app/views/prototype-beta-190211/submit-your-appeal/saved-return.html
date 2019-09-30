@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Return to saved benefit appeal - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+{% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-details" class="link-back">Back</a> 
+
+    <h1 class="heading-large">
+     Check your answers so far 
+   </h1>
+   <p>Review the answers you have entered so far. You can change them if you want to.</p> 
+
+   <p>Continue with your appeal application if you do not want to change anything. </p>
+
+
+   <h2 class="heading-medium">Benefit</h2>
+
+   <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        Benefit name
+      </dt>
+      <dd class="cya-answer">
+        Personal Independence Payment (PIP)
+      </dd>
+      <dd class="cya-change">
+        <a href="001-benefit-type">
+          Change<span class="visually-hidden"> benefit name</span>
+        </a>
+      </dd>
+    </div>
+  </dl>
+  <!-- Mandatory Reconsideration Notice (MRN) -->
+  <h2 class="heading-medium">Mandatory Reconsideration Notice (MRN)</h2>
+  <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        Number from MRN address
+      </dt>
+      <dd class="cya-answer">
+        3
+      </dd>
+      <dd class="cya-change">
+        <a href="002-dwp-office">
+          Change<span class="visually-hidden"> number from MRN address</span>
+        </a>
+      </dd>
+    </div>
+    <div>
+      <dt class="cya-question">
+        Date of MRN
+      </dt>
+      <dd class="cya-answer">
+        4 February 2019
+      </dd>
+      <dd class="cya-change">
+        <a href="003-mrn-date">
+          Change<span class="visually-hidden"> date of MRN</span>
+        </a>
+      </dd>
+    </div>
+
+
+  </dl>
+
+   <!-- Claiment details -->
+      <h2 class="heading-medium">Your details</h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Appointee
+          </dt>
+          <dd class="cya-answer">
+            No
+          </dd>
+          <dd class="cya-change">
+            <a href="004-appointee">
+              Change<span class="visually-hidden"> appointee</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          <dd class="cya-answer">
+            <p>Manish Sharma</p>
+          </dd>
+          <dd class="cya-change">
+            <a href="004-your-name">
+              Change<span class="visually-hidden"> your name</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Date of birth
+          </dt>
+          <dd class="cya-answer">
+            12 March 1971
+          </dd>
+          <dd class="cya-change">
+            <a href="004-your-dob">
+              Change<span class="visually-hidden"> your date of birth</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            National Insurance number
+          </dt>
+          <dd class="cya-answer">
+            NP 27 28 67
+          </dd>
+          <dd class="cya-change">
+            <a href="004-your-nino">
+              Change<span class="visually-hidden"> your National Insurance number</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            <p class="pbold">Address<br/><br/><br/></p>
+            <p class="pbold">Email<br/></p>
+            <p class="pbold">Phone number</p>
+          </dt>
+          <dd class="cya-answer">
+           <p>122 Horton Drive<br/>
+            Brooklands<br/>
+Manchester<br/>
+            N17 2HB<br/></p>
+            <p>manish.sharma@gmail.com</p>
+           
+            <p>07972 438178</p>
+          </p>
+        </dd>
+        <dd class="cya-change">
+          <a href="004-your-contact-details">
+            Change<span class="visually-hidden"> your address</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+
+<br/><br/>
+
+      <div class="grid-row">
+      <div class="column-one-third">
+        <a class="button" href="005-sms-sign-up-return">Continue your application</a>
+      </div>
+
+    </div>
+
+
+</main>
+{% endblock %}
+
+

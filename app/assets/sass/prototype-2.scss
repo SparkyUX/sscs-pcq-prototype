@@ -1,0 +1,90 @@
+@import "_colours";
+
+#content.prototype-2 {
+
+  .details {
+    padding-bottom: 10px;
+    border-bottom: 3px solid $govuk-blue;
+  }
+
+  .update {
+    position: relative;
+    height: 35px;
+    border-bottom: 1px solid $grey-3;
+    margin-top: 20px;
+    h2:first-child {
+      float: left;
+    }
+    h2:last-child {
+      float: right;
+    }
+  }
+
+  .description {
+    border-bottom: 2px solid $govuk-blue;
+    margin-bottom: 20px;
+    p {
+      background-color: #dee0e2;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .progress-container {
+    width: 36px;
+    float: left;
+
+    .ring {
+      border: 8px solid #bebebe;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin-top: -1px;
+      margin-bottom: -1px;
+    }
+
+    .leg {
+      width: 10px;
+      height: 45px;
+      background-color: #bebebe;
+      margin: auto;
+    }
+
+    .leg.foot:after {
+      display: block;
+      content: " ";
+      background-color: #bebebe;
+      width: 24px;
+      height: 6px;
+      position: relative;
+      top: 39px;
+    }
+
+    .leg.active,
+    .leg.foot.active:after {
+      background-color: green;
+    }
+
+    .ring.active {
+      border: 8px solid green;
+    }
+  }
+
+  .progress-text-container {
+    margin-left: 60px;
+
+    p.heading {
+      font-weight: bold;
+    }
+
+    .appeal-received {
+      margin-top: 38px;
+    }
+
+    .heading.decision,
+    .heading.hearing {
+      margin-top: 38px;
+      margin-bottom: 35px;
+    }
+  }
+}

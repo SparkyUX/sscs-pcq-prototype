@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing arrangements (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+{% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %}
+
+ <a href="#" class="link-back">Back</a>
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Support  for the hearing
+    </h1>
+    <p>Click all the support you need for the hearing:    </p>
+    <p>You <span class="pbold">cannot</span> bring your own interpreter to the hearing. </p>
+<!-- Checkbox with reveal pattern - code based on - http://govuk-elements.herokuapp.com/form-elements/#form-checkboxes
+  Styling and functionality isn't working -->
+  <form>
+    <div class="form-group">
+      <fieldset>
+        <legend class="visually-hidden">Arrangements for the hearing</legend>
+        <div class="multiple-choice" data-target="language-types">
+          <input id="language-interpreter" name="nationalities" type="checkbox" value="Language interpreter">
+          <label for="language-interpreter">Language interpreter</label>
+        </div>
+
+        <div class="panel panel-border-wide js-hidden auto-comp-field" id="language-types">
+          <label class="form-label" for="nationalities-other-country">Enter the language you need interpreting</label>
+
+          <select class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+            <option disabled="" selected="" value="" style="display: none"></option>
+            {% for language in languageInterpreter %}
+            <option value="{{ language }}">{{ language }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="multiple-choice" data-target="sign-language-types">
+          <input id="sign-language" name="sign-language" type="checkbox" value="Sign language">
+          <label for="sign-language">Sign language interpreter</label>
+        </div>
+
+        <div class="panel panel-border-wide js-hidden auto-comp-field" id="sign-language-types">
+          <label class="form-label" for="nationalities-other-country">
+            Enter the sign language you need
+          </label>
+          <select class="form-control" type="text" id="sign-nationalities-other-country" name="sign-nationalities-other-country">
+            <option disabled="" selected="" value="" style="display: none"></option>
+            {% for language in signLanguage %}
+            <option value="{{ language }}">{{ language }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="hearing-loop" name="hearing-loop" type="checkbox" value="Hearing loop">
+          <label for="hearing-loop">Hearing loop</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="disabled-access" name="disabled-access" type="checkbox" value="Disabled access" checked>
+          <label for="disabled-access">Disabled access</label>
+        </div>
+
+        <div class="multiple-choice" data-target="other-text-input">
+          <input id="other" name="other" type="checkbox" value="other">
+          <label for="other">Other support</label>
+        </div>
+        <div class="panel panel-border-wide js-hidden" id="other-text-input">
+          <label class="form-label" for="anything-else">
+            Explain what other support you need the tribunal to arrange 
+          </label>
+          <textarea id="anything-else" class="form-control form-control-3-4" id="textarea-a" cols="90" rows="4"></textarea>
+        </div>
+      </fieldset>
+      <br/>
+
+      <div class="grid-row">
+        <div class="column-one-third">
+          <a class="button" href="https://sscs-cor.herokuapp.com/mya-hearing-002/appeal-hearing-support-change#hearing">Continue</a>
+        </div>
+
+      </div>
+
+    </form>
+
+    {% include "includes/help-contact.html" %}
+
+  </div>
+</div>
+</main>
+{% endblock %}

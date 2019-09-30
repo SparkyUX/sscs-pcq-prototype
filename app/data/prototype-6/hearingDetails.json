@@ -1,0 +1,18 @@
+{
+  "name": "John Smith",
+  "reference": "SC123/45/0001",
+  "status": "hearingBooked",
+  "date": "2017-02-06T10:00:00.000+0000",
+  "time": "10.00am",
+  "address": {
+    "addressLine1": "The Old Bakery",
+    "addressLine2": "115 Queens Road",
+    "addressLine3": "Norwich",
+    "addressLine4": "NR1 3PL"
+  },
+  "mapsAndDirectionsUrl": "https://www.google.com/maps/dir/51.504435,-0.1291664/The+Tribunal+Services,+The+Old+Bakery,+115+Queens+Road,+Norwich+NR1+3PL,+United+Kingdom/@52.0575637,-0.5285309,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47d9e3e4e1b11f6d:0xe59811e6d74ce2b3!2m2!1d1.2950886!2d52.6221993",
+  "parkingDirectionsUrl": "https://www.google.com/maps/dir/Queens+Road+Car+Park,Norwich+NR1+3PN/The+Old+Bakery,115+Queens+Road,+Norwich+NR1+3PL,+UK",
+  "disabledAccess": "Not needed",
+  "representative": "Mr P. Ashbourne",
+  "interpreter": "Not needed"
+}

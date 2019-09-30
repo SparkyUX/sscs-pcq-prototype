@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Are you an appointee? - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="004-appointee" class="link-back">Back</a> 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Are you an 'appointee'?
+            </h1>
+            <p>You’re an appointee if you’ve been appointed by DWP to act on behalf of someone who is unable to deal with their benefit claim. For example, a parent who is claiming on behalf of a child.</p>
+            <form  action="/prototype-180522/appointee" method="post">
+                <div class="form-group">
+                    <fieldset>
+
+                        <div class="multiple-choice">
+                            <input id="radio-1" type="radio" name="radioGroup" value="nonAppointee">
+                            <label for="radio-1">I’m appealing for myself</label>
+                        </div>
+
+                        <div class="multiple-choice">
+                            <input id="radio-2" type="radio" name="radioGroup" value="appointee">
+                            <label for="radio-2">I have been appointed by DWP to act on behalf of someone else</label>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <input type="submit" class="button" value="Continue">
+            </form>
+
+<br/>
+        <!-- <p> <a href="#">Save and come back later</a></p> -->
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

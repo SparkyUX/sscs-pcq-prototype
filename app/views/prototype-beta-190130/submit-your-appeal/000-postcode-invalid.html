@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your postcode - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+	{% include "includes/phase_banner_beta.html" %} 
+	<a href="#" class="link-back">Back</a> 
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h1 class="heading-large">
+				You need to download and fill out a paper form
+			</h1>
+			<p>Unfortunately your postcode is not covered by the trial service.</p> 
+			<br/>
+			<form>
+				<a class="button" href="http://formfinder.hmctsformfinder.justice.gov.uk/sscs1-eng.pdf">Continue to form download</a>
+			</form>
+		</div>
+	</div>
+</main>
+{% endblock %}

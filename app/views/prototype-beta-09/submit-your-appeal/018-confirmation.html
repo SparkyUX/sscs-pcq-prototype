@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Appeal confirmation - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ {% include "includes/breadcrumbs.html" %}
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-box-highlight">
+     <h1 class="bold-large">
+      Your appeal has been submitted
+    </h1>
+    <br/>
+  </div>
+
+<p><a href="">Download a PDF of your appeal submission</a></p>
+
+  <br/>
+  <p>The DWP have to respond to your appeal by 31 May 2017. We’ll contact you and explain what happens next when they’ve replied. </p>
+
+  <p>You can <a href="https://track-your-appeal.herokuapp.com/prototype-beta-09/status?casenumber=SC012%2F34%2F56789&status=appeal">track your appeal</a> anytime.</p>
+</div>
+</div>
+<div class="prototype-nav">
+  <p><a href="../index">Index</a></p>
+</div>
+</main>
+{% endblock %}

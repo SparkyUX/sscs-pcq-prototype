@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Example - Forms
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-3" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+
+    <h1 class="heading-xlarge">
+        Your PIP benefit appeal
+    </h1>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="details">
+                <h2 class="heading-medium">{{ name }}</h2>
+                <h2 class="form-hint">Case Reference: {{ id }}</h2>
+            </div>
+
+            <div class="divider top"></div>
+
+            <div class="description">
+                <h4 class="heading-small">Latest Update</h4>
+                {% if status==1 %}
+                    <p>The DWP now have to respond to your appeal before 20/06/16. We will be in touch when they do.</p>
+                {% elif status==2 %}
+                <p>We received the evidence you sent us on 08/05/2016. This will be submitted to the tribunal for consideration.</p>
+                <p>The DWP now have to respond to your appeal before 20/06/16. We will be in touch when they do.</p>
+                {% elif status==3 %}
+                   <p>The DWP have responded to your appeal. We are now in the process of booking a hearing. We will contact you by letter and your preferred contact method when we have a time and date.</p>
+                {% elif status==4 %}
+                    <p>A hearing has been booked for your appeal. <br /><a href="https://www.gov.uk">Find out details of your hearing</a></p>
+                {% elif status==5 %}
+                    <p>A decision was made on your appeal on 18 December 2016. A letter with the decision will be sent to your registered address.</p>
+                {% else %}
+                    <p>Unknown status</p>
+                {% endif %}
+            </div>
+
+            <div class="divider bottom"></div>
+
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds appeal">
+
+            <p class="appeal-progress">Appeal Progress</p>
+
+            <div class="progress-container">
+                <div class="ring active"></div>
+                <div class="leg foot {{'active' if status>=2}}"></div>
+                <div class="leg foot {{'active' if status>=3}}"></div>
+                <div class="leg foot {{'active' if status>=4}}"></div>
+                <div class="leg {{'active' if status>=5}}"></div>
+                <div class="ring {{'active' if status>=5}}"></div>
+            </div>
+            <div class="progress-text-container">
+                <p class="appeal-received">Appeal received</p>
+                <p class="evidence-received">Evidence received</p>
+                <p class="dwp-respond">DWP respond to your appeal</p>
+                <p class="hearing-booked">Hearing for your appeal booked</p>
+                <p class="hearing">Hearing</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

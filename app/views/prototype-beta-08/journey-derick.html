@@ -1,0 +1,36 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+SSCS Protoypes
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+           <div style="margin: 30px 0 45px 0;"> <img src="/public/images/hmcts-logo.png">
+          <p class="heading-small">Social Security and Child Support (SSCS)</p>
+           </div>
+
+
+           <div class="grid-row">
+
+           	<div class="column-one-third">
+
+           		<img src="/public/images/persona-derick.png" width="90%"  >
+           	</div>
+
+           	<div class="column-two-thirds">
+           		<h1 class="heading-large">Derick</h1>
+
+
+           	<h3 class="heading-small">Scenario</h3>
+           		<p>He calls DWP after receiving an MRN. They direct him to call HMCTS. HMCTS direct him to download the SSCS1 form which he does with his daughters help. Derick fills out the SSCS1 form and indicates he’s disabled in section 7.2. A couple of weeks later the appeal received letter arrives. the DWP  response letter arrives from HMCTS 5 weeks after that. It includes the hearing location and details of his special arrangements. Two or three weeks later he calls the contact centre to find out the status of his appeal. The agent asks him whether he wants to receive notifications. He signs up for text messages as he doesn't use email.<p>
+
+            <h3 class="heading-small">Prototype</h3>
+           		<p>Derek calls the contact centre and asks if he would like to register for notifications. He then receives and SMS <a href="notifications/sms-register">confirming he is registered for notifications</a>. </p>
+           	</div>
+           </div>
+
+</main>
+
+{% endblock %}

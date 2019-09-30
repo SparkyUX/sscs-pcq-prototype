@@ -1,0 +1,296 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-8" role="main">
+  <div class="grid-row">
+    <div>
+
+      <h1 class="heading-large">
+        Check your appeal
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">Benefit</h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+
+
+      <!-- Benefit name -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        
+
+        <div>
+          <dt class="cya-question">
+            Name of benefit
+          </dt>
+          <dd class="cya-answer">
+            Personal Independence Payment (PIP)
+          </dd>
+          <dd class="cya-change">
+            <a href="001-benefit-type">
+              Change<span class="visually-hidden"> name of benefit</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <!-- Mandatory Reconsideration Notice (MRN) -->
+      <h2 class="heading-medium">Mandatory Reconsideration Notice (MRN)</h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Date sent
+          </dt>
+          <dd class="cya-answer">
+            20 August 2017
+          </dd>
+          <dd class="cya-change">
+            <a href="003-mrn-date">
+              Change<span class="visually-hidden"> date MRN Sent</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <!-- Appointee -->
+      <h2 class="heading-medium">Appointee</h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Are you an appointee?
+          </dt>
+          <dd class="cya-answer">
+            No
+          </dd>
+          <dd class="cya-change">
+            <a href="004-appointee">
+              Change<span class="visually-hidden"> appointee</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <!-- Your details -->
+      <h2 class="heading-medium">Your details</h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name <br/>
+            National Insurance number<br/>
+            Address<br/><br/><br/>
+            Email<br/>
+            Phone number
+          </dt>
+          <dd class="cya-answer">
+            Manish Patel<br/>
+            QQ 12 34 56 <br/>
+            122 Breach Street<br/>
+            Birmingham <br/>
+            B1 2HB<br/>
+            manish.patel@gmail.com<br/>
+            0121 460 2033
+
+          </dd>
+          <dd class="cya-change">
+            <a href="004-your-details">
+              Change<span class="visually-hidden"> your details</span>
+            </a>
+          </dd>
+        </div>
+
+ 
+   </dl>
+
+
+
+
+      <!-- Text message reminders -->
+      <h2 class="heading-medium">Text message reminders</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Receive text message reminders
+          </dt>
+          <dd class="cya-answer">
+            Yes
+          </dd>
+          <dd class="cya-change">
+            <a href="005-sms-sign-up">
+              Change<span class="visually-hidden"> name of benefit</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Your mobile phone number
+          </dt>
+          <dd class="cya-answer">
+            07979 23 5234
+          </dd>
+          <dd class="cya-change">
+            <a href="006-enter-mobile-number">
+              Change<span class="visually-hidden"> Your mobile phone number</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+      <!-- Your representative -->
+      <h2 class="heading-medium">Your representative</h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Register a representative<br/>
+            Name<br/>
+            Organisation<br/>
+            Address<br/><br/><br/><br/><br/>
+            Email<br/>
+            Phone number<br/>
+          </dt>
+          <dd class="cya-answer">
+            Yes<br/>
+            Peter Smith<br/>
+            Citizens Advice Buerau<br/>
+            Ground Floor<br/>
+            Gazette Buildings<br/>
+            168 Corporation Street<br/>
+            Birmingham<br/>
+            B4 6TF<br/>
+            peter.smith@cab.co.uk<br/>
+            03444 77 1010
+          </dd>
+          <dd class="cya-change">
+            <a href="008-representative">
+              Change<span class="visually-hidden"> representatives details</span>
+            </a>
+          </dd>
+        </div>
+
+        
+   </dl>
+      
+
+
+      <!-- Reasons for appealing -->
+      <h2 class="heading-medium">Reasons for appealing</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            What you disagree with on the MRN
+          </dt>
+          <dd class="cya-answer">
+            DWP said I was fit to work<br/>
+            I can't walk more than 10 metres<br/>
+            I can't sit for more than 10 minutes<br/>
+          </dd>
+          <dd class="cya-change">
+            <a href="011-why-are-you-appealing">
+              Change<span class="visually-hidden"> what you disagree with</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <!-- the hearing -->
+      <h2 class="heading-medium">The hearing</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Attending the hearing
+          </dt>
+          <dd class="cya-answer">
+            Yes
+          </dd>
+          <dd class="cya-change">
+            <a href="013-your-hearing">
+              Change<span class="visually-hidden"> attend hearing</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Dates not available to attend
+          </dt>
+          <dd class="cya-answer">
+            12 October 2017 to 13 October 2017
+          </dd>
+          <dd class="cya-change">
+            <a href="http://xr0nsn.axshare.com/hearing_availability.html">
+              Change<span class="visually-hidden"> dates not available to attend</span>
+            </a>
+          </dd>
+        </div>
+     
+    
+
+      </dl>
+
+<h2 class="heading-medium">The hearing arrangements</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+        
+     
+        <div>
+          <dt class="cya-question">
+            Language interpreter<br/>
+            Sign interpreter<br/>
+            Hearing loop<br/>
+            Disabled access<br/>
+            Anything else we need to know
+          </dt>
+          <dd class="cya-answer">
+            Not required<br/>
+            Not required<br/>
+            Not required<br/>
+            Not required<br/>
+            Not required
+          </dd>
+          <dd class="cya-change">
+            <a href="015-hearing-arrangements">
+              Change<span class="visually-hidden"> hearing arrangements</span>
+            </a>
+          </dd>
+        </div>
+
+    
+
+      </dl>
+
+
+<br/>
+
+
+      <h2 class="heading-medium">Sign and submit </h2>
+          <p>The information I have provided in this appeal is accurate, to the best of my knowledge. </p>
+          <p>[if chosen rep] I give permission for the tribunal to correspond with my named representative about my appeal.</p>
+          <div class="form-group">
+            <h3 class="heading-small">
+              Enter your name
+              <span class="form-hint">This should be the person who is named on your appeal</span></h3>
+              <input class="form-control form-control-2-4" id="form-control-3-4" type="text"> 
+            </div>
+
+             <div class="form-group">
+            <a class="button" href="018-confirmation">Submit your appeal</a>
+</div>
+     
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

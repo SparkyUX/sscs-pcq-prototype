@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Update anyone else? - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="#" class="link-back">Back</a> 
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Is there anyone else you’d like to keep updated? 
+    </h1>
+
+    <form  action="/prototype-180425/supporter" method="post">
+      <div class="form-group">
+        <fieldset>
+
+          <legend class="visually-hidden">Is there anyone else who you’d like to be kept updated?</legend>
+
+          <p>We can send a friend, family member or partner emails or text messages about your appeal.</p> 
+
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radioGroup" value="yes">
+            <label for="radio-1">
+              Yes
+            </label>
+          </div>
+
+          <div class="multiple-choice">
+            
+            <input id="radio-2" type="radio" name="radioGroup" value="no">
+            <label for="radio-2">
+              No
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+      <a class="button" href="http://szo3n0.axshare.com/#c=2">Continue</a>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+</main>
+
+{% endblock %}

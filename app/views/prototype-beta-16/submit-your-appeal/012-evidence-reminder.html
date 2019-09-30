@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Sending evidence - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+       {% include "includes/back.html" %}
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Sending evidence to support your appeal 
+            </h1>
+<p>If you have any evidence, you should send it as early as possible to avoid delaying your appeal. </p>
+
+<p>Evidence is anything which shows how your condition affects your life at the time of the assessment by DWP. For example, a doctor’s letter or a written statement by yourself or someone who knows you. </p>
+
+<p>You can send this to us after you’ve submitted the appeal. We’ll send you details of how to do this by post [and email.] </p> 
+
+<form>
+
+  <a class="button" href="013-your-hearing">Continue</a>
+
+</form>
+            
+        </div>
+
+    </div>
+    
+
+
+</main>
+
+{% endblock %}

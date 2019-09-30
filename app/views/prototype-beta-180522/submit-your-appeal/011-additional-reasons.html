@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Anything else to tell the tribunal - Appeal a benefit decision - GOV.UK - option a
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="011-" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Anything else you want to tell the tribunal (optional)
+    </h1>
+    <p>You can tell the tribunal about anything you think may be relevant to your appeal, such as something you feel DWP didn’t consider in their assessment. </p>
+   <!-- <p>You don’t have to write anything, if you have nothing further to add.</p>-->
+
+    <p>You don’t have to write anything, if you have nothing further to add. </p>
+
+    <form>
+      <div class="form-group">
+        <textarea class="form-control form-control-3-4" id="textarea-a"  rows="8" placeholder="You can write as much as you want "></textarea>
+      </div>
+
+
+      <a class="button" href="012-evidence-provide">Continue</a><br/>  <br/>
+      <div>
+      </form>
+
+        <!-- <p> <a href="#">Save and come back later</a></p> -->
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

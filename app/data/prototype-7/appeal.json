@@ -1,0 +1,13 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC123/45/00001",
+  "status": "APPEAL",
+  "updates": [
+    {
+      "date": "13 November 2016",
+      "messages": [
+        "We have told the DWP that you want to appeal against their decision. They have to provide a written response before 23 November 2016. We will contact you and explain the next steps when they have replied."
+      ]
+    }
+  ]
+}

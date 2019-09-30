@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your feedback - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Your feedback
+            </h1>
+
+<p>Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+            
+<form>
+  <div class="form-group">
+    <fieldset>
+
+
+     <div class="form-group">
+          <label class="heading-medium" for="think-of-the-service">
+            Tell us what you think of this service
+          </label>
+          <textarea class="form-control form-control-3-4" id="textarea-a" cols="120" rows="6"></textarea>
+</div>
+
+               <div class="form-group">
+
+          <label class="heading-medium" for="service-improvements">
+            Tell us what we could improve
+          </label>
+          <textarea class="form-control form-control-3-4" id="textarea-a" cols="90" rows="6"></textarea>
+          </div>
+
+<h2 class="heading-medium">Leave your details so we can contact you if we need to</h2>
+<label class="form-label" for="name">
+            Name (optional)
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+<br/><br/>
+          <label class="form-label" for="email">
+            Email (optional)
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+
+    </fieldset>
+
+
+
+  </div>
+  <a class="button" href="your-feedback-confirmation">Continue</a>
+
+
+</form>
+<br/>
+<br/>
+
+<details>
+
+  <summary><span class="summary">I need help making an appeal</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+<p> Phone [contact centre number] for help filling out the appeal form. We can’t provide you with legal advice.</p>
+
+
+  </div>
+
+</details>
+ 
+        </div>
+
+
+
+    </div>
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

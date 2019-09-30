@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your MRN - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <a href="../prototype-beta-20/submit-your-appeal/001-benefit-type" class="link-back">Back</a> 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Find DWP’s address on the top right of your Mandatory Reconsideration Notice (MRN) 
+      </h1>
+      
+     <!-- <details>
+        <summary><span class="summary">What’s a Mandatory Reconsideration Notice?</span></summary>
+        <p>Your MRN is the letter you received from DWP when you asked them to reconsider their decision about the PIP benefit.  If you don’t have one, click ‘I don’t have a Mandatory Reconsideration Notice.’ </p>
+      </details> -->
+      <!--<p>This is the letter you received from DWP when you asked them to reconsider their decision about the PIP benefit. </p>-->
+      
+      <div class="form-group">
+        <img src="/public/images/mrn/dwp-office-number.png" width="100%" alt="Example Mandatory Reconsideration Notice with the first line of the address highlighted.">
+        <form>
+          <br/>
+         
+          <fieldset>
+            <p class="bold">Select the office which is shown in the first line of DWP’s address</p>
+            <div class="govuk-form-group">
+  
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
+  </select>
+</div>
+            </fieldset>
+          </div>
+          <a class="button" href="#">Continue</a>
+        </form>
+       
+      </div>
+    </div>
+  </main>
+  {% endblock %}

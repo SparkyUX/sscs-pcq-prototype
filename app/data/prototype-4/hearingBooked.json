@@ -1,0 +1,33 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC242/16/03435",
+  "status": "hearingBooked",
+  "updates": [
+    {
+      "date": "24 November 2016",
+      "messages": [
+        "A hearing has been booked for your appeal."
+      ]
+    },
+    {
+      "date": "14 November 2016",
+      "messages": [
+        "The evidence you sent was received by us on the 4 February 2017. This will be submitted to the tribunal for consideration"
+      ]
+    },
+    {
+      "date": "28 October 2016",
+      "messages": [
+        "The DWP have responded to your appeal. They have not changed their original decision.",
+        "We are now in the process of booking a hearing for your appeal. We will contact you within 6 weeks to tell you when and where your hearing is."
+      ]
+    },
+    {
+      "date": "13 September 2016",
+      "messages": [
+        "We received the evidence you sent us on 08/05/2016. This will be submitted to the tribunal for consideration.",
+        "The DWP now have to respond to your appeal before 20/06/16. We'll be in touch when they do."
+      ]
+    }
+  ]
+}

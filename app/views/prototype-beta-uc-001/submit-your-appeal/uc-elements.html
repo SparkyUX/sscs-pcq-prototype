@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Universal credit  - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="" class="link-back">Back</a> 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                What is your appeal about?
+            </h1>
+            <p>What did DWP’s decision that you disagree with, relate to?</p>
+
+            <br/>
+            <form  action="/uc-001/uc-elements" method="post">
+                <div class="form-group">
+                    <fieldset>
+                      
+
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="backdating">
+                        <label for="radio-2">Backdating<span class="form-hint">Past payments that you believe are owed to you.</label>
+                    </div>
+
+
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="housingcosts">
+                        <label for="radio-2">Housing costs<span class="form-hint">Eligibility to have your housing costs paid. </span></label>
+                    </div>
+
+                                        <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="overpayment">
+                        <label for="radio-2">Overpayment<span class="form-hint">DWP say you were paid too much money in the past.</span></label>
+                    </div>
+
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="righttoreside">
+                        <label for="radio-2">Right to reside<span class="form-hint">Your right to live in the UK and claim benefits. </span></label>
+                    </div>
+
+                    <div class="multiple-choice">
+                        <input id="radio-1" type="checkbox" name="radioGroup" value="sanction">
+                        <label for="radio-1">Sanctions<span class="form-hint">Your payments were stopped or reduced for a set period of time. </span></label>
+                    </div>
+
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="workcapability">
+                        <label for="radio-2">Your ability to work<span class="form-hint">The results from your Work Capability Assessment </span></label>
+                    </div>
+
+
+                    <div class="multiple-choice">
+                        <input id="radio-2" type="checkbox" name="radioGroup" value="otherreason">
+                        <label for="radio-2">Another reason</label>
+                    </div>
+
+
+                </fieldset>
+            </div>
+           <!-- <input type="submit" class="button" value="Save and continue">-->
+                   <a class="button" href="011-why-are-you-appealing">Save and continue</a>
+
+        </form>
+
+       
+         {% include "includes/help-contact.html" %}
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

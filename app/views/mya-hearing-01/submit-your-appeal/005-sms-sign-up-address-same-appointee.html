@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block page_title %}
+SMS reminders - address same (Appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-their-details-appointee" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+     Do you want to receive text message reminders?
+   </h1>
+   <p>You’ll only get them when you need to do something important, like send evidence or go to the hearing.</p>
+   <a class="button" href="../prototype-beta-20/submit-your-appeal/006-sms-mobile-number-provided-appointee">Sign up</a>
+   <br/>  <br/>
+   <p><a href="../prototype-beta-190211/submit-your-appeal/008-representative-appointee">No thanks</a></p>
+
+
+
+
+
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+<!--<p> <a href="#">Save and come back later</a></p>-->
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

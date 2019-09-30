@@ -1,0 +1,176 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+SSCS Protoypes
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+           <div style="margin: 30px 0 45px 0;"> <img src="/public/images/hmcts-logo.png"></div>
+	<h1 class="heading-large">
+		Social Security and Child Support (SSCS)
+	</h1>
+
+	<h2 class="heading-medium">
+		Exceptions - Usability testing 09.11.2016<br/><br/>
+	</h2>
+
+<h2 class="heading-small">On this page</h2>
+<ul class="list">
+<li><a href="#letter">Letter</a></li>
+<li><a href="#online-status">Online status</a></li>
+<li><a href="#online-status-exceptions">Online status - Exceptions</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#email-exceptions">Email - Exceptions</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#text-exceptions">Text - Exceptions</a></li>
+<li><a href="#hearing">Hearing context and support content</a></li>
+<li><a href="#register">Online status</a></li>
+</ul>
+
+<hr>
+
+	<h2 id="letter" class="heading-medium">Letter</h2>
+	<p>Participant shown the letter to trigger the journey to online and registering for notifications.</p>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/notifications/letter-appeal-received">Appeal received</a></li>
+		<li><a href="/public/images/p8/letter-appeal-received.pdf">Appeal received (download pdf)</a></li>
+	</ol>
+
+<hr>
+
+	<h2 id="online-status" class="heading-medium">Online status</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/track-your-appeal">Track your appeal search</a></li>
+		<!--<li><a href="/prototype-8/validate-reference">Track your appeal search (Two screens)</a></li>-->
+		<!--<li><a href="/prototype-8/track-your-appeal-multi">Track your appeal search (Multi text field)</a></li>-->
+		<li><a href="/prototype-8/status?casenumber=SC012%2F34%2F56789&status=appeal">Appeal received</a></li>
+		<li><a href="/prototype-8/status-evidence-received-appeal">Evidence received (Appeal received)</a></li>
+		<li><a href="/prototype-8/status-dwp-response">DWP response</a></li>
+
+		<li><a href="/prototype-8/status-evidence-received-dwp-response">Evidence received (DWP response)</a></li>
+		<li><a href="/prototype-8/status-hearing-booked">Hearing booked</a></li>
+		<li><a href="/prototype-8/status-evidence-received-hearing-booked">Evidence received (Hearing booked)</a></li>
+		<li><a href="/prototype-8/status-decision">Decision made</a></li>
+		<li><a href="/prototype-8/status-appeal-closed">Appeal closed</a></li>
+
+	</ol>
+
+	<hr>	
+
+	<h2 id="online-status-exceptions"class="heading-medium">Online status - Exceptions</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/status-adjourned-generic">Adjourned</a></li>
+		<li><a href="/prototype-8/status-adjourned-evidence">Adjourned - further evidence</a></li>
+
+	
+		<li><a href="/prototype-8/status-adjourned-medical-evidence">Adjourned - medical evidence</a></li>
+		<li><a href="/prototype-8/status-death-paused">Death - appeal paused</a></li>
+		<li><a href="/prototype-8/status-death-appointee-assigned">Death - appointee assigned</a></li>
+		<li><a href="/prototype-8/status-postponed">Postponed</a></li>
+		<li><a href="/prototype-8/status-postponed-refused">Postponement refused</a></li>
+		<li><a href="/prototype-8/status-hearing-booked-new">New hearing booked</a></li>
+
+		<li><a href="/prototype-8/status-revised">Revised</a></li>
+		<li><a href="/prototype-8/status-withdrawn">Withdrawn</a></li>
+
+	</ol>
+
+
+<hr>
+
+<h2 id="email" class="heading-medium">Email</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/notifications/email-appeal-received">Appeal received</a></li>
+		<li><a href="/prototype-8/notifications/email-dwp-response">DWP response</a></li>
+		<li><a href="/prototype-8/notifications/email-evidence-reminder">Evidence reminder</a></li>
+		<li><a href="/prototype-8/notifications/email-evidence-received">Evidence received</a></li>
+		<li><a href="/prototype-8/notifications/email-hearing-booked">Hearing booked</a></li>
+		<li><a href="/prototype-8/notifications/email-hearing-reminder-1wk">Hearing reminder - 1 week</a></li>
+		<li><a href="/prototype-8/notifications/email-hearing-reminder-1day">Hearing reminder - 1 day</a></li>
+
+	</ol>
+
+	<hr>
+
+<h2 id="email-exceptions" class="heading-medium">Email - Exceptions</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/notifications/email-adjourned-generic">Adjourned</a></li>
+		<li><a href="/prototype-8/notifications/email-adjourned-evidence">Adjourned evidence</a></li>
+		<li><a href="/prototype-8/notifications/email-adjourned-medical-evidence">Adjourned medical evidence</a></li>
+
+
+		<li><a href="/prototype-8/notifications/email-hearing-booked-new">New hearing booked</a></li>
+		<li><a href="/prototype-8/notifications/email-postponed-other">Postponed</a></li>
+		<li><a href="/prototype-8/notifications/email-postponed-appellant-request">Postponement appellant request</a></li>
+
+		<li><a href="/prototype-8/notifications/email-postponed-refused">Postponement refused</a></li>
+		<li><a href="/prototype-8/notifications/email-revised">Revised</a></li>
+		<li><a href="/prototype-8/notifications/email-withdrawn">Withdrawn</a></li>
+
+	</ol>
+
+	<hr>
+
+
+		<h2 id="text" class="heading-medium">Text</h2>
+
+	<ol class="list list-number">
+	<!--	<li><a href="/prototype-8/notifications/sms-appeal-received">Appeal received</a></li>
+		<li><a href="/prototype-8/notifications/sms-dwp-response">DWP response</a></li> -->
+		<li><a href="/prototype-8/notifications/sms-evidence-reminder">Evidence reminder</a></li>
+		<li><a href="/prototype-8/notifications/sms-evidence-received">Evidence received</a></li>
+	<!--	<li><a href="/prototype-8/notifications/sms-hearing-booked">Hearing booked</a></li> -->
+		<li><a href="/prototype-8/notifications/sms-hearing-reminder-1wk">Hearing reminder - 1 week</a></li>
+		<li><a href="/prototype-8/notifications/sms-hearing-reminder-1day">Hearing reminder - 1 day</a></li>
+
+	</ol>
+
+	<hr>
+	
+		<h2 id="text-exceptions" class="heading-medium">Text - Exceptions</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/notifications/sms-adjourned-generic">Adjourned</a></li>
+		<li><a href="/prototype-8/notifications/sms-adjourned-evidence">Adjourned evidence</a></li>
+		<li><a href="/prototype-8/notifications/sms-adjourned-medical-evidence">Adjourned medical evidence</a></li>
+
+		<li><a href="/prototype-8/notifications/sms-new-hearing-booked">New hearing booked</a></li>
+		<li><a href="/prototype-8/notifications/sms-postponed-other">Postponed</a></li>
+
+		<li><a href="/prototype-8/notifications/sms-revised">Revised</a></li>
+		<li><a href="/prototype-8/notifications/sms-withdrawn">Withdrawn</a></li>
+
+	</ol>
+
+	<hr>
+
+	<h2 id="hearing" class="heading-medium">Hearing context and support content</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/tribunal-hearing">Check your hearing details</a></li>
+		<li><a href="/prototype-8/about-hearing">What to expect at your hearing</a></li>
+		<li><a href="/prototype-8/expenses">Claiming expenses to attend your hearing </a></li>
+		<li><a href="/prototype-8/expenses-alt">Claiming expenses to attend your hearing (Alternative)</a></li>
+		<li><a href="/prototype-8/evidence">Providing evidence to support your appeal</a></li>
+
+	</ol>
+
+<hr>
+
+	<h2 id="register" class="heading-medium">Register for notifications</h2>
+
+	<ol class="list list-number">
+		<li><a href="/prototype-8/notifications-register/index">Register for notifications</a></li>
+	</ol>
+
+
+</main>
+
+{% endblock %}

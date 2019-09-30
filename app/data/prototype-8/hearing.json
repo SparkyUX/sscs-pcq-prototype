@@ -1,0 +1,39 @@
+{
+  "name": "John Smith",
+  "caseRef": "SC242/16/03438",
+  "status": "HEARING",
+  "updates": [
+    {
+      "date": "9 January 2017",
+      "messages": [
+        "Your hearing took place on 9 January 2017. The decision was sent to you in the post and should have arrived at your registered address by 16 January 2017. We cannot publish the decision online or tell you over the phone. This is to protect your personal information."
+      ]
+    },
+    {
+      "date": "24 November 2016",
+      "messages": [
+        "A hearing has been booked for your appeal. "
+      ]
+    },
+    {
+      "date": "11 November 2016",
+      "messages": [
+         "The evidence you sent was received by us on 18 December 2016."
+      ]
+    },
+    {
+      "date": "28 October 2016",
+      "messages": [
+
+        "We have told the DWP you wanted to appeal against their decision on your claim for PIP benefit. They have now responded and told us they have not changed their decision. They should have sent you a copy of their response in the post. ",
+        "We are now in the process of booking a hearing for your appeal. We’ll contact you within 6 weeks to tell you when and where your hearing is."
+      ]
+    },
+    {
+      "date": "13 October 2016",
+      "messages": [
+        "We have told the DWP that you want to appeal against their decision. They have to provide a written response before 23 November 2016. We will contact you and explain the next steps when they have replied."
+      ]
+    }
+  ]
+}
