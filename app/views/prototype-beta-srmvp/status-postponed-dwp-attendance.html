@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Status - Postponed DWP request - GOV.UK (EXHP2-S)
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">
+      Your PIP benefit appeal
+    </h1>
+    <div class="details">
+      <h2 class="heading-medium">Manish Sharma</h2>
+      <h2>Appeal reference number:  SC242/16/034</h2>
+    </div>
+    <div class="divider"></div>
+    <section class="progress-bar-tya">
+      <div class="appeal-received active">
+        <div class="ring">
+          <img class="tick" src="/public/images/tick2.png" alt="ignored by screen readers" aria-hidden="true">
+        </div>
+        <h4 class="" aria-hidden="true">Appeal</h4>
+        <span class="screen-reader-text">Appeal received. This step is complete.</span>
+      </div>
+      <div class="dwp-respond active">
+        <div class="leg"></div>
+        <div class="ring">
+          <img class="tick" src="/public/images/tick2.png" alt="ignored by screen readers" aria-hidden="true">
+        </div>
+        <h4 class="current" aria-hidden="true">DWP Response</h4>
+        <span class="screen-reader-text">DWP response. This step is complete.</span>
+      </div>
+      <div class="hearing-booked">
+        <div class="leg"></div>
+        <div class="ring">
+          <img class="tick" src="/public/images/tick.svg" alt="ignored by screen readers" aria-hidden="true">
+        </div>
+        <h4 class="" aria-hidden="true">Hearing booked</h4>
+        <span class="screen-reader-text">Hearing booked. This step has not happened yet.</span>
+      </div>
+      <div class="hearing">
+        <div class="leg"></div>
+        <div class="ring">
+          <img class="tick" src="/public/images/tick.svg" alt="ignored by screen readers" aria-hidden="true">
+        </div>
+        <h4 class="" aria-hidden="true">Hearing</h4>
+        <span class="screen-reader-text">Hearing booked. This step has not happened yet.</span>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="description">
+      <h4 class="heading-small">Latest update</h4>
+      <p>Unfortunately the hearing for your 
+      PIP benefit  appeal  has been postponed because DWP  can no longer attend. We’re sorry for any inconvenience this may cause you.</p>   
+      <p>We’ll have to book a new hearing for your appeal. We’ll contact you by [date + 4 weeks]  with the details.  </p>
+      <p class="updates-toggle">
+        <i class="fa fa-caret-right" aria-hidden="true"><span>View previous updates</span></i>
+      </p>
+      <div class="updates-container">
+        <div class="update">
+          <h4 class="bold-small">Update title goes here<span class="date-updates">[Date published]</span>
+            <p>Status message lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id fringilla enim. Vivamus et leo ac metus laoreet lobortis et ornare nulla.</p>
+          </div>
+          <div class="update">
+            <h4 class="bold-small">Update title goes here<span class="date-updates">[Date published]</span>
+              <p>Status message lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id fringilla enim. Vivamus et leo ac metus laoreet lobortis et ornare nulla. </p>
+            </div>
+            <div class="update">
+              <h4 class="bold-small">Update title goes here<span class="date-updates">[Date published]</span>
+                <p>Status message lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id fringilla enim. Vivamus et leo ac metus laoreet lobortis et ornare nulla. </p>
+              </div>          
+            </div>  
+          </div>
+               
+        <div class="panel panel-border-wide">
+         <p>If you have any more evidence it should be sent as early as possible. This is so there’s time to read it before your hearing.</p>  
+         <p><a href="benefit-appeal-evidence">Find out about submitting evidence to support your appeal</a></p>
+       </div>
+       <div class="updates-border"></div>
+     </div>
+   </div>
+   <h4 class="heading-small">About your appeal</h4>
+   <ul class="list">
+    <li><a href="about-hearing">What to expect at your hearing</a></li>
+    <li><a href="claiming-hearing-expenses">Claiming hearing expenses</a></li>
+    <li><a href="contact-us">Contact us</a></li>   
+  </ul> 
+  <div class="prototype-nav">
+    <p><a href="index">Index</a></p>
+  </div>
+</main>
+{% endblock %}

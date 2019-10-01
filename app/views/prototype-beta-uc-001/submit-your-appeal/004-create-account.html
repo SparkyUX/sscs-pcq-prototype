@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Create an account - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-appointee" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+You need to create an account to save your benefit appeal  
+    </h1>
+    
+<p>Creating an account means you can save, track and manage your appeal online. </p>
+
+<p>Your appeal application will be saved for six months.  
+</p>
+
+<div class="grid-row">
+          <div class="column-one-third">
+<a class="button" href="idam-create-account">Create account </a> 
+</div>
+
+<div class="column-two-thirds save-for-later">
+<a  href="005-sms-sign-up">Continue without saving </a>
+</div>
+</div>
+
+
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+

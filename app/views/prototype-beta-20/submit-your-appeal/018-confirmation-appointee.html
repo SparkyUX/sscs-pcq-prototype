@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Benefit appeal submitted (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-box-highlight">
+     <h1 class="bold-large">
+      Your appeal has been submitted
+    </h1>
+  </div>
+  <div class="progress-container">
+   <img src="/public/images/bs11/progress-bar-appeal-received.svg" width=100%>
+ </div>
+ <div class="description">
+  <h4 class="heading-small">What happens next</h4>
+  <p>We’ll notify DWP of your appeal. They have until 17 November 2017 to respond. We’ll contact you and explain the next steps when they reply. </p>
+
+  <p>We may need to contact you and ask you some additional questions. If we do, it’s important that you reply as soon as you can. </p>
+</div>
+<p><span style="color: red;">[If signed up to email]</span> 
+You’ll get an email from us within 3 working days. This will have a copy of your appeal and a link so you can track your appeal online. </p> 
+
+<p><span style="color: red;">[If signed up to email and SMS]</span>  
+You’ll get an email and text message from us within 3 working days. They’ll have a link so you can track your appeal online. The email will have a copy of your appeal.</p> 
+
+<p><span style="color: red;">[If signed up to SMS] </span> 
+You’ll get a text message from us  within 2 working days. This will have a link so you can track your appeal online. You’ll receive a copy of your appeal in the post when DWP respond to your appeal. </p>
+
+<p><span style="color: red;">[If not signed up to email or sms]</span>  
+You’ll receive a letter confirming your appeal in the post. You’ll also get a copy of your appeal from DWP when they respond. </p>
+<p><a href="017-check-your-answers-appointee-pdf">View or print a copy of your appeal submission</a></p>
+</div>
+</div>
+<div class="prototype-nav">
+  <p><a href="../notifications/email-sya-confirmation">Confirmation email</a></p>
+</div>
+</main>
+{% endblock %}

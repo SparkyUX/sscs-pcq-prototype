@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block page_title %}
+SMS number confirm - Appeal a benefit decision - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="005-sms-sign-up" class="link-back">Back</a> 
+
+    <div class="grid-row">
+        <div class="column-full">
+            <h1 class="heading-large">
+                Do you want them sent to the number you provided earlier? 
+            </h1>
+
+            
+            <form  action="/prototype-180425/mobile" method="post">
+
+                <div class="form-group">
+
+                    <fieldset>
+
+                        <legend class="visually-hidden">Do you want them sent to the number you provided earlier?</legend>
+                        <div class="multiple-choice">
+                         
+                            <input id="radio-1" type="radio" name="radioGroup" value="usemobile">
+                            <label  for="radio-1">
+                                Yes, send them to <span style="font-weight: bold">0797 243 8178</span>
+                            </label>
+                        </div>
+                        <div class="multiple-choice">
+                            
+                            <input id="radio-2" type="radio" name="radioGroup" value="newmobile">
+                            <label  for="radio-2">
+                                No, send them to a different number
+                            </label>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <input type="submit" class="button" value="Continue">
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+
+
+</main>
+
+{% endblock %}

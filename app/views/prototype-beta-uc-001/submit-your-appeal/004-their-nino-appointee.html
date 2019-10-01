@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Their NI number (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-dob" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <form>
+    <legend>  <h1 class="heading-large">
+      Enter their National Insurance number
+    </h1></legend>
+    <p>This will be on any letter from DWP about the benefit. </p>
+        <!-- National insurance number -->
+        <div class="form-group">
+          <input class="form-control form-control-1-4" id="form-control-1-4" type="text">  
+        </div> 
+       <p> <a class="button" href="004-appellant-same-address-appointee">Save and continue</a>
+                 <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+</p>
+<br/>
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

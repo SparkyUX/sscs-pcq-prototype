@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Register representative details later - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="009-reps-details" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      You can register them later  
+    </h1>
+    <p>You can contact the tribunal and provide their details later. You’ll be sent the address or phone number after you’ve submitted your appeal. </p>
+
+    <p>Make sure you have their: </p>
+    <ul class="list list-bullet">
+      <li>full name</li> 
+      <li>organisation they work for (if they work for one)</li>
+      <li>email or postal address </li>
+    </ul> 
+    <form>
+       <a class="button" href="011-why-are-you-appealing-appointee">Save and continue</a>
+        <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+    </form>
+<br/>
+         <p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> 
+       
+         {% include "includes/help-contact.html" %}
+<!--<p> <a href="#">Save and come back later</a></p>-->
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

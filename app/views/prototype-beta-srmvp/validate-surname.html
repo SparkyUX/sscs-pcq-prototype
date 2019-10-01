@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Track your appeal - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+
+  {% include "includes/sscs-beta.html" %}
+
+  <form action="/prototype-8/validate-surname" method="get" class="form">
+
+     <h1 class="form-title heading-xlarge">Track your benefit appeal</h1>
+
+     <div class="form-group">
+        <label class="heading-medium" for="surname">Enter your surname</label>
+        
+        <p class="form-hint">As it appears on any letter about your appeal.</p>
+        <input type="text" class="form-control"  id="surname" name="surname" value="">
+    
+
+    <div class="form-group">
+        <input type="submit" class="button" value="Find appeal">
+    </div>
+
+  </form>
+
+</main>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your email address - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-appointee" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Enter your email address
+    </h1>
+
+<p>Providing your email address means you can:</p>
+
+<ul class="list list-bullet">
+<li>save your appeal</li>
+<li>receive updates about your appeal</li>
+<li>track your appeal online (if you choose to attend a hearing)</li>
+<li>access your appeal online (if you choose to attend a hearing)</li>
+</ul>
+
+    <form>
+      <fieldset>
+        
+        <div class="form-group">
+          <label class="form-label" for="email">
+            Your email address
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+
+                <div class="form-group">
+          <label class="form-label" for="email">
+            Confirm your email address
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+       
+         
+        <a class="button" href="005-sms-sign-up">Continue</a>
+      </form>
+<br/><br/>
+        <p> <a href="#">Save and come back later</a></p>
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your data. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}
+
+
+
+
+

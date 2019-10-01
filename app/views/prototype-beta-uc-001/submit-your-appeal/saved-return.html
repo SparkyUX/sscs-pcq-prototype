@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Return to saved benefit appeal - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+{% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+
+    <h1 class="heading-large">
+     Check your answers so far 
+   </h1>
+   <p>Review the answers you have entered so far. You can change them if you want to.</p> 
+
+   <p>Continue with your appeal application if you do not want to change anything. </p>
+
+
+   <h2 class="heading-medium">Benefit</h2>
+
+   <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        Benefit name
+      </dt>
+      <dd class="cya-answer">
+        Universal Credit
+      </dd>
+      <dd class="cya-change">
+        <a href="001-benefit-type">
+          Change<span class="visually-hidden"> benefit name</span>
+        </a>
+      </dd>
+    </div>
+  </dl>
+  
+<br/><br/>
+
+      <div class="grid-row">
+      <div class="column-one-third">
+        <a class="button" href="002-have-mrn">Continue your application</a>
+      </div>
+
+    </div>
+
+
+</main>
+{% endblock %}
+
+

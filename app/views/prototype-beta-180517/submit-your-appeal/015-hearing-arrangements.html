@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing arrangements (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="../prototype-beta-180517/submit-your-appeal/014-hearing-arrangements-needed" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Support  for the hearing 
+    </h1>
+    <p>Click all the support you need for the hearing:    </p>    
+    <p>You <span class="pbold">can’t</span> bring your own interpreter to the hearing. </p>
+<!-- Checkbox with reveal pattern - code based on - http://govuk-elements.herokuapp.com/form-elements/#form-checkboxes
+  Styling and functionality isn't working --> 
+  <form>
+    <div class="form-group">
+      <fieldset>
+        <legend class="visually-hidden">Arrangements for the hearing</legend>
+        <div class="multiple-choice" data-target="language-types">
+          <input id="language-interpreter" name="nationalities" type="checkbox" value="Language interpreter">
+          <label for="language-interpreter">Language interpreter</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="language-types">
+          <label class="form-label" for="nationalities-other-country">Language</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+          <label class="form-label" for="nationalities-other-country">Dialect</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+        </div>
+        <div class="multiple-choice">
+          <input id="sign-language" name="sign-language" type="checkbox" value="Sign language">
+          <label for="sign-language">Sign language interpreter</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="hearing-loop" name="hearing-loop" type="checkbox" value="Hearing loop">
+          <label for="hearing-loop">Hearing loop</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="disabled-access" name="disabled-access" type="checkbox" value="Disabled access">
+          <label for="disabled-access">Disabled access</label>
+        </div>
+      </fieldset>
+      <br/>
+      <div class="form-group">
+        <label class="form-label" for="anything-else">
+          Any other support you need   
+        </label>
+        <textarea class="form-control form-control-3-4" id="textarea-a" cols="90" rows="4"></textarea>
+      </div>
+      <a class="button" href="../prototype-beta-180517/submit-your-appeal/016-hearing-availability">Continue</a>
+    </div>
+  </form>
+  <p> <a href="#">Save and come back later</a></p>
+  <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your data. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+</div>
+</div>
+</main>
+{% endblock %}

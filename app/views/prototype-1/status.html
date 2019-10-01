@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Example - Forms
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-1" role="main">
+
+    <h1 class="heading-xlarge">
+        Your appeal
+    </h1>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="details">
+                <h2 class="bold-small">Case Reference: {{ id }}</h2>
+                <h2 class="bold-small">Name: {{ name }}</h2>
+            </div>
+            <p class="description">
+                A decision has been made on your appeal. A letter with the decision is being sent to to the address
+                you provided when you made your appeal.
+            </p>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds appeal">
+            <h2 class="bold-medium">Appeal</h2>
+            <ul>
+                <li>
+                    <img src="../public/images/tick.svg" class="tick"/>
+                    <p>Appeal logged 11/05/2016</p>
+                </li>
+                <li>
+                    <img src="../public/images/tick.svg" class="tick"/>
+                    <p>DWP responds to appeal</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds hearing">
+            <h2 class="bold-medium">Hearing</h2>
+            <ul>
+                <li>
+                    <img src="../public/images/tick.svg" class="tick"/>
+                    <p>Hearing Booked.</p>
+                    <a href="https://www.gov.uk/">See hearing details</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds decision">
+            <h2 class="bold-medium">Decision</h2>
+            <ul>
+                <li>
+                    <img src="../public/images/tick.svg" class="tick"/>
+                    <p>Tribunal reached</p>
+                    <a href="https://www.gov.uk/">a decision on your appeal</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

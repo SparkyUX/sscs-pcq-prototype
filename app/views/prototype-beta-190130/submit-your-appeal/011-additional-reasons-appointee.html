@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Reasons for appealing (appointee) - Appeal a benefit decision - GOV.UK - option a
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="011-" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+  <h1 class="heading-large">
+      Anything else you want to tell the tribunal (optional)
+    </h1>
+    <p>You can tell the tribunal about anything you think may be relevant to your appeal, such as something you feel DWP didn’t consider in their assessment. </p>
+   <!-- <p>You don’t have to write anything, if you have nothing further to add.</p>-->
+
+    <p>You can upload evidence on the next page, if you have it. You can also post it in. </p>
+
+
+    <form>
+      <div class="form-group">
+        <textarea class="form-control form-control-3-4" id="textarea-a"  rows="8"></textarea>
+      </div>
+      <a class="button" href="012-evidence-reminder-appointee">Save and continue</a>
+ <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+      <br/>  <br/>
+      <a href="012-evidence-reminder-appointee">I don’t have anything further to add right now</a>
+     <div class="prototype-nav">
+        </form>
+        <div>
+   
+<div class="prototype-nav">
+
+    <p><a href="011a-why-are-you-appealing-appointee">Reasons for appealing - single screen</a></p>
+
+</div> 
+
+    </div>
+
+
+
+<br/><br/>
+         <p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> 
+       
+         {% include "includes/help-contact.html" %}
+<!--<p> <a href="#">Save and come back later</a></p>-->
+        
+
+    </div>
+</div>
+</main>
+{% endblock %}

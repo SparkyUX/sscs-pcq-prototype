@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Benefit appeal submitted - Appeal a benefit decision - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-box-highlight">
+     <h1 class="bold-large">
+      Your appeal has been submitted
+    </h1>
+   
+
+  </div>
+
+  <p><a href="/public/images/pip-benefit-appeal-sscs.pdf">View, save or print a copy of your appeal</a></p>
+
+ <p>We’ll send you a letter to the address you provided. [If rep] We’ll also send a confirmation to your representative.</p>
+
+<h2 class="heading-medium">Check your [emails and] post </h2>
+
+    <p>The tribunal may contact you to ask you some additional questions. It’s important that you reply as soon as possible.</p>  
+
+
+  <p>You can <a href="https://track-your-appeal.herokuapp.com/prototype-beta-18/status?casenumber=SC012%2F34%2F56789&status=appeal">track your appeal online</a>.</p>
+
+  <!-- <p>We’ll email you a link so you can track your appeal anytime.</p>-->
+
+<!--<span style="color: red; font-weight: normal; font-size: 19px;">[If just email]</span>
+
+<p>We’ve emailed you a confirmation.</p>
+
+<span style="color: red; font-weight: normal; font-size: 19px;">[If just text message]</span>
+
+<p>We’ve sent you a text message confirmation. </p>
+
+<span style="color: red; font-weight: normal; font-size: 19px;">[If email and text message]</span>
+
+<p>We’ve sent you an email and text message confirmation.</p> 
+
+  <p>DWP have to respond to your appeal by 31 May 2017. We’ll contact you and explain what happens next when they’ve replied. </p>
+
+  <p>You can <a href="https://track-your-appeal.herokuapp.com/prototype-beta-09/status?casenumber=SC012%2F34%2F56789&status=appeal">track your appeal</a> anytime.</p> -->
+</div>
+</div>
+
+</main>
+{% endblock %}

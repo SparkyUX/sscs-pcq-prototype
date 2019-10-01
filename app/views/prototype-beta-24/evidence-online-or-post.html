@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Evidence - options
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a class="link-back" href="status">Back</a>        
+      <form  action="/prototype-24/evidencechannel" method="post">
+        <div class="form-group">
+          <fieldset>
+            <legend>
+              <h1 class="heading-large">How do you want to provide additional evidence?</h1>
+            </legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="radioGroup" value="online">
+              <label for="radio-1">Upload evidence or write a statement online</label>
+            </div>
+            
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="radioGroup" value="post">
+              <label for="radio-2">Send evidence by post</label>
+            </div>
+
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+
+          <br/>
+          <br/>
+          <br/> 
+        <!--  <details>
+            <summary><span class="summary">You can also post evidence to the tribunal</span></summary>
+            <h2 class="heading-medium">
+              Posting evidence to the tribunal
+            </h2>
+            <p class="body-text">Post evidence to the address below.</p>
+            <p> Make sure it’s clearly marked with your appeal reference number: <span class="bold">SC242/16/03435</span></p>
+            <p>Birmingham ASC<br/>
+              HM Courts and Tribunals Service<br/>
+              Administrative Support Centre (ASC)<br/>
+              P O Box 14620<br/>
+              Birmingham<br/>
+            B16 6FR</p>
+            <p><a href="#">Download and print address </a></p>
+            <p>Try to post it as soon as possible to avoid delaying your appeal.</p>
+          </details>
+        -->
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

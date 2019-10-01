@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Representative signed up confirmation - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                You’ve signed up [first name last name] from [support organisation] as your representative.  
+            </h1>
+            
+<p>They’ll now receive all the information you do about your appeal.</p>
+
+<form>
+
+  <a class="button" href="008-update-anyone-else">Continue</a>
+
+</form>
+
+<div>
+<br/>
+<br/>
+<p> <a href="006-reps-details">Change your representatives details</a></p>
+</div>
+
+            
+        </div>
+
+    </div>
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

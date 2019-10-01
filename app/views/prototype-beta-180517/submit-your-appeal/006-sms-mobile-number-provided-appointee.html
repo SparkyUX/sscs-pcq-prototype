@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Send to number provided? (appointee) - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="005-sms-sign-up" class="link-back">Back</a> 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Do you want them sent to the number you provided earlier? 
+            </h1>
+            <form  action="/prototype-180517/mobile-app" method="post">
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="visually-hidden">Shall we send them to the number you provided earlier? </legend>
+                        <div class="multiple-choice">
+                            <input id="radio-1" type="radio" name="radioGroup" value="usemobileApp">
+                            <label  for="radio-1">
+                                Yes, send them to <span style="font-weight: bold">07972 438178</span>
+                            </label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="radio-2" type="radio" name="radioGroup" value="newmobileApp">
+                            <label  for="radio-2">
+                                No, send them to a different number
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <input type="submit" class="button" value="Continue">
+            </form>
+<br/>
+        <p> <a href="#">Save and come back later</a></p>
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your data. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

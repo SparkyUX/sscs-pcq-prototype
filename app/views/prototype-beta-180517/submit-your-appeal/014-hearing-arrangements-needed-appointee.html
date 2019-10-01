@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing arrangements confirm (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="../prototype-beta-180517/submit-your-appeal/013-your-hearing" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+   <h1 class="heading-large">
+    Do you need any support for your hearing?  
+  </h1>
+  <p>Support for your hearing can be arranged,such as an interpreter, hearing loop or disabled access. You <span class="pbold">can’t</span> bring your own interpreter to the hearing.</p>
+  <form  action="/prototype-180517/arrangements-app" method="post">
+    <div class="form-group">
+     <div class="multiple-choice">
+      <input id="radio-1" type="radio" name="radioGroup" value="arrangementsRequiredApp">
+      <label for="radio-1">
+        Yes
+      </label>
+    </div>
+    <div class="multiple-choice">
+      <input id="radio-2" type="radio" name="radioGroup" value="arrangementsNotRequiredApp">
+      <label for="radio-2">
+        No
+      </label>
+    </div>
+  </fieldset>
+</div>
+<input type="submit" class="button" value="Continue">
+</form>
+<br/> 
+<br/>           
+</div>
+</div>
+</main>
+{% endblock %}

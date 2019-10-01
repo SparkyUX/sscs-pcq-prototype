@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Give feedback - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/sscs-beta.html" %}
+  {% include "includes/sscs-breadcrumbs.html" %}
+
+<div class="grid-row">
+<div class="column-two-thirds">
+  <h1 class="form-title heading-large">
+    Please provide feedback
+  </h1>
+
+
+  <form>
+    <div class="form-group">
+      <fieldset>
+      <p class="heading-medium">Why do you want to stop receiving emails about your appeal? </p>
+        <legend class="visually-hidden">Why do you want to stop receiving emails about your appeal?</legend>
+        <label class="block-label selection-button-radio" for="radio-1">
+          <input id="radio-1" type="radio" name="radio-group" value="They came too often">
+          They came too often
+        </label>
+        <label class="block-label selection-button-radio" for="radio-2">
+          <input id="radio-2" type="radio" name="radio-group" value="They weren’t helpful">
+          They weren’t helpful
+        </label>
+        <label class="block-label selection-button-radio" for="radio-3">
+          <input id="radio-3" type="radio" name="radio-group" value="They made me feel worried">
+          They made me feel worried
+        </label>
+
+        <label class="block-label selection-button-radio" data-target="other-reason" for="example-other-reason">
+        <input id="example-other-reason" type="radio" name="radio-contact-group" value="No">
+        Other reason
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="other-reason">
+        <input class="form-control-3-4" name="other-reason" type="text" id="other-reason-text">
+      </div>
+    </div>
+
+        <div class="form-group">
+          <label class="heading-medium">Provide more detail here, if you want. 
+          </label>
+          <br/>
+          <br/>
+          <textarea name="Text1" cols="50" rows="6"></textarea>
+        </div>
+
+
+
+
+      </fieldset>
+  
+
+    <a class="button" href="email-notifications-stopped">Continue</a><br/><br/>
+      <a href="manage-email-notifications-unsubscribe">Cancel</a>
+
+  </form>
+
+  <div class="prototype-nav">
+    <p><a href="../index">Index</a></p>
+  </div>
+
+  </div>
+
+    <div class="column-one-third">
+ 
+  </div>
+</main>
+{% endblock %}

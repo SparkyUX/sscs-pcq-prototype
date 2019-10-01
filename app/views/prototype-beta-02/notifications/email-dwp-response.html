@@ -1,0 +1,64 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Email - DWP response
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-8" role="main">
+
+<p style="padding-top: 30px;"><strong class="bold-small">Subject:</strong> Your <span style="color: green;">ESA benefit</span> <span style="color: red; font-weight: normal; font-size: 19px;"> [Benefit name acronym. If benefit + ' benefit']</span> appeal</p>
+
+<div class="email-border">
+
+	<div style="margin-bottom: 45px;"> <img src="/public/images/hmcts-logo.png"></div>
+	
+	<div class="panel panel-border-wide">
+		<p>Appeal reference number: <span style="color: green;"> SC242/16/03435</span><span style="color: red; font-weight: normal; font-size: 19px;"> [Appeal ref. # from GAPS2]</span></p>
+	</div>
+
+	<br/>
+
+	<p>Dear <span style="color: green;">Mr M Sharma</span><span style="color: red; font-weight: normal; font-size: 19px;"> [Title and name as in GAPS2]</span></p>
+
+	<p>The <span style="color: green;">DWP</span> <span style="color: red; font-weight: normal; font-size: 19px;">[1st tier agency acronym]</span> have responded to your <span style="color: green;">ESA benefit</span> <span style="color: red; font-weight: normal; font-size: 19px;"> [Benefit name acronym. If benefit + ' benefit']</span> appeal. They should have sent you a copy of their response in the post. </p>
+
+
+<p>We’re now booking a hearing for your appeal. We’ll contact you by <span style="color: green;"> 5 January 2017</span><span style="color: red;">[date + 6 weeks from DWP response date]</span> with the details. </p>
+
+
+
+<span style="color: red; font-weight: normal; font-size: 19px;">
+[Display evidence reminder only if DWP have responded and until 29 days from DWP response date*]</span>
+        <p>All evidence should be received by <span style="color: green;"> 9 February 2017</span><span style="color:red;"> [date + 28 days from DWP response]</span>. This is so there’s time to read it before your hearing.   <span style="color: red;">[Display paragraph <span style="color: red; font-weight: normal; font-size: 19px;">
+
+
+
+
+ <p>If you have any more evidence, it must be received by <span style="color: green;"> 9 February 2017</span><span style="color:red;"> [date + 28 days from DWP response]</span>. This is so there’s time to read it before your hearing. <span style="color: red;">[Display paragraph if evidence received]</span> </p>
+
+       <p>Read about submitting evidence: <a href="../evidence">https://www.gov.uk/track-your-appeal/benefit-appeal-evidence/p19ya35s </a>  <span style="color: red;">  [Display submitting evidence link only if DWP have responded]</span></p>
+
+
+
+
+	<p>Track the progress of your appeal any time: <a href="../status-dwp-response">https://www.gov.uk/track-your-appeal/p19ya35s</a><span style="color: red;"> [8-digit unique code generated from appeal reference number]</span></p> 
+
+<br/>
+
+	<p><strong class="bold-small">Social Security and Child Support Tribunal</strong><br/>
+		HMCTS<br/>
+		Telephone: 0300 123 1142<br/>
+	</p>
+
+	<p>Change your email address or stop receiving these emails:  <a href="../manage/manage-email-notifications">https://www.gov.uk/track-your-appeal/manage-email-notifications/p19ya35s</a><span style="color: red;"> [8-digit unique code generated from appeal reference number]</span></p> 
+
+</div>
+
+<div style="margin-top: 40px; font-size: 14px;">
+	<p><a href="../index">Index</a> | <a href="../evidence">Providing evidence</p>
+</div>
+
+</main>
+
+{% endblock %}

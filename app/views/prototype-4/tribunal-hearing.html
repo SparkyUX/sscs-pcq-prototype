@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Example - Forms
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-4" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+    {% include "includes/sscs-breadcrumbs.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+                Your tribunal hearing
+            </h1>
+            <div class="divider"></div>
+            <div class="details">
+                <h2 class="heading-medium">{{ name }}</h2>
+                <h2 class="form-hint">Case Reference: {{ caseRef }}</h2>
+            </div>
+        </div>
+        <div class="column-third">
+
+     
+</div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="tribunal-details">
+                <dl class="date-time">
+                    <dt>Date</dt>
+                    <dd>{{date}}</dd>
+                </dl>
+                <dl class="date-time">
+                    <dt>Time</dt>
+                    <dd>{{time}}</dd>
+                </dl>
+                <dl class="address">
+                    <dt>Location</dt>
+                    <dd>
+                    {% for key, value in address %}
+                        <span>{{ value }}</span>
+                    {% endfor %}
+                    </dd>
+                </dl>
+                <a class="maps-and-directions" href="https://www.google.co.uk/maps">Maps and directions</a>
+            </div>
+            <p class="interpreter-message">{{messages[0]}}</p>
+            <div class="contact-us-message">
+                <div class="border"></div>
+                <h2>{{messages[1]}}</h2>
+            </div>
+            <div class="updates-border"></div>
+            <a href="/prototype-4/status?casenumber=SC012%2F34%2F56789&status=hearingbooked" class="track-apppeal-link">Track your appeal</a>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Provide evidence - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <a href="011-additional-reasons" class="link-back">Back</a> 
+   <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="heading-large">
+          Evidence to support your appeal 
+      </h1>
+      <p>Evidence is any information that supports your appeal such as a letter, written statement or medical report. Useful evidence shows how your condition affects your life. </p>
+      <p>You can upload evidence now or after you have submitted your appeal. You can also post it in. You’ll be sent the address after you’ve submitted your appeal.</p>
+      <form  action="/prototype-180522/evidenceprovide" method="post">
+        <div class="form-group">
+            <fieldset>
+              <label>
+                <h2 class="heading-medium">Would you like to upload evidence now?</h2>
+                <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="radioGroup" value="yesupload">
+                    <label for="radio-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="radioGroup" value="noupload">
+                    <label for="radio-2">No</label>
+                </div>
+            </fieldset>
+        </div>
+        <input type="submit" class="button" value="Continue">
+    </form>
+<br/>
+     <!--<p> <a href="saved-appeal-confirm-email">Save and come back later</a></p>-->
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

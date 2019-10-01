@@ -1,0 +1,190 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+SSCS Protoypes
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	<div style="margin: 30px 0 45px 0;"> <a href="../index"><img src="/public/images/hmcts-logo.png"></a>
+		<p class="heading-small">Social Security and Child Support (SSCS)</p>
+		<h1 class="heading-large">Track your appeal</h1>
+		<h2 class="heading-small">On this page</h2>
+		<ul class="list">
+			<li><a href="#online-status">Online status</a></li>
+			<li><a href="#online-status-exceptions">Online status - Exceptions</a></li>
+			<li><a href="#email">Email</a></li>
+			<li><a href="#email-exceptions">Email - Exceptions</a></li>
+			<li><a href="#sms">SMS</a></li>
+			<li><a href="#support">Hearing context and support content</a></li>
+			<li><a href="#register">Manage notifications online</a></li>
+			<li><a href="#error">Error pages</a></li>
+		</ul>
+		<hr>
+		<h2 id="online" class="heading-medium">Online status</h2>
+		<ol class="list list-number">
+			<li><a href="enter-lastname">Enter lastname - TYA access</a></li>
+			<li><a href="status?casenumber=SC012%2F34%2F56789&status=appeal">Appeal received (PHAR1-S)</a></li>
+			<!--<li><a href="status-evidence-received-appeal">Appeal received with evidence received (PHAR2-S)</a></li>-->
+			<li><a href="status-dwp-response">DWP response received (PHRR1-S) </a></li>
+			<li><a href="status-evidence-received-dwp-response">DWP response received with evidence received (PHRR2-S)</a></li>
+			<li><a href="status-hearing-booked">Hearing booked (PHHB1-S)</a></li>
+			<!--<li><a href="status-evidence-received-hearing-booked">Hearing booked with evidence received (PHHB2-S)</a></li>-->
+			<li><a href="status-decision">Decision made - Generic (Doormant) (PHDM1-S)</a></li>
+		<!--	<li><a href="status-decision-sent">Decision made - Issued (PHDM2-S)</a></li> -->
+			<li><a href="status-appeal-closed">Appeal closed - After 3 months from decision (PHDM2-S)</a></li>
+		</ol>
+		<hr>
+		<h2 id="online-status-exceptions" class="heading-medium">Online status - Exceptions</h2>
+		<h3 class="heading-small">MVP</h3>
+		<ol class="list list-number">
+			<li><a href="status-dwp-response-late">DWP response date exceeded (EXRE3-S)</a></li>
+			<li><a href="status-hearing-booked-late">Hearing booked date exceeded (EXRE1-S)</a></li>
+			<li><a href="status-postponed-generic">Postponed generic (EXHP9-S)</a></li>
+			<li><a href="status-adjourned-generic">Adjourned generic (EXHA10-S)</a></li>
+			<li><a href="status-hearing-booked-new">New hearing booked (EXNH1-S)</a></li>
+			<li><a href="status-revised">Appeal lapsed / Revised (EXAL1-S)</a></li>
+			<li><a href="status-withdrawn">Appeal withdrawn (EXAW1-S)</a></li>
+		</ol>
+		<h3 class="heading-small">Post MVP</h3>
+		<ol class="list list-number">
+			<li><a href="status-adjourned-medical-evidence-not-attended">Adjourned - medical evidence - Not attended (EXHA1-S)</a></li>
+			<li><a href="status-adjourned-medical-evidence">Adjourned - medical evidence- attended (EXHA2-S)</a></li>			
+			<li><a href="status-adjourned-medical-evidence-dwp">Adjourned - medical evidence DWP - Not attended (EXHA3-S)</a></li>
+			<li><a href="status-adjourned-medical-evidence-dwp">Adjourned - medical evidence DWP - attended (EXHA4-S)</a></li>
+			<li><a href="status-adjourned-evidence-not-attended">Adjourned - further evidence - Not attended (EXHA5-S)</a></li>
+			<li><a href="status-adjourned-evidence">Adjourned - further evidence - Attended (EXHA6-S)</a></li>
+			<li><a href="status-adjourned-other">Adjourned other - Not attended (EXHA7-S)</a></li>
+			<li><a href="status-adjourned-other">Adjourned other - Attended (EXHA8-S)</a></li>
+			<li><a href="status-death-paused">Death of a party - appeal paused (EXDP1-S)</a></li>
+			<li><a href="status-death-appointee-assigned">Death - appointee assigned (EXDP3-S)</a></li>
+			<li><a href="status-postponed-appellant-request">Postponement - Appellant request (EXHP1-S)</a></li>
+			<li><a href="status-postponed-dwp-attendance">Postponement - Requested by DWP (EXHP2-S)</a></li>
+			<li><a href="status-postponed-appellant-request-confirmed">Postponement - Confirmed (EXHP3-S)</a></li>
+			<!--<li><a href="status-postponed-refused">Postponement - Refused (EXHP4-S)</a></li>-->
+			<li><a href="status-postponed-incomplete">Postponement - Incomplete tribunal or exclusion (EXHP6-S)</a></li>
+			<li><a href="status-postponed-listing-error">Postponement - Listing error (EXHP7-S)</a></li>
+		</ol>
+		<hr>
+		<h2 id="email" class="heading-medium">Email</h2>
+		<h3 class="heading-small">MVP</h3>
+		<ol class="list list-number">
+			<li><a href="notifications/email-confirmation-supporter">Subscription confirmation - Supporter (ATNA1S-E)</a></li>
+
+			<li><a href="notifications/email-appeal-received-mvp">Appeal received (PHAR1-E)</a>  - ITERATED in PB</li>
+<li><a href="notifications/email-appeal-lodged">Appeal lodged (code tbc)</a>  - ITERATED in PB</li>
+			<li><a href="notifications/email-dwp-response">DWP response received (PHRR1-E)</a>  - ITERATED in PB</li>
+			<li><a href="notifications/email-evidence-reminder-generic">Evidence reminder - Generic (PHER0-E)</a></li>
+			<li><a href="notifications/email-evidence-received">Evidence received (PHER1-E)</a></li>
+			<li><a href="notifications/email-hearing-booked-mvp">Hearing booked (PHHB1-E)</a></li>
+			<li><a href="notifications/email-hearing-reminder-1wk-mvp">Hearing reminder - 1 week (PHHR1-E)</a></li>
+			<li><a href="notifications/email-hearing-reminder-1day-mvp">Hearing reminder - 1 day (PHHR2-E)</a></li>
+		</ol>
+		<h3 class="heading-small">Post MVP</h3>
+		<ol class="list list-number">
+
+			<li><a href="notifications/email-hearing-booked">Hearing booked (PHHB1-E)</a></li>
+			<li><a href="notifications/email-hearing-reminder-1wk">Hearing reminder - 1 week (PHHR1-E)</a></li>
+			<li><a href="notifications/email-hearing-reminder-1day">Hearing reminder - 1 day (PHHR2-E)</a></li>
+		</ol>
+		<hr>
+		<h2 id="email-exceptions" class="heading-medium">Email - Exceptions</h2>
+		<h3 class="heading-small">MVP</h3>
+		<ol class="list list-number">
+			<li><a href="notifications/email-dwp-response-late">DWP response date exceeded (EXRE-E) </a></li>
+			<li><a href="notifications/email-hearing-booked-late">Hearing not booked yet (code tbc) </a>  - NEW in PB</li>
+
+			<li><a href="notifications/email-postponed-generic">Postponement - Generic (EXHP9-E) </a></li>
+			<li><a href="notifications/email-adjourned-generic">Adjourned - Generic (EXHA10-E) </a></li>
+			<li><a href="notifications/email-hearing-booked-new">New hearing booked (EXNH1-E)</a></li>
+			<li><a href="notifications/email-revised">Revised/Lapsed (EXAL1-E</a></li>
+			<li><a href="notifications/email-withdrawn">Withdrawn (EXAW1-E)</a></li>
+		</ol>
+		<h3 class="heading-small">Post MVP</h3>
+		<ol class="list list-number">
+			<li><a href="notifications/email-adjourned-generic">Adjourned medical evidence - Attended (EXHA1-E)</a></li>
+			<li><a href="notifications/email-adjourned-medical-evidence-not-attended">Adjourned medical evidence - No Attended (EXHA2-E)</a></li>
+			<li><a href="notifications/email-adjourned-medical-evidence-dwp">Adjourned medical evidence - DWP - Attended (EXHA3-E)</a></li>
+			<li><a href="notifications/email-adjourned-medical-evidence-dwp-not-attended">Adjourned medical evidence - DWP - Not attended (EXHA4-E)</a></li>
+			<li><a href="notifications/email-adjourned-evidence">Adjourned further evidence - Attended (EXHA5-E)</a></li>
+			<li><a href="notifications/email-adjourned-evidence-not-attended">Adjourned further evidence - Not attended (EXHA6-E)</a></li>
+			<li><a href="notifications/email-adjourned-other">Adjourned other reason - Attended (EXHA7-E)</a></li>
+			<li><a href="notifications/email-adjourned-other-not-attended">Adjourned other reason - Not attended (EXHA8-E)</a></li>
+			<li><a href="notifications/email-postponed-appellant-request">Postponement - Appellant request (EXHP1-E)</a></li>
+			<li><a href="notifications/email-postponed-appellant-request-confirmed">Postponement - Confirmed (EXHP3-E)</a></li>
+			<li><a href="notifications/email-postponed-refused">Postponement - Refused (EXHP4-E)</a></li>
+			<li><a href="notifications/email-postponed-refused-3days">Postponement - Refused (3 days to hearing) (EXHP5-E)</a></li>
+			<li><a href="notifications/email-postponed-dwp-attendance">Postponement - Requested by DWP (EXHP2-E)</a></li>
+			<li><a href="notifications/email-postponed-incomplete">Postponement - Incomplete tribunal or exclusion (EXHP6-E)</a></li>
+			<li><a href="notifications/email-postponed-listing-error">Postponement - Listing error (EXHP7-E)</a></li>
+		</ol>
+		<hr>
+		<h2 id="sms" class="heading-medium">SMS</h2>
+		<h3 class="heading-small">MVP</h3>
+		<ol class="list list-number">
+			<li><a href="notifications/sms-confirmation">Subscription confirmation appellant SMS (ATNA1-T)</a> - ITERATED in PB</li>
+			<li><a href="notifications/sms-confirmation-supporter">Subscription confirmation supporter SMS (ATNA1S-T)</a> - ITERATED in PB</li>
+			<li><a href="notifications/sms-appeal-received">Appeal received  (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-appeal-lodged">Appeal lodged  (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-dwp-response">DWP response  (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-dwp-response-late">DWP response late  (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-hearing-booked-not-yet">Hearing booked - not yet (code tbc)</a> - NEW in PB</li>
+
+			<li><a href="notifications/sms-evidence-reminder">Evidence reminder (PHER0-T)</a></li>
+			<li><a href="notifications/sms-evidence-received">Evidence received (PHED1-T)</a></li>
+			<li><a href="notifications/sms-hearing-booked">Hearing booked (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-hearing-reminder-1wk-mvp">Hearing reminder  - One week (PHHR1-T)</a></li>
+			<li><a href="notifications/sms-hearing-reminder-1day-mvp">Hearing reminder - One day (PHHR2-T)</a></li>
+			<li><a href="notifications/sms-adjourned-generic">Hearing adjourned (EXHA10-T)</a></li>
+			<li><a href="notifications/sms-new-hearing-booked">New hearing booked  (code tbc)</a> - NEW in PB</li>
+			<li><a href="notifications/sms-updated-number-new">Updated phone number - sent to new number (MNCM1-T)</a></li>
+			<li><a href="notifications/sms-updated-number-old">Updated phone number - sent to old number (MNCM2-T)</a></li>
+		</ol>
+		<h3 class="heading-small">Post MVP</h3>
+		<ol class="list list-number">
+			<li><a href="notifications/sms-hearing-reminder-1wk">Hearing reminder SMS - One week (PHHR1-T)</a></li>
+			<li><a href="notifications/sms-hearing-reminder-1day">Hearing reminder SMS - One day (PHHR2-T)</a></li>
+		</ol>
+		<hr>
+<!--	<h2 id="text-exceptions" class="heading-small">Text - Exceptions</h2>
+<ol class="list list-number">
+<li><a href="notifications/sms-adjourned-generic">Adjourned</a></li>
+<li><a href="notifications/sms-adjourned-evidence">Adjourned evidence</a></li>
+<li><a href="notifications/sms-adjourned-medical-evidence">Adjourned medical evidence</a></li>
+<li><a href="notifications/sms-new-hearing-booked">New hearing booked</a></li>
+<li><a href="notifications/sms-postponed-other">Postponed</a></li>
+<li><a href="notifications/sms-revised">Revised</a></li>
+<li><a href="notifications/sms-withdrawn">Withdrawn</a></li>
+</ol>
+<hr> -->
+<h2 id="support" class="heading-medium">Hearing context and support content</h2>
+<h3 class="heading-small">MVP</h3>
+<ol class="list list-number">
+	<li><a href="check-your-hearing-details-mvp">Check your hearing details</a></li>
+	<li><a href="about-hearing">What to expect at your hearing</a></li>
+	<!--<li><a href="expenses">Claiming expenses to attend your hearing </a></li>-->
+	<li><a href="claiming-hearing-expenses">Claiming expenses to attend your hearing</a></li>
+	<li><a href="benefit-appeal-evidence">Providing evidence to support your appeal</a></li>
+	<li><a href="contact-us">Contact us</a></li>
+</ol>
+<h3 class="heading-small">Post MVP</h3>
+<ol class="list list-number">
+	<li><a href="check-your-hearing-details">Check your hearing details</a></li>
+</ol>
+<hr>
+<h2 id="register" class="heading-medium">Manage notifications online</h2>
+<ol class="list list-number">
+	<!--<li><a href="notifications-register/index">Register for notifications</a></li>-->
+	<li><a href="manage/manage-email-notifications">Update / unsubscribe</a></li>
+	<li><a href="notifications/manage/email-confirm-change-new">Update email address - Confirmation message - New contact details</a></li>
+	<li><a href="notifications/manage/email-confirm-change-previous">Update email address - Confirmation message - Old contact details</a></li>
+	<li><a href="notifications/manage/sms-confirm-change">Updated phone number SMS: new number (MNCM1-T)</a></li>
+	<li><a href="notifications/manage/sms-confirm-old-number">Updated phone number SMS: old number (MNCM2-T)</a></li>
+</ol>
+<hr/>
+<h2 id="error" class="heading-medium">Error pages</h2>
+<ol class="list list-number">
+	<li><a href="error-pages/error-404">Page not found - 404</a></li>
+	<li><a href="error-pages/error-500">Service temorarily unavailable</a></li>
+</ol>
+</div>
+</main>
+{% endblock %}

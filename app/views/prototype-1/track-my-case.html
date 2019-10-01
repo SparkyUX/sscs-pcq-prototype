@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Forms
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-1" role="main">
+
+  {% include "includes/sscs-breadcrumbs.html" %}
+
+  <form action="/prototype-1/status" method="get" class="form">
+
+    <h1 class="form-title heading-xlarge">
+      Track your benefit appeal
+    </h1>
+
+    <p>
+      Find the status of your appeal against a benefits decision.
+    </p>
+
+    <!-- Case reference Number -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Enter your case reference Number</label>
+      <p class="form-hint">You can find this on any letter we have sent you about your appeal.</p>
+      <input type="text" class="form-control" id="full-name" name="casenumber">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main>
+{% endblock %}

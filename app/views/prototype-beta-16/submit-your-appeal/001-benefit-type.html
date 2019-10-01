@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Which benefit is your appeal about - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+       {% include "includes/back.html" %}
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="visually-hidden">Which benefit is the appeal about?</legend>
+        <label>
+            <h1 class="heading-large">
+                Which benefit is the appeal about?
+            </h1>
+    
+     
+ 
+</label>
+<input class="form-control" type="text">
+
+    </fieldset>
+
+  </div>
+  <a class="button" href="003-mrn-date">Continue</a>
+
+</form>
+
+<br/>
+<br/>
+<details>
+
+  <summary><span class="summary">I can’t find the benefit I’m appealing</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+      Sometimes the name of the benefit can change. Check the last letter you received about it.  
+    </p>
+
+  </div>
+
+</details>
+
+
+            
+        </div>
+
+    </div>
+    
+           
+
+
+</main>
+
+{% endblock %}

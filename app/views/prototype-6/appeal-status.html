@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Track your benefits appeal
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-6" role="main">
+
+    {% include "includes/sscs-alpha.html" %}
+    {% include "includes/sscs-breadcrumbs.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <h1 class="heading-xlarge">Your PIP benefit appeal</h1>
+
+            <div class="details">
+                <h2 class="heading-medium">{{ name }}</h2>
+                <h2 class="form-hint">{{ __('common.appealReferenceNumber') }}: {{ reference }}</h2>
+            </div>
+
+            <div class="divider"></div>
+
+            <section role="region" class="progress-container">
+
+                <h2 class="screen-reader-text">{{ __('progressBar.screenReader.heading') }}</h2>
+
+                <div class="ring active">
+                    <p class="appeal-received">
+                        <span aria-hidden="true">{{ __('progressBar.appeal') }}</span>
+                        {% if status == 'appeal' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.appeal.happening') }}</span>
+                        {% else %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.appeal.happened') }}</span>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="leg foot {{ isActive('dwprespond', status ) }}">
+                    <p class="dwp-respond">
+                        <span aria-hidden="true">{{ __('progressBar.dwpRespond') }}</span>
+                        {% if status == 'appeal' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.dwpRespond.due') }}</span>
+                        {% elif status == 'dwprespond' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.dwpRespond.happening') }}</span>
+                        {% else %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.dwpRespond.happened') }}</span>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="leg foot {{ isActive('hearingbooked', status ) }}">
+                    <p class="hearing-booked">
+                        <span aria-hidden="true">{{ __('progressBar.hearingBooked') }}</span>
+                        {% if status == 'appeal' or status == 'dwprespond' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.hearingBooked.due') }}</span>
+                        {% elif status == 'hearingbooked' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.hearingBooked.happening') }}</span>
+                        {% else %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.hearingBooked.happened') }}</span>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="leg {{ isActive('hearing', status ) }}"></div>
+                <div class="ring {{ isActive('hearing', status ) }}">
+                    <p class="hearing">
+                        <span aria-hidden="true">{{ __('progressBar.hearing') }}</span>
+                        {% if status != 'hearing' %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.hearing.due') }}</span>
+                        {% else %}
+                        <span class="screen-reader-text">{{ __('progressBar.screenReader.hearing.happening') }}</span>
+                        {% endif %}
+                    </p>
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <div class="description">
+
+                <h4 class="heading-small">{{ __('common.latestUpdate') }}</h4>
+
+                {% for update in latestUpdates %}
+                    <p>{{ update }}</p>
+                {% endfor %}
+
+                {% if status == 'hearingbooked' %}
+                <a href="/prototype-6/hearingdetails">{{ __('hearingDetails.checkDetails') }}</a>
+                {% endif %}
+
+                {% if updates.length > 1 %}
+
+                    <p class="updates-toggle">
+                        <i class="fa fa-caret-right" aria-hidden="true"><span>{{ __('common.viewAllUpdates') }}</span></i>
+                    </p>
+
+                    <div class="updates-container">
+                        {% for index in range(1, updates.length) %}
+                        <div class="update">
+
+                            <h4 class="bold-small">
+                                {{ updates[index].heading }}
+                                <span class="form-hint">{{ updates[index].eventDate | formatDate }}</span>
+                            </h4>
+
+                            {% if updates[index].webKey == 'status.appeal' %}
+                                <p>{{ __('status.appeal.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'status.dwpRespond' %}
+                                <p>{{ __('status.dwpRespond.msg', updates[index].placeholders ) }}</p>
+                                <p>{{ __('status.dwpRespond.msg2', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'status.hearingBooked' %}
+                                <p>{{ __('status.hearingBooked.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'status.hearing' %}
+                                <p>{{ __('status.hearing.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'status.evidence' %}
+                                <p>{{ __('status.evidence.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'evidence.dwp' %}
+                                <p>{{ __('evidence.dwp.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'evidence.default' %}
+                                <p>{{ __('evidence.default.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'evidence.appellant' %}
+                                <p>{{ __('evidence.appellant.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'evidence.tribunalsService' %}
+                                <p>{{ __('evidence.tribunalsService.msg', updates[index].placeholders ) }}</p>
+                            {% elif updates[index].webKey == 'evidence.representative' %}
+                                <p>{{ __('evidence.representative.msg', updates[index].placeholders ) }}</p>
+                            {% else %}
+                                <p>UNKNOWN WEBKEY:{{ updates[index].webKey }}</p>
+                            {% endif %}
+
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </div> <!--end of description-->
+
+            <div class="panel panel-border-wide">
+                <p>{{ __('evidence.receivedBy') }} 22 December 2016.<br/>
+                    <a href="/prototype-6/provideevidence">{{ __('evidence.provide.link') }}</a>
+                </p>
+            </div>
+
+            <div class="updates-border"></div>
+
+            <h4 class="heading-small">{{ __('common.aboutYourAppeal') }}</h4>
+            <ul class="links">
+                <li><a href="/prototype-6/abouthearing">{{ __('hearing.expectations.title') }}</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</main>
+
+{% endblock %}

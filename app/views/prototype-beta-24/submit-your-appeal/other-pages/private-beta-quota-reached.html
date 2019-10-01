@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Private beta quota reached - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <div class="grid-row">
+    <div class="column-full">
+    <h1 class="heading-large">
+            You need to download and fill out a paper form
+        </h1>
+    </div>
+  
+  <div class="column-two-thirds">
+        <p>We’re only accepting a limited number of appeals per day while we trial the online service. </p>
+
+<p>You can download and fill out a paper appeal form, or try the online service again tomorrow.  
+</p>
+
+<!-- <p>We’re sorry for the inconvenience.</p> -->
+
+<form>
+      <a class="button" href="http://formfinder.hmctsformfinder.justice.gov.uk/sscs1-eng.pdf">Continue to form download</a>
+    </form>
+    </div>
+    
+</div>
+</main>
+{% endblock %}

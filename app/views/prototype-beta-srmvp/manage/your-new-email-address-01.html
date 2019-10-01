@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your new email addresss - GOV.UK
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+    <a href="manage-email-notifications" class="link-back">Back</a> 
+
+<h1 class="heading-large">Your new email address</h1>
+<div class="form-group">
+<!--  <label class="form-label" for="first-name-2">Enter your new email address</label> -->
+  <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+</div>
+
+   <a class="button" href="manage-email-check-02">Continue</a><br/><br/>
+
+
+    
+            <div class="prototype-nav">
+            <p><a href="https://track-your-appeal.herokuapp.com/index-demo">Index</a></p> 
+
+            </div>
+
+
+</main>
+
+{% endblock %}

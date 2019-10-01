@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Their name (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-appointee" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Enter their name
+    </h1>
+    <p>Enter the name of the person you are authorised to appeal for.</p>
+    <form>
+      <fieldset>
+
+        <div class="form-group">
+          <label class="form-label" for="first-name">
+            Title
+          </label>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text">
+        </div>
+        <div class="form-group">
+          <!-- Firstname, surname -->
+          <label class="form-label" for="first-name">
+            First name
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="Last name">
+            Last name
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+       <p> <a class="button" href="004-their-dob-appointee">Save and continue</a>
+                 <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+</p>
+           <br/>
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

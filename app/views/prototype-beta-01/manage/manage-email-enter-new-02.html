@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Confirm email 01
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+
+<h1 class="heading-large">Your new email address</h1>
+<div class="form-group">
+<!--  <label class="form-label" for="first-name-2">Enter your new email address</label> -->
+  <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+</div>
+
+   <a class="button" href="manage-email-check-02">Continue</a><br/><br/>
+  <a href="manage-email-update-02">Cancel</a>
+
+
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

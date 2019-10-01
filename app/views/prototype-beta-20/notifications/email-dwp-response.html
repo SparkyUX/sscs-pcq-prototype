@@ -1,0 +1,42 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+Email - DWP response
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+	<p style="padding-top: 30px;"><strong class="bold-small">Subject: </strong>Your PIP benefit appeal</p>
+	
+	<div class="email-border">
+		
+		<div style="margin-bottom: 15px;"> <img src="/public/images/notify-email-header.png"></div>
+		<div class="email-margin">
+		<div style="margin-bottom: 20px;"> <img src="/public/images/hmcts-logo.png"></div>
+		<div class="panel panel-border-wide">
+			<p>Appeal reference number: SC242/16/03435</p>
+		</div>
+		<br/>
+		<p>Dear Manish Sharma</p>
+
+		<p>DWP have responded to your PIP benefit appeal. They should have sent you a copy of their response in the post.</p>
+
+		<p>A hearing needs to be booked for your appeal. You don’t need to do anything. You’ll receive an email when your hearing has been booked. This may take some time, depending on how busy the hearing venues are.</p>
+
+		<p>[If no evidence submitted]
+If you have any evidence, it should be received before [date + 28 days from DWP response date]. This is so the tribunal have time to read it before your hearing.</p>
+
+		<p>Find out more about sending evidence to support your appeal: <a href="../benefit-appeal-evidence">https://www.sscs.reform.hmcts.net/progress/fzpqcy/track-your-appeal/evidence</a></p>
+
+		<p>Track the progress of your appeal any time: <a href="../status-dwp-response">https://www.sscs.reform.hmcts.net/progress/fzpqcy/track-your-appeal</a></p> 
+
+		<br/>
+		<p>PIP Benefit Appeals<br/>
+			HMCTS<br/>
+			Telephone: 0300 123 1142<br/>
+		</p>
+		<p>This message is automatically generated; please do not reply to this email.</p>
+		<p>Change your email address or stop receiving these emails:  <a href="../manage/manage-email-notifications">https://www.sscs.reform.hmcts.net/progress/fzpqcy/manage-<br/>email-notifications</a></p>
+	</div>
+<div style="margin-top: 40px; font-size: 14px;">
+<p><a href="../../index-s11-test">Index</a> | <a href="../status-dwp-response">DWP response - Status</a></p></div>
+</main>
+{% endblock %}

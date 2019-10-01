@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Benefit appeal submitted - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="govuk-box-highlight">
+     <h1 class="bold-large">
+      Your appeal has been submitted
+    </h1>
+  </div>
+  <div class="progress-container">
+   <img src="/public/images/bs11/progress-bar-appeal-received.svg" width=100%>
+ </div>
+ <div class="description">
+            <h4 class="heading-small">What happens next</h4>
+
+            <p>DWP will be notified that you want to appeal against their decision. They have until 17 December to respond. You’ll be told the next steps when DWP have responded. </p>
+
+            <!-- <h4 class="heading-small">Look out for letters and emails from the tribunal</h4> -->
+
+            <p>The tribunal may need to contact you and ask you some additional questions. It’s important that you reply as soon as you can. </p>
+</div>
+
+
+<p><span style="color: red;">[If signed up to email only]</span> 
+You’ll get an email within 3 working days to confirm your appeal has been lodged. This will have a link so you can track your appeal online. You’ll also get a copy of your appeal in a separate email. </p> 
+
+<p><span style="color: red;">[If signed up to email and SMS]</span> 
+You’ll get an email and text message within 3 working days. They’ll have a link so you can track your appeal online. You’ll also get a copy of your appeal in a separate email. </p> 
+
+<p><span style="color: red;">[If signed up to SMS only] </span> 
+You’ll get a text message within 3 working days. This will have a link so you can track your appeal online. You’ll receive a copy of your appeal in the post when DWP respond to your appeal.</p>
+
+<p><span style="color: red;">[If not signed up to email or sms]</span>  
+You’ll receive a letter confirming your appeal in the post within 7 working days. You’ll also get a copy of your appeal from DWP when they respond. </p>
+<br/>
+<div class="form-group">
+      <a class="button" href="019-exit-survey">Continue</a>
+    </div>
+
+</div>
+</div>
+</main>
+{% endblock %}

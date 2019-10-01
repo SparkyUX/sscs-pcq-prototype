@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Which benefit is your appeal about - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="visually-hidden">Which benefit is your appeal about?</legend>
+        <label>
+            <h1 class="heading-large">
+                Which benefit is your appeal about?
+            </h1>
+    
+     
+  <span class="form-hint">
+    [Hint text goes here]
+    
+  </span>
+</label>
+<input class="form-control" type="text">
+
+    </fieldset>
+
+  </div>
+  <a class="button" href="002-mrn_date">Continue</a>
+
+</form>
+
+<br/>
+<br/>
+<p> <a href="#">I can’t select the benefit I’m appealing</a></p> 
+
+
+            
+        </div>
+
+    </div>
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

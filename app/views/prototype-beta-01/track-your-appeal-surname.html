@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Track your appeal - HMCTS
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+
+  {% include "includes/sscs-beta.html" %}
+  {% include "includes/sscs-breadcrumbs.html" %}
+
+  <form action="/prototype-8/validate" method="get" class="form">
+
+<!--    <h1 class="form-title heading-medium">
+      Enter your surname -->
+    </h1>
+
+    <div class="form-group">
+         <div class="form-group">
+               <div style="padding-top: 30px;"></div>
+
+      <label class="heading-large" for="full-name">Enter your surname</label>
+      <div style="padding-top: 15px;"
+      <p class="form-hint">As it appears on any correspondence you've received about your appeal.</p>
+      <input type="text" class="form-control"  id="surname" id="full-name-f1" value="">
+    </div>
+
+      
+    </div>
+
+
+
+    <div class="form-group">
+    <!--<p class="button"><a href="status-appeal">Find appeal</a></p>-->
+     <input type="submit" class="button" value="Find appeal">
+    </div>
+
+  </form>
+
+</main>
+{% endblock %}

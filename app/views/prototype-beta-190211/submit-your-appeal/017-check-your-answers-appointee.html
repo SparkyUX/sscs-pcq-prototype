@@ -1,0 +1,429 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Check benefit appeal answers (appointee) - Appeal a benefit decision - GOV.UK 
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-large">
+        Check your appeal
+      </h1>
+      <!-- Benefit type -->
+      <h2 class="heading-medium">Benefit</h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Benefit name
+          </dt>
+          <dd class="cya-answer">
+            Personal Independence Payment (PIP).
+          </dd>
+          <dd class="cya-change">
+            <a href="001-benefit-type">
+              Change<span class="visually-hidden"> benefit name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+      <!-- Mandatory Reconsideration Notice (MRN) -->
+      <h2 class="heading-medium">Mandatory Reconsideration Notice (MRN)</h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Number from MRN address
+          </dt>
+          <dd class="cya-answer">
+            3
+          </dd>
+          <dd class="cya-change">
+            <a href="002-dwp-office">
+              Change<span class="visually-hidden"> number from MRN address</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Date of MRN
+          </dt>
+          <dd class="cya-answer">
+            3 November 2017
+          </dd>
+          <dd class="cya-change">
+            <a href="003-mrn-date">
+              Change<span class="visually-hidden"> date of MRN</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Why appeal is late
+          </dt>
+          <dd class="cya-answer">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <!--<span style="color: red;">[Reason for late appeal. Display if appeal is late and reason entered on either</span>
+            <a href="https://track-your-appeal.herokuapp.com/prototype-beta-20/submit-your-appeal/003-3-why-appeal-late-1month">'Tell us why your appeal is late' (over 1 month)</a> or <a href="https://track-your-appeal.herokuapp.com/prototype-beta-20/submit-your-appeal/003-4-why-appeal-late-13months">'Tell us why your appeal is late' (over 13 months)</a>]-->
+          </dd>
+          <dd class="cya-change">
+            <a href="003-mrn-date">
+              Change<span class="visually-hidden"> date of MRN</span>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            No MRN
+          </dt>
+          <dd class="cya-answer">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <!--<span style="color: red;">[Reason for no MRN as entered on <a href="https://track-your-appeal.herokuapp.com/prototype-beta-20/submit-your-appeal/003-1-no-mrn">'Tell us why you don’t have a Mandatory Reconsideration Notice'</a></span>-->
+          </dd>
+          <dd class="cya-change">
+            <a href="003-mrn-date">
+              Change<span class="visually-hidden"> date of MRN</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+      <!-- Claimant -->
+      <h2 class="heading-medium">Claimant</h2>
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+           Name
+         </dt>
+         <dd class="cya-answer">
+          Manish Sharma
+        </dd>
+        <dd class="cya-change">
+          <a href="004-their-name-appointee">
+            Change<span class="visually-hidden"> claimant name</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          Date of birth
+        </dt>
+        <dd class="cya-answer">
+          1 December 2002
+        </dd>
+        <dd class="cya-change">
+          <a href="004-their-dob-appointee">
+            Change<span class="visually-hidden"> claimant date of birth</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          National Insurance number
+        </dt>
+        <dd class="cya-answer">
+          QA 68 12 74
+        </dd>
+        <dd class="cya-change">
+          <a href="004-their-nino-appointee">
+            Change<span class="visually-hidden"> claimant National Insurance number</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          Address
+        </dt>
+        <dd class="cya-answer">
+         <p>122 Horton Drive<br/>
+          Cardiff<br/>
+          CF11 2HB<br/></p>
+        </dd>
+        <dd class="cya-change">
+          <a href="004-appellant-same-address-appointee">
+            Change<span class="visually-hidden"> claimant address</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+    <!-- Appointee -->
+    <h2 class="heading-medium">Appointee</h2>
+    <dl class="govuk-check-your-answers cya-questions-short">
+      <div>
+        <dt class="cya-question">
+          Appointee
+        </dt>
+        <dd class="cya-answer">
+          Yes
+        </dd>
+        <dd class="cya-change">
+          <a href="004-appointee">
+            Change<span class="visually-hidden"> appointee</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          Name
+        </dt>
+        <dd class="cya-answer">
+          Ananya Sharma
+        </dd>
+        <dd class="cya-change">
+          <a href="004-your-name-appointee">
+            Change<span class="visually-hidden"> appointee name</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          Date of birth
+        </dt>
+        <dd class="cya-answer">
+          12 March 1971
+        </dd>
+        <dd class="cya-change">
+          <a href="004-your-dob-appointee">
+            Change<span class="visually-hidden"> appointee date of birth</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          National Insurance number
+        </dt>
+        <dd class="cya-answer">
+          NP 27 28 67
+        </dd>
+        <dd class="cya-change">
+          <a href="004-your-nino-appointee">
+            Change<span class="visually-hidden"> appointee National Insurance number</span>
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt class="cya-question">
+          <p class="pbold">Address<br/><br/><br/></p>
+          <p class="pbold">Email<br/></p>
+          <p class="pbold">Phone number</p>
+        </dt>
+        <dd class="cya-answer">
+         <p>122 Horton Drive<br/>
+          Cardiff<br/>
+          CF11 2HB<br/></p>
+          <p>ananya.sharma@gmail.com</p>
+          <p>0797 243 8179</p>
+        </p>
+      </dd>
+      <dd class="cya-change">
+        <a href="004-your-contact-details-appointee">
+          Change<span class="visually-hidden"> appointee address</span>
+        </a>
+      </dd>
+    </div>
+  </dl>
+  <!-- Text reminders -->
+  <h2 class="heading-medium">Text message reminders</h2>
+  <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        Receive text message reminders
+      </dt>
+      <dd class="cya-answer">
+        Yes
+      </dd>
+      <dd class="cya-change">
+        <a href="005-sms-sign-up-appointee">
+          Change<span class="visually-hidden"> receive text message reminders</span>
+        </a>
+      </dd>
+    </div>
+    <div>
+      <dt class="cya-question">
+        Mobile number
+      </dt>
+      <dd class="cya-answer">
+        0797 243 8179
+      </dd>
+      <dd class="cya-change">
+        <a href="006-sms-mobile-number">
+          Change<span class="visually-hidden"> mobile number for text reminders</span>
+        </a>
+      </dd>
+    </div>
+  </dl>
+  <!-- Representative -->
+  <h2 class="heading-medium">Representative</h2>
+  <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        Have a representative
+      </dt>
+      <dd class="cya-answer">
+        Yes
+      </dd>
+      <dd class="cya-change">
+        <a href="008-representative">
+          Change<span class="visually-hidden">have a representative</span>
+        </a>
+      </dd>
+    </div>
+    <div>
+      <dt class="cya-question">
+        <p class="pbold">Name</p>
+        <p class="pbold">Organisation</p>
+        <p class="pbold">Address<br/><br/><br/></p>
+        <p class="pbold">Email</p>
+        <p class="pbold">Phone number</p>
+      </dt>
+      <dd class="cya-answer">
+        <p>Peter Smith</p>
+        <p>Citizens Advice</p>
+        <p>Ground Floor<br/>
+          Gazette Buildings<br/>
+          168 Corporation Street<br/>
+          Cardiff<br/>
+        CF10 6TF</p>
+        <p>peter.smith@cab.org.uk</p>
+        <p>03444 77 1010</p>
+      </dd>
+      <dd class="cya-change">
+        <a href="009-reps-details">
+          Change<span class="visually-hidden">representative details</span>
+        </a>
+      </dd>
+    </div>
+  </dl>
+  <!-- Reasons for appealing -->
+  <h2 class="heading-medium">Reasons for appealing</h2>
+  <dl class="govuk-check-your-answers cya-questions-short">
+    <div>
+      <dt class="cya-question">
+        <p class="pbold"> What you disagree with</p>
+        <p class="pbold"> Why you disagree with it</p>
+      </dt>
+      <dd class="cya-answer">
+        <p>I can't use a computer for long periods of time</p>
+        <p>Since my stroke I have had trouble focussing. Using a computer gives me headaches and i need to take regular breaks and my consultant told me i should not use one. I cannot do a job which needs me to use a computer. </p>
+      </dd>
+      <dd class="cya-change">
+        <a href="http://j3w7qa.axshare.com/#c=2"> <!-- onPageLoad open the relevant accordion panel -->
+          Change<span class="visually-hidden"> 1st reason for appealing</span>
+        </a>
+      </dd>
+    </div>
+    <div>
+      <dt class="cya-question">
+       <p class="pbold"> What you disagree with</p>
+       <p class="pbold">Why you disagree with it</p>
+     </dt>
+     <dd class="cya-answer">
+      <p>That i am able to cope with social situations</p>
+      <p>I have trouble remembering people’s names. I get very anxious before social situations. I try to avoid them because i don't want to offend people by forgetting their name. </p>
+    </dd>
+    <dd class="cya-change">
+      <a href="http://j3w7qa.axshare.com/#c=2"> <!-- onPageLoad open the relevant accordion panel -->
+        Change<span class="visually-hidden"> 1st reason for appealing</span>
+      </a>
+    </dd>
+  </div>
+  <div>
+    <dt class="cya-question">
+      Anything else you want to tell us<br/>
+    </dt>
+    <dd class="cya-answer">
+      I told the assessor about my condition but he did not listen to me.  
+    </dd>
+    <dd class="cya-change">
+      <a href="011-additional-reasons-appointee">
+        Change<span class="visually-hidden"> anything else you want to tell us</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+<!-- The hearing -->
+<h2 class="heading-medium">The hearing</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+  <div>
+    <dt class="cya-question">
+      Attending the hearing
+    </dt>
+    <dd class="cya-answer">
+      Yes
+    </dd>
+    <dd class="cya-change">
+      <a href="013-your-hearing-appointee">
+        Change<span class="visually-hidden"> attending the hearing</span>
+      </a>
+    </dd>
+  </div>
+  <div>
+    <dt class="cya-question">
+      Dates you're not available
+    </dt>
+    <dd class="cya-answer">
+      <p>15 February 2017 to 16 February 2017</p>
+      <p>3 March 2017</p>
+    </dd>
+    <dd class="cya-change">
+      <a href="016-hearing-dates-nonjs-appointee">
+        Change<span class="visually-hidden"> Dates you're not available to attend</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+<!-- The hearing arrangements -->
+<h2 class="heading-medium">Hearing arrangements</h2>
+<dl class="govuk-check-your-answers cya-questions-short">
+  <div>
+    <dt class="cya-question">
+      <p class="pbold">Language interpreter</p>
+      <p class="pbold">Sign interpreter</p>
+      <p class="pbold">Hearing loop</p>
+      <p class="pbold">Disabled access</p>
+      <p class="pbold">Anything other arrangements</p>
+    </dt>
+    <dd class="cya-answer">
+      <p>Not required</p>
+      <p>Not required</p>
+      <p>Not required</p>
+      <p>Required</p>
+      <p>Not required</p>
+    </dd>
+    <dd class="cya-change">
+      <a href="015-hearing-arrangements-appointee">
+        Change<span class="visually-hidden"> hearing arrangements</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+<br/>
+<h2 class="heading-medium">Sign and submit </h2>
+<p>The information I have provided in this appeal is accurate, to the best of my knowledge. </p>
+<p><!--[if chosen rep]--> I give permission for the tribunal to correspond with my named representative about my appeal.</p>
+<p>I agree to the <a href="other-pages/terms-and-conditions">terms and conditions</a> of using the ‘Appeal a benefit decision’ service.</p>
+<div class="form-group">
+  <h3 class="heading-small">
+    Enter your name
+    <span class="form-hint">This should be the name of the appointee</span></h3>
+    <input class="form-control form-control-2-4" id="form-control-3-4" type="text"> 
+  </div>
+
+<br/>
+      <div class="grid-row">
+        <div class="column-one-quarter">
+          <a class="button" href="018-confirmation-appointee">Submit your appeal</a>
+        </div>
+        <div class="column-two-thirds save-for-later">
+          <a href="saved-signed-out">Save and come back later</a></p>  
+        </div>
+      </div>
+
+      <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}  
+
+
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block page_title %}
+No MRN - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+<div class="breadcrumbs">
+  <ol>
+    <li>< <a href="003-mrn-date">back</a></li>
+    
+  </ol>
+</div>
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h1 class="heading-large">
+      Tell us why you don’t have a Mandatory Reconsideration Notice
+    </h1>
+    <p>You can still appeal if you can show that you have asked DWP to reconsider their decision.</p>
+    <form>
+      <div class="form-group">
+        <fieldset>
+
+        <label class="form-label" for="textarea">
+</label>
+<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+        </fieldset>
+      </div>  <a class="button" href="004-your-details-mrn-late">Continue</a>
+    </form>
+    <br/>
+    <p><a href="003-2-contact-dwp">I haven’t contacted DWP about their decision</a></p>
+  </div>
+</div>
+</main>
+{% endblock %}

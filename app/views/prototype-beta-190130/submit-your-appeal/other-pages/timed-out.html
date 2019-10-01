@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Sesison timed out- GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-large">
+            Sorry, you'll have to start again
+        </h1>
+        <p>Your session automatically ends if you don't use this service for 20 minutes.</p>
+        <p>Your information has been deleted. We do this to protect your personal data. </p>
+  
+ 
+<a class="button" href="../guidance/start-an-appeal">Start again</a>
+  </div>
+</div>
+<br/>
+<div style=" font-size: 14px;">
+		<p><a href="../011-why-are-you-appealing">Demo: Back to Reasons for appealing</a></p></div>
+</main>
+{% endblock %}

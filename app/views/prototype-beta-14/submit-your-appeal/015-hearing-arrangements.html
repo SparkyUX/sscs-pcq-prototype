@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing arrangements - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Arrangements for your hearing
+    </h1>
+
+    <p>Click all the arrangements we need to make for your hearing.</p>    
+
+    <p>Please note that you can’t bring your own interpreter to the hearing. </p>
+
+<!-- Checkbox with reveal pattern - code based on - http://govuk-elements.herokuapp.com/form-elements/#form-checkboxes
+  Styling and functionality isn't working --> 
+
+  <form>
+    <div class="form-group">
+      <fieldset>
+
+        <legend class="visually-hidden">Arrangements for your hearing</legend>
+
+        <div class="multiple-choice" data-target="language-types">
+          <input id="language-interpreter" name="nationalities" type="checkbox" value="Language interpreter">
+          <label for="language-interpreter">Language interpreter</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="language-types">
+          <label class="form-label" for="nationalities-other-country">Language</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+
+          <label class="form-label" for="nationalities-other-country">Dialect</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+
+        </div>
+
+        <div class="multiple-choice">
+          <input id="sign-language" name="sign-language" type="checkbox" value="Sign language">
+          <label for="sign-language">Sign language interpreter</label>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="hearing-loop" name="hearing-loop" type="checkbox" value="Hearing loop">
+          <label for="hearing-loop">Hearing loop</label>
+        </div>
+
+        <div class="multiple-choice">
+          <input id="disabled-access" name="disabled-access" type="checkbox" value="Disabled access">
+          <label for="disabled-access">Disabled access</label>
+        </div>
+ </fieldset>
+ <br/>
+      <div class="form-group">
+
+          <label class="form-label" for="anything-else">
+            Anything else we need to know  
+          </label>
+          <textarea class="form-control form-control-3-4" id="textarea-a" cols="90" rows="4"></textarea>
+        </div>
+      <a class="button" href="http://2cn9p3.axshare.com/#c=2">Continue</a>
+    </div>
+
+
+
+  </form>
+
+</div>
+
+</div>
+
+
+
+
+</main>
+
+{% endblock %}

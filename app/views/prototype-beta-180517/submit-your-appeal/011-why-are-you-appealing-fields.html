@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Reasons for appealing - Appeal a benefit decision - GOV.UK - option a
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+    <a href="#" class="link-back">Back</a>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Enter a reason for your appeal
+            </h1>
+            <form action="/prototype-180517/submit-your-appeal/reasonForAppeal{% if index %}/{{ index }}{% endif %}" method="POST" class="form">
+                <p>DWP should have explained their decision on your entitlement to PIP in the Mandatory Reconsideration Notice (MRN) or the decision letter they sent you.</p>
+                <p>Read your MRN or the decision letter and write what you disagree with and why. Your reasons will be considered by an independent tribunal who are separate from DWP.</p>
+                <div class="form-group">
+                    <label class="form-label" for="whatYouDisagreeWith">What you disagree with</label>
+                    <input class="form-control form-control-3-4" name="whatYouDisagreeWith" id="whatYouDisagreeWith" type="text" {% if reason.whatYouDisagreeWith %}value="{{ reason.whatYouDisagreeWith }}"{% endif %}>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="whyYouDisagreeWithIt">Why you disagree with it</label>
+                    <textarea class="form-control form-control-3-4" name="whyYouDisagreeWithIt" id="whyYouDisagreeWithIt" rows="5">{% if reason.whyYouDisagreeWithIt %}{{ reason.whyYouDisagreeWithIt }}{% endif %}</textarea>
+                </div>
+                <input type="submit" class="button" value="Continue">
+            </form>
+<br/>
+        <p> <a href="#">Save and come back later</a></p>
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your data. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

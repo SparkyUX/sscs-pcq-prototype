@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Track your appeal - HMCTS
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<main id="content" class="prototype-7" role="main">
+
+  {% include "includes/sscs-alpha.html" %}
+  {% include "includes/sscs-breadcrumbs.html" %}
+
+  <form action="/prototype-7/validatemulti" method="get" class="form">
+
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+
+          <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
+              There are errors on the page.
+          </h1>
+
+          <ul class="error-summary-list">
+            <li><a href="#example-personal-details">{{errorMessages[1]}}</a></li>
+          </ul>
+
+      </div>
+
+      <h1 class="form-title heading-xlarge">
+        Track your benefit appeal
+      </h1>
+
+      <div class="form-group error">
+          <label class="form-label">Enter your appeal reference number</label>
+          <p class="form-hint">You can find this on any letter you’ve received about your benefit appeal. For example SC242/16/03435.</p>
+
+          <span class="error-message">
+              {{errorMessages[0]}}
+          </span>
+
+          <span>SC </span>
+          <input style="width: 67px;" type="text" class="form-control" name="caseref1" value="{{caseRefNumbers[0]}}" maxlength="3">
+          <span>/</span>
+          <input style="width: 55px;" type="text" class="form-control" name="caseref2" value="{{caseRefNumbers[1]}}" maxlength="2">
+          <span>/</span>
+          <input style="width: 90px;" type="text" class="form-control" name="caseref3" value="{{caseRefNumbers[2]}}" maxlength="5">
+
+          <input type="hidden" class="form-control" name="status" value="appeal" />
+      </div>
+
+      <div class="form-group">
+          <input type="submit" class="button" value="Find appeal">
+      </div>
+
+    </form>
+
+</main>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Email notifications - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-dob" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <form>
+    <legend>  <h1 class="heading-large">
+      Enter your email address
+    </h1></legend>
+    
+        
+        <div class="form-group">
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">  
+        </div> 
+        <a class="button" href="../prototype-beta-uc-001/submit-your-appeal/017-check-your-answers">Save and continue</a>
+         <a style="padding-left:45px;" href="004-create-account">Save and come back later</a>
+      </form>
+      <br/>
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+    </div>
+  </div>
+</main>
+{% endblock %}

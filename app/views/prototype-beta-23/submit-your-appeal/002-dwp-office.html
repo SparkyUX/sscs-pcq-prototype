@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your MRN - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+  <a href="../prototype-beta-20/submit-your-appeal/001-benefit-type" class="link-back">Back</a> 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Find DWP’s address on the top right of your Mandatory Reconsideration Notice (MRN) 
+      </h1>
+      
+     <!-- <details>
+        <summary><span class="summary">What’s a Mandatory Reconsideration Notice?</span></summary>
+        <p>Your MRN is the letter you received from DWP when you asked them to reconsider their decision about the PIP benefit.  If you don’t have one, click ‘I don’t have a Mandatory Reconsideration Notice.’ </p>
+      </details> -->
+      <!--<p>This is the letter you received from DWP when you asked them to reconsider their decision about the PIP benefit. </p>-->
+      
+      <div class="form-group">
+        <img src="/public/images/mrn/dwp-office-number.png" width="100%" alt="Example Mandatory Reconsideration Notice with the first line of the address highlighted.">
+        <form>
+          <br/>
+         
+          <fieldset>
+            <p class="bold">Enter the Personal Independence Payment number from DWP’s address</p>
+            <div class="form-date">
+              <label class="form-label" for="dob-day">Personal Independence Payment</label>
+              <div class="form-group form-group-day">
+                <input class="form-control" id="dob-day" name="day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+              </div>
+            </fieldset>
+          </div>
+          <a class="button" href="../prototype-beta-23/submit-your-appeal/003-mrn-date">Continue</a>
+        </form>
+       
+      </div>
+    </div>
+  </main>
+  {% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your new email address - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+<div class="govuk-box-highlight">
+   <h1 class="bold-small">
+      Emails about your <span style="color: green;">ESA benefit </span><span style="color: red; font-weight: normal;">[Appeal benefit type]</span> appeal  will now be sent to
+    </h1>
+    <br/>
+    <p class="bold-large">manish.sharma@gmail.com</p>
+</div>
+<p>We’ve sent an email to that address. Check it in a few minutes.</p>
+  <a href="manage-email-enter-new-02">Change your email address </a>
+
+</div>
+</div>
+
+ 
+
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

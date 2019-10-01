@@ -1,0 +1,67 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+SSCS Protoypes
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+ <div style="margin: 30px 0 45px 0;"> <img src="/public/images/hmcts-logo.png">
+  <p class="heading-small">Social Security and Child Support (SSCS)</p>
+</div>
+<h1 class="heading-xlarge">Submit and track end-to-end journey</h1>
+<div class="grid-row">
+  <div class="column-one-third">
+   <img src="/public/images/persona-manish.png" width="90%"  >
+ </div>
+ <div class="column-two-thirds">
+  <h2 class="heading-medium">Appealing a benefit decision online</h2>
+  <p>Manish receives a Mandatory Reconsideration Notice (MRN) from DWP. It tells him they are sticking by their original decision to award his benefits at a reduced rate. He feels he’s entitled to more.</p>
+  <p>The MRN letter tells him he can appeal the decision through an independent tribunal. There's a web site address for the Appeal a benefit decision service on GOV.UK. He shows the letter to his wife and they go online together to find out how they can appeal the decision. </p>
+  <h3 class="heading-small">Digital profile</h2>
+    <ul class="list list-bullet"</ul>
+      <li>Owns a smartphone</li>
+      <li>Goes online independently and performs basic tasks</li>
+      <li>Needs help with more complex tasks</li>
+      <li>Has an email address</li>
+      <li>Gets tired easily, so struggles to focus for long periods</li>
+    </ul>
+
+
+    <br/>
+    <a class="button button-start" href="dwp-mrn" role="button">Start demo</a>
+    <hr>
+    <h3 class="heading-small">Submit your appeal</h3>
+    <ol class="list list-number">
+      <li><a href="submit-your-appeal/guidance/overview">Service guidance on GOV.UK</a></li>
+      <!--  <li><a href="submit-your-appeal/001-benefit-type">Private beta filters</a></li>-->
+      <li><a href="submit-your-appeal/002-have-mrn">Compliance</a></li>
+      <li><a href="submit-your-appeal/004-your-name-start">Identity and contact</a></li>
+      <li><a href="submit-your-appeal/005-sms-sign-up">Sign up for notifications</a></li>
+      <li><a href="submit-your-appeal/008-representative">Representative</a></li>
+      <li><a href="submit-your-appeal/011-why-are-you-appealing">Reasons for appealing and evidence</a></li>
+      <li><a href="submit-your-appeal/013-your-hearing">Attend a hearing</a></li>
+      <li><a href="submit-your-appeal/017-check-your-answers">Check your answers</a></li>
+      <li><a href="submit-your-appeal/018-confirmation">Appeal submitted confirmation</a></li>
+    </ol>
+    <h3 class="heading-small">Track your appeal</h3>
+    <ol class="list list-number">
+      <li><a href="notifications/email-appeal-received-mvp">Email - Appeal received (MVP)</a></li>
+      <li><a href="notifications/email-appeal-lodged">Email - Appeal lodged (MVP)</a></li>
+      <li><a href="status">Status - Appeal lodged</a></li>
+      <li><a href="notifications/email-dwp-response">Email - DWP response</a></li>
+      <!--<li><a href="notifications/email-dwp-response-late"> Email - DWP response late (New)</a></li> -->
+      <li><a href="benefit-appeal-evidence"> Support - Providing evidence to support your appeal</a></li>
+      <!--<li><a href="notifications/email-evidence-reminder">Email - Evidence reminder</a></li>-->
+      <li><a href="notifications/email-evidence-received">Email - Evidence received</a></li>
+      <li><a href="notifications/email-hearing-booked-mvp">Email - Hearing booked (MVP)</a></li>
+      <li><a href="about-hearing">Support - What to expect at your hearing</a></li>
+      <!-- <li><a href="claiming-hearing-expenses">Support - Claiming expenses to attend your hearing </a></li> -->
+      <li><a href="check-your-hearing-details-mvp">Check your hearing details (MVP)</a></li>
+      <li><a href="notifications/email-hearing-reminder-1wk-mvp">Email - Hearing reminder - 1 week (MVP)</a></li>
+      <li><a href="notifications/email-hearing-reminder-1day-mvp">Hearing reminder - 1 day (MVP)</a></li>
+      <li><a href="status-decision">Status - Decision</a></li>
+      <li><a href="status-appeal-closed">Status - Appeal closed</a></li>
+    </ol>
+  </div>
+</div>
+</main>
+{% endblock %}

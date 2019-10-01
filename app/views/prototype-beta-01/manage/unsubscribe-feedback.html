@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Providing evidence - Track your benefits appeal
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+
+
+    <h1 class="form-title heading-large">
+      Please provide feedback
+    </h1>
+
+<form>
+
+    <div class="form-group">
+         <div class="form-group">
+      <label class="heading-medium" for="full-name">Tell us briefly why you wanted to stop receiving <br/>emails about your appeal. 
+</label>
+      <br/>
+         <br/>
+<textarea name="Text1" cols="26" rows="6"></textarea>
+    </div>
+  <a class="button" href="unsubscribe-feedback-thanks">Send</a>
+
+     
+    </div>
+
+
+
+
+  </form>
+
+    
+            <div class="prototype-nav">
+            <p><a href="../index">Index</a></p>
+
+            </div>
+
+
+</main>
+
+{% endblock %}

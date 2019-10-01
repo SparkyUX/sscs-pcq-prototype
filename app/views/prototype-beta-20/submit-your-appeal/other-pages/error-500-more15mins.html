@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Service not available - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+   {% include "includes/phase_banner_beta.html" %} 
+   <div class="grid-row">
+    <div class="column-full">
+    <h1 class="heading-large">
+            Sorry, we’re experiencing technical difficulties
+        </h1>
+    </div>
+  
+  <div class="column-two-thirds">
+        <p>Please try again in a few hours.</p>
+        <p> If you need to submit your appeal quickly, you can <a href="https://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?original_id=3038">download and fill out an SSCS1 form</a>.</p>
+    </div>
+    
+</div>
+</main>
+{% endblock %}

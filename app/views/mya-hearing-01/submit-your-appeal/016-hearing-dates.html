@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Hearing availability - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+  {% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <input id="asset-path" type="hidden" data-path="{{ asset_path }}">
+
+    <a href="#" class="link-back">Back</a>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">Enter the dates when you cannot go to a hearing</h1>
+            <p>It’s important that you make yourself available for a hearing. If you don’t show up, the appeal could go ahead in your absence or be delayed by several months.</p>
+            <p>Select dates you <span class="bold">cannot</span> go to a hearing.</p>
+
+                <div id="date-picker" class="datepicker"></div>
+
+                <h2 class="heading-medium">Dates you cannot go to a hearing</h2>
+                <dl id="dates-cant-attend-list" class="add-another-list">
+                    {% if datesCantAttend %}
+                        {% for date in datesCantAttend %}
+                        <div id="add-another-list-items-{{ loop.index0 }}">
+                            <dd class="add-another-list-item"><span data-index="{{ loop.index0 }}">{{ date }}</span></dd>
+                            <dd class="add-another-list-controls">
+                                <a href="/prototype-beta-190211/submit-your-appeal/011-why-are-you-appealing-fields/{{ loop.index0 }}" class="add-another-edit-link">Edit</a>
+                                <a href="/prototype-beta-190211/submit-your-appeal/011-why-are-you-appealing-fields/{{ loop.index0 }}/delete" class="add-another-delete-link">Remove</a>
+                            </dd>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                    <div>
+                        <dd class="add-another-list-item">
+                            <div id="items" class="noItems">No dates added yet</div>
+                        </dd>
+                    </div>
+                    {% endif %}
+                </dl>
+
+   <br/>
+
+      
+
+          <div class="grid-row">
+      <div class="column-one-third">
+        <a class="button" href="/../prototype-beta-190211/submit-your-appeal/017-check-your-answers">Save and continue</a>
+      </div>
+      <div class="column-two-thirds save-for-later">
+        <a href="/prototype-beta-190211/submit-your-appeal/saved-signed-out">Save and come back later</a></p>  
+      </div>
+    </div>
+
+
+         <!--<p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> -->
+       
+         {% include "includes/help-contact.html" %}
+        </div>
+
+    </div>
+</main>
+{% endblock %}

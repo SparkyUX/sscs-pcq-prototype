@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+MRN reference number - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+     {% include "includes/phase_banner_beta.html" %} 
+ 
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="visually-hidden">Enter your MRN reference number</legend>
+        <label>
+            <h1 class="heading-large">
+                Enter your MRN reference number
+            </h1>
+    
+     <p>This is the number at the top of your Mandatory Reconsideration Notice</p>
+ 
+</label>
+<input class="form-control" type="text">
+
+    </fieldset>
+
+  </div>
+  <a class="button" href="002-mrn_date">Continue</a>
+
+</form>
+
+
+
+</main>
+
+{% endblock %}

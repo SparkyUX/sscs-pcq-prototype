@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your NI number (appointee) - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-dob" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <form>
+    <legend>  <h1 class="heading-large">
+      Enter your National Insurance number
+    </h1></legend>
+
+        <p>This is the appointee’s National Insurance Number.
+</p>
+    <!--<P>You can find your National Insurance number on any letter about the benefit. </P>-->
+
+        <!-- National insurance number -->
+        <div class="form-group">
+          <input class="form-control form-control-1-4" id="form-control-1-4" type="text">  
+        </div> 
+        <a class="button" href="004-your-contact-details-appointee">Continue</a>
+      </form>
+<br/>
+        <!-- <p> <a href="#">Save and come back later</a></p> -->
+
+        <p class="timeout-note">This page will time out in 20 minutes if there is no activity. This is to protect your personal information. <!--[when save and return implemented] You can upload or post evidence after you have submitted your appeal, if you don’t have it to hand. --></p>
+
+    </div>
+</div>
+</main>
+{% endblock %}

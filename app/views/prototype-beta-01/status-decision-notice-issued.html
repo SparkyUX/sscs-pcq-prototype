@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Status - Decision issued
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-8" role="main">
+
+     {% include "includes/phase_banner_beta.html" %} 
+  {% include "includes/breadcrumbs.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+                Your ESA benefit appeal
+            </h1>
+
+            <div class="details">
+                <h2 class="heading-medium">Mr M Sharma</h2>
+                <h2 class="form-hint">Appeal reference number: SC012/34/56789</h2>
+            </div>
+            <div class="divider"></div>
+ <div class="progress-container">
+                <div class="ring active">
+                    <p class="appeal-received">Appeal</p>
+                </div>
+                <div class="leg foot active">
+                    <p class="dwp-respond">DWP response</p>
+                </div>
+                <div class="leg foot active">
+                    <p class="hearing-booked">Hearing booked</p>
+                </div>
+                <div class="leg active"></div>
+                <div class="ring active">
+                    <p class="hearing">Hearing</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="description">
+
+
+
+                <h4 class="heading-small">Latest update</h4>
+
+                <p>Your hearing took place on 9 January 2017. The decision was sent to you in the post and should have arrived at your registered address by 16 January 2017. We cannot publish the decision online or tell you over the phone. This is to protect your personal information.</p>
+
+            </div>
+
+            <p class="updates-toggle">
+                <i class="fa fa-caret-right" aria-hidden="true"><span>View previous updates</span></i>
+            </p>
+
+            <div class="updates-container">
+
+
+
+
+            <div class="update">
+                <p>20 December 2016</p>
+                <p>A hearing has been booked for your appeal.</p>
+
+                <p><a href="tribunal-hearing">Check the details of your hearing</a></p>
+            </div>
+
+
+                <div class="update">
+                    <p>18 December 2016</p>
+                    <p>The evidence you sent was received by us on 18 December 2016.</p>
+                </div>
+
+               
+
+                <div class="update">
+                        <p>23 November 2016</p>
+                        
+                        <p>We have told the DWP you wanted to appeal against their decision on your claim for PIP benefit. They have now responded and told us they have not changed their decision. They should have sent you a copy of their response in the post.</p>
+
+                        <p>We are now in the process of booking a hearing for your appeal. We will contact you within 6 weeks with the details.</p>
+                </div>
+
+                <div class="update">
+                        <p>13 October 2016</p>
+                        
+                        <p>We have told the DWP that you want to appeal against their decision. They have to provide a written response before 23 November 2016. We will contact you and explain the next steps when they have replied.</p>
+                        
+                </div>
+
+
+                </div>
+            <div class="updates-border-thin"></div>
+
+            <div class="prototype-nav">
+            <p><a href="index">Index</a></p>
+
+            </div>
+
+            </div>
+        </div>
+
+
+    
+
+    </main>
+
+    {% endblock %}

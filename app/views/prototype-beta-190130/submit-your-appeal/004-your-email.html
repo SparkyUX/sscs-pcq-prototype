@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block page_title %}
+Your email address - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block proposition_header %}
+{% include "includes/idam_signout_propositional_navigation_190117.html" %}
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="004-your-contact-details" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Enter your email address
+    </h1>
+    <p>Providing your email address means you can:</p>
+    <ul class="list list-bullet">
+      <li>save your appeal</li>
+      <li>receive updates about your appeal</li>
+      <li>track your appeal online</li>
+      <li>access your appeal online</li>
+    </ul>
+    <form>
+      <fieldset>
+        <div class="form-group">
+          <label class="form-label" for="email">
+            Your email address
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">
+            Confirm your email address
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+        <a class="button" href="005-sms-sign-up">Save and continue</a>
+        <br/>
+        <!--<p> <a href="#">Save and come back later</a></p>-->      </form>
+        <br/>
+        <p class="timeout-note">If you do not do anything for 20 minutes then this service will time out.</p> 
+       
+         {% include "includes/help-contact.html" %}
+      </div>
+    </div>
+  </main>
+  {% endblock %}

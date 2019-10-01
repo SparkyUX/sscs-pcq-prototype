@@ -1,0 +1,89 @@
+{% extends "layout_unbranded.html" %}
+{% block page_title %}
+SSCS Protoypes
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	<div style="margin: 30px 0 45px 0;"> <a href="../index"><img src="/public/images/hmcts-logo.png"></a>
+		<p class="heading-small">Social Security and Child Support (SSCS)</p>
+		<h1 class="heading-large">Submit your appeal - Appellant</h1>
+		<br/>
+		<h2 id="online" class="heading-small">Submit your appeal journey - Appellant</h2>
+		<ol class="list list-number">
+
+			<li><a href="guidance/start-an-appeal">Start an appeal</a></li>
+		</ol>
+		<h2 id="online" class="heading-small">Individual pages</h2>
+		<p class="form-hint"> Note: onward links may not work if viewing screens individually. <br/>Return to the this index and select another link.</p>
+		<ol class="list list-number">
+			
+			<li><a href="guidance/start-an-appeal">Start an appeal</a></li>
+			<li><a href="001-benefit-type">Which benefit is your appeal about?</a></li>
+			<li><a href="001-1-sscs-form-download">You need to download an appeal form [If not PIP]</a></li>
+			<li><a href="000-postcode">Postcode check (Private Beta enrolment)</a></li>
+			<li><a href="000-postcode-invalid">You need to download and fill out a paper form  (Invalid PB postcode)</a></li>
+			<li><a href="001-2-independence">You’re appealing to an independent tribunal</a></li>
+			<li><a href="002-have-mrn">Have you got a Mandatory Reconsideration Notice (MRN)?</a></li>
+			<li><a href="002-contacted-dwp">Have you contacted DWP?</a></li>	
+	
+
+			<li><a href="002-dwp-office">DWP office number from the MRN letter</a></li>
+			<li><a href="003-mrn-date">What’s the date of your Mandatory Reconsideration Notice (MRN)?</a></li>
+			<li><a href="003-1-no-mrn">Explain why you don’t have a Mandatory Reconsideration Notice (MRN)</a></li>
+			<li><a href="003-2-contact-dwp">Contact the DWP before you appeal</a></li>
+			<li><a href="003-0-check-mrn-date">Double check the date you entered
+			</a></li>
+			<li><a href="003-3-why-appeal-late-1month">Explain why your appeal is late (MRN date > 1 month and < 13)</a></li>
+			<li><a href="003-4-why-appeal-late-13months">Explain why your appeal is late (MRN date > 13 months)</a></li>
+			<!--<li><a href="003-5-appeal-late-no-reason-1month">Unfortunately you cannot appeal (no reason given)</a></li>-->
+			<li><a href="004-appointee">Are you an appointee?</a></li>
+			<li><a href="001-1-SSCS-form-download">You need to download an appeal form [If an appointee - MVP]</a></li>
+			<li><a href="004-your-name">Enter your name</a></li>
+			<li><a href="004-your-dob">Enter your date of birth</a></li>
+			<li><a href="004-your-nino">Enter your National Insurance number</a></li>
+			<li><a href="004-your-contact-details">Enter your contact details</a></li>
+			
+			<li><a href="005-sms-sign-up">Do you want to receive text message reminders?</a></li>
+			<li><a href="006-sms-mobile-number-provided">Do you want them sent to the number you provided earlier?</a></li>
+			<li><a href="006-sms-mobile-number">Enter your mobile phone number</a></li>
+			<li><a href="007-sms-confirmation">You’re signed up for text message reminders</a></li>
+			<li><a href="008-representative">Do you have a representative?</a></li>
+			<li><a href="009-reps-details">Enter their details</a></li>
+			<!--<li><a href="009-no-reps-details">You can register them later</a></li>-->
+			<li><a href="https://113ix4.axshare.com/#c=2">Your reason for appealing (JS)</a></li>
+
+			<li><a href="011-why-are-you-appealing">Your reason for appealing  (non-JS version)</a></li>
+			<li><a href="011-additional-reasons">Anything else you want to tell the independent tribunal</a></li>
+			<li><a href="012-evidence-reminder">Sending evidence to support your appeal</a></li>
+			<li><a href="013-your-hearing">The hearing</a></li>
+			<li><a href="013-hearing-not-attending">You have chosen not to attend the hearing</a></li>
+			<li><a href="014-hearing-arrangements-needed">Do you need any support for your hearing?</a></li>
+			<li><a href="015-hearing-arrangements">Arrangements for the hearing</a></li>
+			<li><a href="016-hearing-availability">Your availability for a hearing</a></li>
+			<li><a href="016-hearing-dates">Enter the dates when you cannot go to a hearing (Calendar date picker)</a></li>
+			<li><a href="https://gkk307.axshare.com/#c=2">Enter the dates when you cannot go to a hearing  (JS single and range of dates input - MVP) </a></li>
+
+			<li><a href="016-hearing-dates-nonjs-appellant">Enter the dates when you cannot go to a hearing  (non-JS single date input)</a></li>
+			<li><a href="017-check-your-answers">Check your appeal</a></li>
+			<li><a href="018-confirmation">Your appeal has been submitted</a></li>
+			<!--<li><a href="/public/images/pdf/Alex-Smith-PIP-Benefit-Appeal.pdf">Appeal summary PDF</a></li> -->
+			<li><a href="../notifications/email-appeal-summary">Appeal summary email</a></li>
+			<li><a href="../notifications/email-appeal-lodged">Appeal lodged</a></li>
+
+			<li><a href="../notifications/sms-sya-confirmation">Registered for SMS - confirmation sms</a></li>
+		</ol>
+
+		<hr/>
+		<h2 class="heading-small">Other pages</h2>
+		<ol class="list list-number">
+			<li><a href="other-pages/error-404">Page not found - 404</a></li>
+			<li><a href="other-pages/timed-out">Timed out</a></li>
+			<li><a href="other-pages/error-500-15mins">Technical issue (less than 15 minutes) - 500</a></li>
+			<li><a href="other-pages/error-500-more15mins">Shutter page</a></li>
+<!--<li><a href="other-pages/private-beta-quota-reached">Private beta quota reached</a></li>-->
+<li><a href="other-pages/terms-and-conditions">Terms and conditions</a></li>
+		</ol>	
+	
+	</div>
+</main>
+{% endblock %}
