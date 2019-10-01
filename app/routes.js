@@ -205,7 +205,7 @@ router.get('/prototype-sya-demo/validate-surname',   prototypeSixteenCtrl.valida
 router.get('/prototype-sya-demo/status',   prototypeSixteenCtrl.getAppealStatus);
 router.post('/prototype-sya-demo/appointee',   prototypeSixteenCtrl.appointee);
 router.post('/prototype-sya-demo/representative',   prototypeSixteenCtrl.representative);
-router.post('/prototype-sya-demo3/representative-app',   prototypeSixteenCtrl.representativeApp);
+router.post('/prototype-sya-demo/representative-app',   prototypeSixteenCtrl.representativeApp);
 router.post('/prototype-sya-demo/hearing',   prototypeSixteenCtrl.hearing);
 router.post('/prototype-sya-demo/hearing-app',   prototypeSixteenCtrl.hearingApp);
 router.post('/prototype-sya-demo/arrangements',   prototypeSixteenCtrl.arrangements);
@@ -213,7 +213,7 @@ router.post('/prototype-sya-demo/arrangements-app',   prototypeSixteenCtrl.arran
 router.post('/prototype-sya-demo/mobile',   prototypeSixteenCtrl.mobile);
 router.post('/prototype-sya-demo/mobile-app',   prototypeSixteenCtrl.mobileApp);
 router.post('/prototype-sya-demo/mobileboth',   prototypeSixteenCtrl.mobileboth);
-router.post('/prototype-sya-demo3/notifications',   prototypeSixteenCtrl.notifications);
+router.post('/prototype-sya-demo/notifications',   prototypeSixteenCtrl.notifications);
 router.post('/prototype-sya-demo/mrnDate',   prototypeSixteenCtrl.mrnDate);
 router.post('/prototype-sya-demo/checkdate',   prototypeSixteenCtrl.checkdate);
 router.post('/prototype-sya-demo/availability',   prototypeSixteenCtrl.availability);

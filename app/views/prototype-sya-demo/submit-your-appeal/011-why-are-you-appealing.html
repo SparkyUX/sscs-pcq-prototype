@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html>
+<!-- JHS 19 Sep 19 replace axure page -->
+{% extends "layout.html" %}
+{% block page_title %}
+Reasons for appealing - Appeal a benefit decision - GOV.UK
+{% endblock %}
+{% block content %}
+<main id="content" class="prototype-8" role="main">
+ {% include "includes/phase_banner_beta.html" %} 
+ <a href="#" class="link-back">Back</a> 
+ <div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-large">
+      Your reasons for appealing
+    </h1>
+    <p>DWP should have explained their decision on your entitlement to PIP in the Mandatory Reconsideration Notice (MRN).</p>
+    <p>Read the MRN and write what you disagree with and why. Your reasons will be considered by an independent tribunal who are separate from DWP.</p>
 
-<head>
-  <title>Redirect</title>
-  <!-- JS version <meta http-equiv="refresh" content="0; URL='https://113ix4.axshare.com/#c=2'" /> -->
- <meta http-equiv="refresh" content="0; URL='https://g7nqtf.axshare.com/#c=2'" />
-
-
-</head>
-
-<body>
-
-</body>
-
-</html>
+    <form>
+        <div class="form-group">
+          <label class="form-label" for="what-you-disagree-with">
+            What you disagree with
+          </label>
+          <input class="form-control form-control-3-4" id="form-control-3-4" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="what-you-disagree-with">
+           Why you disagree with it
+          </label> 
+        <textarea class="form-control form-control-3-4" id="textarea-a"  rows="10"></textarea>
+      </div>
+      <a class="button" href="submit-your-appeal/011-additional-reasons">Continue</a>
+    </form>  
+  </div>
+</div>
+</main>
+{% endblock %}
