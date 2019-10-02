@@ -66,7 +66,7 @@ var controller = {
         if (req.body.radioGroup === 'datesYes') {
             res.render('prototype-sya-demo/submit-your-appeal/016-hearing-dates');
         } else if (req.body.radioGroup === 'datesNo') {
-            res.render('prototype-sya-demo/submit-your-appeal/017-check-your-answers');
+            res.redirect('https://hmcts-pcq-sscs-prototype.herokuapp.com/pcq-v1/introduction');
         }
     },
 
@@ -74,7 +74,7 @@ var controller = {
         if (req.body.radioGroup === 'datesYesApp') {
             res.render('prototype-sya-demo/submit-your-appeal/016-hearing-dates-appointee');
         } else if (req.body.radioGroup === 'datesNoApp') {
-            res.render('prototype-sya-demo/submit-your-appeal/017-check-your-answers-appointee');
+            res.redirect('https://hmcts-pcq-sscs-prototype.herokuapp.com/pcq-v1/introduction');
         }
     },
 
