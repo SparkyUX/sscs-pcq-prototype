@@ -1,6 +1,11 @@
 .idea
-node_modules
+.sass-cache
+.DS_Store
+.start.pid
+.port.tmpnode_modules
 govuk_modules
 public
+package-lock.json
+
 uploads/*
 !uploads/.gitkeep
